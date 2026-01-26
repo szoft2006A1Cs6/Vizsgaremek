@@ -1,0 +1,6 @@
+@RendelőTabletApi_HostAddress = http://localhost:5274
+
+GET {{RendelőTabletApi_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
