@@ -1,0 +1,181 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\dz_szoft2006\\Desktop\\20_Registration\\UserManagement\\UserAPI\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{068518B5-BEEA-4995-938E-DB72C53C5A25}|UserAPI\\UserAPI.csproj|c:\\users\\dz_szoft2006\\desktop\\20_registration\\usermanagement\\userapi\\userapi\\auth\\tokenmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{068518B5-BEEA-4995-938E-DB72C53C5A25}|UserAPI\\UserAPI.csproj|solutionrelative:userapi\\auth\\tokenmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{068518B5-BEEA-4995-938E-DB72C53C5A25}|UserAPI\\UserAPI.csproj|c:\\users\\dz_szoft2006\\desktop\\20_registration\\usermanagement\\userapi\\userapi\\auth\\passwordhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{068518B5-BEEA-4995-938E-DB72C53C5A25}|UserAPI\\UserAPI.csproj|solutionrelative:userapi\\auth\\passwordhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{068518B5-BEEA-4995-938E-DB72C53C5A25}|UserAPI\\UserAPI.csproj|c:\\users\\dz_szoft2006\\desktop\\20_registration\\usermanagement\\userapi\\userapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{068518B5-BEEA-4995-938E-DB72C53C5A25}|UserAPI\\UserAPI.csproj|solutionrelative:userapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{068518B5-BEEA-4995-938E-DB72C53C5A25}|UserAPI\\UserAPI.csproj|c:\\users\\dz_szoft2006\\desktop\\20_registration\\usermanagement\\userapi\\userapi\\models\\applicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{068518B5-BEEA-4995-938E-DB72C53C5A25}|UserAPI\\UserAPI.csproj|solutionrelative:userapi\\models\\applicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{068518B5-BEEA-4995-938E-DB72C53C5A25}|UserAPI\\UserAPI.csproj|c:\\users\\dz_szoft2006\\desktop\\20_registration\\usermanagement\\userapi\\userapi\\database\\usermanagercontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{068518B5-BEEA-4995-938E-DB72C53C5A25}|UserAPI\\UserAPI.csproj|solutionrelative:userapi\\database\\usermanagercontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{068518B5-BEEA-4995-938E-DB72C53C5A25}|UserAPI\\UserAPI.csproj|c:\\users\\dz_szoft2006\\desktop\\20_registration\\usermanagement\\userapi\\userapi\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{068518B5-BEEA-4995-938E-DB72C53C5A25}|UserAPI\\UserAPI.csproj|solutionrelative:userapi\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{068518B5-BEEA-4995-938E-DB72C53C5A25}|UserAPI\\UserAPI.csproj|c:\\users\\dz_szoft2006\\desktop\\20_registration\\usermanagement\\userapi\\userapi\\controllers\\applicationusercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{068518B5-BEEA-4995-938E-DB72C53C5A25}|UserAPI\\UserAPI.csproj|solutionrelative:userapi\\controllers\\applicationusercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E3CC83BA-DBA5-4BA2-83BF-D8058EA54891}|UserAPI.IntegrationTests\\UserAPI.IntegrationTests.csproj|c:\\users\\dz_szoft2006\\desktop\\20_registration\\usermanagement\\userapi\\userapi.integrationtests\\logintests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E3CC83BA-DBA5-4BA2-83BF-D8058EA54891}|UserAPI.IntegrationTests\\UserAPI.IntegrationTests.csproj|solutionrelative:userapi.integrationtests\\logintests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E3CC83BA-DBA5-4BA2-83BF-D8058EA54891}|UserAPI.IntegrationTests\\UserAPI.IntegrationTests.csproj|c:\\users\\dz_szoft2006\\desktop\\20_registration\\usermanagement\\userapi\\userapi.integrationtests\\customwebapplicationfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E3CC83BA-DBA5-4BA2-83BF-D8058EA54891}|UserAPI.IntegrationTests\\UserAPI.IntegrationTests.csproj|solutionrelative:userapi.integrationtests\\customwebapplicationfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{068518B5-BEEA-4995-938E-DB72C53C5A25}|UserAPI\\UserAPI.csproj|c:\\users\\dz_szoft2006\\desktop\\20_registration\\usermanagement\\userapi\\userapi\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{068518B5-BEEA-4995-938E-DB72C53C5A25}|UserAPI\\UserAPI.csproj|solutionrelative:userapi\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\dz_szoft2006\\Desktop\\20_Registration\\UserManagement\\UserAPI\\UserAPI\\Program.cs",
+              "RelativeDocumentMoniker": "UserAPI\\Program.cs",
+              "ToolTip": "C:\\Users\\dz_szoft2006\\Desktop\\20_Registration\\UserManagement\\UserAPI\\UserAPI\\Program.cs",
+              "RelativeToolTip": "UserAPI\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-13T15:50:43.102Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "UserManagerContext.cs",
+              "DocumentMoniker": "C:\\Users\\dz_szoft2006\\Desktop\\20_Registration\\UserManagement\\UserAPI\\UserAPI\\Database\\UserManagerContext.cs",
+              "RelativeDocumentMoniker": "UserAPI\\Database\\UserManagerContext.cs",
+              "ToolTip": "C:\\Users\\dz_szoft2006\\Desktop\\20_Registration\\UserManagement\\UserAPI\\UserAPI\\Database\\UserManagerContext.cs",
+              "RelativeToolTip": "UserAPI\\Database\\UserManagerContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-13T15:42:37.422Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ApplicationUser.cs",
+              "DocumentMoniker": "C:\\Users\\dz_szoft2006\\Desktop\\20_Registration\\UserManagement\\UserAPI\\UserAPI\\Models\\ApplicationUser.cs",
+              "RelativeDocumentMoniker": "UserAPI\\Models\\ApplicationUser.cs",
+              "ToolTip": "C:\\Users\\dz_szoft2006\\Desktop\\20_Registration\\UserManagement\\UserAPI\\UserAPI\\Models\\ApplicationUser.cs",
+              "RelativeToolTip": "UserAPI\\Models\\ApplicationUser.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-13T15:37:25.229Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "PasswordHandler.cs",
+              "DocumentMoniker": "C:\\Users\\dz_szoft2006\\Desktop\\20_Registration\\UserManagement\\UserAPI\\UserAPI\\Auth\\PasswordHandler.cs",
+              "RelativeDocumentMoniker": "UserAPI\\Auth\\PasswordHandler.cs",
+              "ToolTip": "C:\\Users\\dz_szoft2006\\Desktop\\20_Registration\\UserManagement\\UserAPI\\UserAPI\\Auth\\PasswordHandler.cs",
+              "RelativeToolTip": "UserAPI\\Auth\\PasswordHandler.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAABTAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-13T16:36:44.686Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "TokenManager.cs",
+              "DocumentMoniker": "C:\\Users\\dz_szoft2006\\Desktop\\20_Registration\\UserManagement\\UserAPI\\UserAPI\\Auth\\TokenManager.cs",
+              "RelativeDocumentMoniker": "UserAPI\\Auth\\TokenManager.cs",
+              "ToolTip": "C:\\Users\\dz_szoft2006\\Desktop\\20_Registration\\UserManagement\\UserAPI\\UserAPI\\Auth\\TokenManager.cs",
+              "RelativeToolTip": "UserAPI\\Auth\\TokenManager.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFUAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-13T16:36:58.044Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "LoginController.cs",
+              "DocumentMoniker": "C:\\Users\\dz_szoft2006\\Desktop\\20_Registration\\UserManagement\\UserAPI\\UserAPI\\Controllers\\LoginController.cs",
+              "RelativeDocumentMoniker": "UserAPI\\Controllers\\LoginController.cs",
+              "ToolTip": "C:\\Users\\dz_szoft2006\\Desktop\\20_Registration\\UserManagement\\UserAPI\\UserAPI\\Controllers\\LoginController.cs",
+              "RelativeToolTip": "UserAPI\\Controllers\\LoginController.cs",
+              "ViewState": "AgIAADMAAAAAAAAAAAAUwBQAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-13T18:04:03.533Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ApplicationUserController.cs",
+              "DocumentMoniker": "C:\\Users\\dz_szoft2006\\Desktop\\20_Registration\\UserManagement\\UserAPI\\UserAPI\\Controllers\\ApplicationUserController.cs",
+              "RelativeDocumentMoniker": "UserAPI\\Controllers\\ApplicationUserController.cs",
+              "ToolTip": "C:\\Users\\dz_szoft2006\\Desktop\\20_Registration\\UserManagement\\UserAPI\\UserAPI\\Controllers\\ApplicationUserController.cs",
+              "RelativeToolTip": "UserAPI\\Controllers\\ApplicationUserController.cs",
+              "ViewState": "AgIAAHkAAAAAAAAAAAAEwFkAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-13T15:53:56.93Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "CustomWebApplicationFactory.cs",
+              "DocumentMoniker": "C:\\Users\\dz_szoft2006\\Desktop\\20_Registration\\UserManagement\\UserAPI\\UserAPI.IntegrationTests\\CustomWebApplicationFactory.cs",
+              "RelativeDocumentMoniker": "UserAPI.IntegrationTests\\CustomWebApplicationFactory.cs",
+              "ToolTip": "C:\\Users\\dz_szoft2006\\Desktop\\20_Registration\\UserManagement\\UserAPI\\UserAPI.IntegrationTests\\CustomWebApplicationFactory.cs",
+              "RelativeToolTip": "UserAPI.IntegrationTests\\CustomWebApplicationFactory.cs",
+              "ViewState": "AgIAABwAAAAAAAAAAAAQwBwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-27T17:39:20.158Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "LoginTests.cs",
+              "DocumentMoniker": "C:\\Users\\dz_szoft2006\\Desktop\\20_Registration\\UserManagement\\UserAPI\\UserAPI.IntegrationTests\\LoginTests.cs",
+              "RelativeDocumentMoniker": "UserAPI.IntegrationTests\\LoginTests.cs",
+              "ToolTip": "C:\\Users\\dz_szoft2006\\Desktop\\20_Registration\\UserManagement\\UserAPI\\UserAPI.IntegrationTests\\LoginTests.cs",
+              "RelativeToolTip": "UserAPI.IntegrationTests\\LoginTests.cs",
+              "ViewState": "AgIAAGIAAAAAAAAAAAAUwGwAAABJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-27T17:45:51.402Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "appsettings.Development.json",
+              "DocumentMoniker": "C:\\Users\\dz_szoft2006\\Desktop\\20_Registration\\UserManagement\\UserAPI\\UserAPI\\appsettings.Development.json",
+              "RelativeDocumentMoniker": "UserAPI\\appsettings.Development.json",
+              "ToolTip": "C:\\Users\\dz_szoft2006\\Desktop\\20_Registration\\UserManagement\\UserAPI\\UserAPI\\appsettings.Development.json",
+              "RelativeToolTip": "UserAPI\\appsettings.Development.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-01-19T15:27:21.027Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
