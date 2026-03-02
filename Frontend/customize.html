@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Termék Testreszabása - Pizza</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Lato:wght@400;700&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+</head>
+<body>
+    <header class="page-header">
+        <button class="back-btn light">
+            <span class="material-icons">arrow_back</span> Vissza
+        </button>
+        <span class="material-icons center-title" style="font-size: 3rem; color: var(--primary-red); opacity: 0.5;">local_pizza</span>
+    </header>
+
+    <main class="customize-main">
+        <div class="product-hero">
+            <h1 class="font-display">PIZZA MARGHERITA</h1>
+            <p>Paradicsomszósz, mozzarella sajt, friss bazsalikom</p>
+        </div>
+
+        <section class="size-section">
+            <h2 class="section-title">MÉRETE</h2>
+            <div class="size-grid">
+                <label class="size-option">
+                    <input type="radio" name="size" value="24"/>
+                    <div class="size-content">
+                        <div class="size-icon"><span class="material-icons">local_pizza</span></div>
+                        <span style="font-weight: bold; font-size: 1.25rem;">24 CM</span>
+                        <span style="font-size: 0.875rem; opacity: 0.7;">Kicsi</span>
+                    </div>
+                </label>
+                <label class="size-option">
+                    <input type="radio" name="size" value="32" checked/>
+                    <div class="size-content">
+                        <div class="recommended-badge">Ajánlott</div>
+                        <div class="size-icon"><span class="material-icons">local_pizza</span></div>
+                        <span style="font-weight: bold; font-size: 1.5rem;">32 CM</span>
+                        <span style="font-size: 0.875rem; opacity: 0.7;">Normál</span>
+                    </div>
+                </label>
+                <label class="size-option">
+                    <input type="radio" name="size" value="45"/>
+                    <div class="size-content">
+                        <div class="size-icon"><span class="material-icons">local_pizza</span></div>
+                        <span style="font-weight: bold; font-size: 1.25rem;">45 CM</span>
+                        <span style="font-size: 0.875rem; opacity: 0.7;">Családi</span>
+                    </div>
+                </label>
+            </div>
+        </section>
+
+        <div class="topping-grid">
+            <section class="topping-section">
+                <h2 class="section-title" style="font-size: 1rem;"><span class="material-icons">add_circle_outline</span> Extra Feltétek</h2>
+                <div class="topping-list">
+                    <label class="topping-item">
+                        <div><input type="checkbox"/> Extra Sajt</div>
+                        <span class="topping-price">+450 Ft</span>
+                    </label>
+                    <label class="topping-item">
+                        <div><input type="checkbox"/> Gomba</div>
+                        <span class="topping-price">+250 Ft</span>
+                    </label>
+                    <label class="topping-item">
+                        <div><input type="checkbox"/> Bacon</div>
+                        <span class="topping-price">+350 Ft</span>
+                    </label>
+                </div>
+            </section>
+
+            <section class="topping-section">
+                <h2 class="section-title" style="font-size: 1rem; color: #6B7280; border-color: #E5E7EB;"><span class="material-icons">remove_circle_outline</span> Elhagyás</h2>
+                <div class="topping-list">
+                    <label class="topping-item">
+                        <div><input type="checkbox"/> Sajt nélkül</div>
+                    </label>
+                    <label class="topping-item">
+                        <div><input type="checkbox"/> Gomba nélkül</div>
+                    </label>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="bottom-bar">
+        <div class="bottom-bar-content">
+            <div class="total-price-box">
+                <span class="total-label">Összesen</span>
+                <span class="total-amount">2 790 Ft</span>
+            </div>
+            <div class="action-buttons">
+                <button class="note-btn">
+                    <span class="material-icons">edit_note</span> Megjegyzés
+                </button>
+                <button class="add-cart-btn font-display">
+                    <span class="material-icons">shopping_cart</span> HOZZÁADÁS
+                </button>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
