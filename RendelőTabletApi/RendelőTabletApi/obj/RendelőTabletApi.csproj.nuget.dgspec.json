@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\hbe_szoft2006\\Documents\\GitHub\\Vizsgaremek\\RendelőTabletApi\\RendelőTabletApi\\RendelőTabletApi.csproj": {}
+    "C:\\Users\\Bende\\Documents\\GitHub\\Vizsgaremek\\RendelőTabletApi\\RendelőTabletApi\\RendelőTabletApi.csproj": {}
   },
   "projects": {
-    "C:\\Users\\hbe_szoft2006\\Documents\\GitHub\\Vizsgaremek\\RendelőTabletApi\\RendelőTabletApi\\RendelőTabletApi.csproj": {
+    "C:\\Users\\Bende\\Documents\\GitHub\\Vizsgaremek\\RendelőTabletApi\\RendelőTabletApi\\RendelőTabletApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\hbe_szoft2006\\Documents\\GitHub\\Vizsgaremek\\RendelőTabletApi\\RendelőTabletApi\\RendelőTabletApi.csproj",
+        "projectUniqueName": "C:\\Users\\Bende\\Documents\\GitHub\\Vizsgaremek\\RendelőTabletApi\\RendelőTabletApi\\RendelőTabletApi.csproj",
         "projectName": "RendelőTabletApi",
-        "projectPath": "C:\\Users\\hbe_szoft2006\\Documents\\GitHub\\Vizsgaremek\\RendelőTabletApi\\RendelőTabletApi\\RendelőTabletApi.csproj",
-        "packagesPath": "C:\\Users\\hbe_szoft2006\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\hbe_szoft2006\\Documents\\GitHub\\Vizsgaremek\\RendelőTabletApi\\RendelőTabletApi\\obj\\",
+        "projectPath": "C:\\Users\\Bende\\Documents\\GitHub\\Vizsgaremek\\RendelőTabletApi\\RendelőTabletApi\\RendelőTabletApi.csproj",
+        "packagesPath": "C:\\Users\\Bende\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Bende\\Documents\\GitHub\\Vizsgaremek\\RendelőTabletApi\\RendelőTabletApi\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\hbe_szoft2006\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Bende\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -83,7 +83,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.301/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.310/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

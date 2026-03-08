@@ -1,9 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.14.36804.6 d17.14
+VisualStudioVersion = 17.14.36804.6
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RendelőTabletApi", "RendelőTabletApi/RendelőTabletApi.csproj", "{111ED883-AB23-45C6-A17B-642EDD5B6E00}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RendelőTabletApi", "RendelőTabletApi\RendelőTabletApi.csproj", "{111ED883-AB23-45C6-A17B-642EDD5B6E00}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RendelőTabletApi.Test", "RendelőTabletApi.Test\RendelőTabletApi.Test.csproj", "{2B5FC97F-2E4E-43FC-B15C-8634F168B0BD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{111ED883-AB23-45C6-A17B-642EDD5B6E00}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{111ED883-AB23-45C6-A17B-642EDD5B6E00}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{111ED883-AB23-45C6-A17B-642EDD5B6E00}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2B5FC97F-2E4E-43FC-B15C-8634F168B0BD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2B5FC97F-2E4E-43FC-B15C-8634F168B0BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2B5FC97F-2E4E-43FC-B15C-8634F168B0BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2B5FC97F-2E4E-43FC-B15C-8634F168B0BD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

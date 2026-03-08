@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("RendelőTabletApi")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1b5a9b609128d10acae84843026da7f5daae9773")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+fbb171234de5475f9fd358d9bcbe20ce729f2f7c")]
 [assembly: System.Reflection.AssemblyProductAttribute("RendelőTabletApi")]
 [assembly: System.Reflection.AssemblyTitleAttribute("RendelőTabletApi")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
