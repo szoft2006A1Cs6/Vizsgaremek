@@ -414,3 +414,35 @@ h1, h2, h3, .font-display {
 .rating-ad { width: 33%; height: 8rem; background-color: var(--brown-dark); border-radius: 0.5rem; overflow: hidden; position: relative; box-shadow: 0 4px 6px rgba(0,0,0,0.1); cursor: pointer; }
 .rating-ad img { width: 100%; height: 100%; object-fit: cover; opacity: 0.6; }
 .rating-ad span { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; color: white; font-family: 'Playfair Display', serif; font-size: 1.25rem; text-transform: uppercase; letter-spacing: 0.1em; text-align: center; padding: 1rem; }
+
+.modal-overlay {
+    position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+    background: rgba(0,0,0,0.7); display: flex; align-items: center; justify-content: center; z-index: 2000;
+}
+
+.tip-content {
+    background: white; padding: 2.5rem; border-radius: 1.5rem; width: 90%; max-width: 450px; text-align: center;
+}
+
+.tip-grid {
+    display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; margin: 2rem 0;
+}
+
+.tip-btn {
+    padding: 1rem; border: 2px solid #E5E7EB; border-radius: 0.75rem; background: none; 
+    font-weight: bold; cursor: pointer; transition: all 0.2s;
+}
+
+.tip-btn.active {
+    background: var(--primary-red, #D32F2F); color: white; border-color: var(--primary-red);
+}
+
+.tip-summary {
+    margin-bottom: 2rem; font-size: 1.2rem; display: flex; justify-content: space-between;
+    padding: 1rem; background: #F9FAFB; border-radius: 0.5rem;
+}
+
+#confirm-tip-btn {
+    width: 100%; padding: 1.25rem; background: #16A34A; color: white; 
+    border: none; border-radius: 1rem; font-size: 1.1rem; cursor: pointer;
+}
