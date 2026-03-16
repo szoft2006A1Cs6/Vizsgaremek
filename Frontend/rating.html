@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Rendelés Értékelése</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Lato:wght@400;700&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+</head>
+<body style="background-color: #EFEBE9;">
+    <header class="page-header bg-dark">
+        <button class="back-btn" style="background-color: #5D4037; color: white;">
+            <span class="material-icons">arrow_back</span> Vissza
+        </button>
+        <h1 class="center-title font-display" style="font-size: 2rem;">Étterem Neve</h1>
+        <div style="width: 100px;"></div>
+    </header>
+
+    <main class="rating-main">
+        <div class="rating-box">
+            <span class="material-icons rating-icon" style="animation: pulse-slow 2s infinite;">restaurant</span>
+            <h2 class="font-display">Hogy ízlett az étel?</h2>
+            <p>Kérjük, értékelje a rendelését, hogy még jobb élményt nyújthassunk!</p>
+            
+            <div class="stars">
+                <button><span class="material-icons">star</span></button>
+                <button><span class="material-icons">star</span></button>
+                <button><span class="material-icons">star</span></button>
+                <button><span class="material-icons">star</span></button>
+                <button><span class="material-icons empty">star</span></button>
+            </div>
+
+            <div class="feedback-box">
+                <label for="feedback">Megjegyzés (Opcionális)</label>
+                <textarea id="feedback" rows="4" placeholder="Írja meg véleményét..."></textarea>
+            </div>
+
+            <button class="submit-btn">
+                <span>ÉRTÉKELÉS BEKÜLDÉSE</span>
+                <span class="material-icons">send</span>
+            </button>
+            
+            <button class="skip-btn">Kihagyom az értékelést</button>
+        </div>
+    </main>
+
+    <footer class="rating-footer">
+        <div class="rating-ad">
+            <img alt="Desszert reklám" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDWjSbMcKdbADGY7rgK0iaKXtMOvbrhoJ_b0kt_NNoYSjne04r73_4y0-ilK3kdVAGikDgjvcgfXt9lYgwG92rj9wl_738A5DniMWqXC35iUg7K0uNep7-6M__nY_unHhI7XwR2n3OdPxiAovZKZXlBrDuaWgOzAMHq6-0NZHSwOM2EGVC7PIfiNjv-Q6U62O0Ck0FtJNum3LK1RwVfcvwE1Zy0heWD_iAnRfyXzJuhSHN_QaFuY0kdwZSFPoc5KQbN0J3q5hJUPug"/>
+            <span>Próbálja ki új desszertünket!</span>
+        </div>
+        <div style="display: flex; align-items: center; gap: 1rem;">
+            <span style="font-weight: bold; text-transform: uppercase;">Segítség / Pincér hívása</span>
+            <button class="floating-help-btn" style="position: static; margin: 0; box-shadow: none;">
+                <span class="material-icons" style="font-size: 2rem;">help_outline</span>
+            </button>
+        </div>
+    </footer>
+</body>
+</html>

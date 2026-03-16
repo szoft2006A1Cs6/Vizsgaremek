@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Fizetés - Éttermi Kioszk</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Lato:wght@400;700&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+</head>
+<body>
+    <header class="page-header bg-white">
+        <button class="back-btn brown">
+            <span class="material-icons">arrow_back</span> Vissza
+        </button>
+        <h1 class="center-title font-display" style="font-size: 2rem; color: var(--primary-red);">FIZETÉS</h1>
+        <div style="display: flex; gap: 1rem; align-items: center;">
+            <div style="background-color: #EFEBE9; padding: 0.5rem 1rem; border-radius: 0.5rem; font-weight: bold;">Asztal: 12</div>
+            <button class="floating-help-btn" style="position: static; margin: 0; background: var(--secondary-yellow);">
+                <span class="material-icons">help_outline</span>
+            </button>
+        </div>
+    </header>
+
+    <main class="payment-main">
+        <section class="order-summary">
+            <div class="summary-header">
+                Rendelés Összesítése <span class="material-icons">shopping_cart</span>
+            </div>
+            <div class="summary-items">
+                <div class="summary-item">
+                    <div style="display: flex;">
+                        <div class="item-qty">1x</div>
+                        <div class="item-details">
+                            <h3>Pizza Margherita</h3>
+                            <p>+ Extra sajt, 32 cm</p>
+                        </div>
+                    </div>
+                    <span style="font-weight: bold;">2 490 Ft</span>
+                </div>
+                <div class="summary-item">
+                    <div style="display: flex;">
+                        <div class="item-qty">2x</div>
+                        <div class="item-details">
+                            <h3>Cola Zero</h3>
+                            <p>0.5 L</p>
+                        </div>
+                    </div>
+                    <span style="font-weight: bold;">1 180 Ft</span>
+                </div>
+            </div>
+            <div class="summary-totals">
+                <div class="total-line"><span>Részösszeg</span><span>6 810 Ft</span></div>
+                <div class="total-line"><span>Szervízdíj (10%)</span><span>681 Ft</span></div>
+                <div class="final-total">
+                    <span>FIZETENDŐ</span>
+                    <span class="amount">7 491 Ft</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="payment-methods">
+            <h2 class="font-display">Válasszon fizetési módot</h2>
+            <div class="method-grid">
+                <div class="method-card card">
+                    <div class="method-icon"><span class="material-icons">credit_card</span></div>
+                    <h3>Bankkártyás</h3>
+                    <h3 style="color: var(--primary-red);">Fizetés</h3>
+                    <p style="color: var(--gray-600); font-size: 0.875rem;">Visa, Mastercard, Maestro</p>
+                </div>
+                <div class="method-card cash">
+                    <div class="method-icon"><span class="material-icons">storefront</span></div>
+                    <h3>Fizetés</h3>
+                    <h3 style="color: var(--secondary-yellow);">A Pultnál</h3>
+                    <p style="color: var(--gray-600); font-size: 0.875rem;">Készpénz vagy SZÉP kártya</p>
+                </div>
+            </div>
+            <div class="secure-badge">
+                <span class="material-icons" style="color: #16A34A;">lock</span> Biztonságos fizetési rendszer
+            </div>
+        </section>
+    </main>
+    <script src="payment.js"></script>
+</body>
+</html>
