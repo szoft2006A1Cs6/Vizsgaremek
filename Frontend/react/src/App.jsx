@@ -6,6 +6,8 @@ import Customize from './pages/Customize';
 import Payment from './pages/Payment';
 import Status from './pages/Status';
 import Rating from './pages/Rating';
+import BurgerMenu from './pages/BurgerMenu';
+import ItalMenu from './pages/ItalMenu'
 
 function App() {
   return (
@@ -14,6 +16,8 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/categories" element={<Categories />} />
         <Route path="/pizza" element={<PizzaMenu />} />
+        <Route path='/burger' element={<BurgerMenu/>} />
+        <Route path='/ital' element={<ItalMenu/>} />
         <Route path="/customize" element={<Customize />} />
         <Route path="/payment" element={<Payment />} />
         <Route path="/status" element={<Status />} />

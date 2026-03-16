@@ -3,9 +3,16 @@ import { FloatingHelpBtn } from '../components/Shared';
 
 const categories = [
   { icon: 'local_pizza', name: 'Pizza', path: '/pizza' },
-  { icon: 'lunch_dining', name: 'Burger', path: '/categories' }, // Csak a pizza van kidolgozva
-  { icon: 'local_bar', name: 'Ital', path: '/categories' },
-  { icon: 'icecream', name: 'Desszert', path: '/categories' },
+  { icon: 'lunch_dining', name: 'Burger', path: '/burger' }, // Csak a pizza van kidolgozva
+  { icon: 'local_bar', name: 'Ital', path: '/ital' },
+  { icon: 'icecream', name: 'Desszert', path: '/desszert' },
+  { name: "Saláta", path: '/salata' },
+  { name: "Leves", path: '/leves'},
+  { name: 'Tészta', path: '/teszta'},
+  { name: 'Grill', path: '/grill'},
+  { name: 'Hal', path: '/hal'},
+  { name: 'Vegán', path: '/vegan'},
+
 ];
 
 export default function Categories() {
