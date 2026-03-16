@@ -11,7 +11,7 @@ const categories = [
   { name: 'Tészta', path: '/teszta'},
   { name: 'Grill', path: '/grill'},
   { name: 'Hal', path: '/hal'},
-  { name: 'Vegán', path: '/vegan'},
+  { name: 'Vegán', path: '/vegan'}
 
 ];
 

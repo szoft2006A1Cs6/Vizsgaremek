@@ -1,33 +1,33 @@
 import { useNavigate } from 'react-router-dom';
 import { FloatingHelpBtn, PageHeader } from '../components/Shared';
 
-const veganok = [
-  { name: 'Vegán Buddha tál', desc:"" , badge: 'Klasszikus' },
-  { name: 'Vegán curry', desc: "", badge: 'Csípős' },
-  { name: 'Falafel tál', desc: '', badge: 'Szimpla'},
-  { name: 'Vegán wrap', desc: '', badge: 'Extra sajtos'},
-  { name: 'Sült zöldségek hummusszal', desc: '', badge: 'Csirkeimádó'}
+const levesek = [
+  { name: 'Gulyásleves', desc: '', badge: 'Csípős' }, //desc-et átkell írogatni
+  { name: 'Húsleves', desc: '', badge: 'Tésztával' },
+  { name: 'Paradicsomleves', desc: '', badge: 'Betü tészta'},
+  { name: 'Brokkolikrémleves', desc: '', badge: 'Pírított kenyér'},
+  { name: 'Halászlé', desc: '', badge: 'Vekni'},
 ];
 
-export default function VeganMenu() {
+export default function LevesMenu() {
   const navigate = useNavigate();
 
   return (
     <>
-      <PageHeader title="VEGAN" theme="light" />
+      <PageHeader title="LEVES" theme="light" />
       <main className="menu-main">
         <div className="menu-grid">
-          {veganok.map((pizza, index) => (
+          {levesek.map((leves, index) => (
             <div key={index} className="menu-card" onClick={() => navigate('/customize')}>
               <div className="menu-img-wrapper">
                 <div style={{width: '100%', height: '100%', backgroundColor: '#eee'}}></div> {/* Kép helye */}
               </div>
               <div className="menu-info">
-                <h2 className="font-display">{vegan.name}</h2>
-                <p>{vegan.desc}</p>
-                {vegan.badge && (
+                <h2 className="font-display">{leves.name}</h2>
+                <p>{leves.desc}</p>
+                {leves.badge && (
                   <div style={{ marginTop: 'auto', textAlign: 'right' }}>
-                    <span className="badge">{vegan.badge}</span>
+                    <span className="badge">{leves.badge}</span>
                   </div>
                 )}
               </div>

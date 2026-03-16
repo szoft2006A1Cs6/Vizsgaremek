@@ -1,33 +1,33 @@
 import { useNavigate } from 'react-router-dom';
 import { FloatingHelpBtn, PageHeader } from '../components/Shared';
 
-const itals = [
-  { name: 'Coca-Cola', desc: '', badge: '0.5L' }, //desc-et átkell írogatni
-  { name: 'Coca-Cola Zero', desc: '', badge: '0.5L' },
-  { name: 'Ásványvíz', desc: '', badge: '0.5L'},
-  { name: 'Narancslé', desc: '', badge: '0.3L'},
-  { name: 'Házi limonádé', desc: '', badge: '0.5L'}
+const grillek = [
+  { name: 'Grillezett csirkemell', desc:"" , badge: 'Klasszikus' },
+  { name: 'Grill kolbász', desc: "", badge: 'Csípős' },
+  { name: 'BBQ oldalas', desc: '', badge: 'Szimpla'},
+  { name: 'Grill zöldségtál', desc: '', badge: 'Extra sajtos'},
+  { name: 'Grill lazac', desc: '', badge: 'Csirkeimádó'}
 ];
 
-export default function ItalMenu() {
+export default function GrillMenu() {
   const navigate = useNavigate();
 
   return (
     <>
-      <PageHeader title="ITAL" theme="light" />
+      <PageHeader title="GRILL" theme="light" />
       <main className="menu-main">
         <div className="menu-grid">
-          {itals.map((ital, index) => (
+          {grillek.map((grill, index) => (
             <div key={index} className="menu-card" onClick={() => navigate('/customize')}>
               <div className="menu-img-wrapper">
                 <div style={{width: '100%', height: '100%', backgroundColor: '#eee'}}></div> {/* Kép helye */}
               </div>
               <div className="menu-info">
-                <h2 className="font-display">{ital.name}</h2>
-                <p>{ital.desc}</p>
-                {ital.badge && (
+                <h2 className="font-display">{grill.name}</h2>
+                <p>{grill.desc}</p>
+                {grill.badge && (
                   <div style={{ marginTop: 'auto', textAlign: 'right' }}>
-                    <span className="badge">{ital.badge}</span>
+                    <span className="badge">{grill.badge}</span>
                   </div>
                 )}
               </div>

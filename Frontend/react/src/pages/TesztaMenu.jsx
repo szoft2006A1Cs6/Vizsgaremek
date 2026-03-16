@@ -1,33 +1,33 @@
 import { useNavigate } from 'react-router-dom';
 import { FloatingHelpBtn, PageHeader } from '../components/Shared';
 
-const itals = [
-  { name: 'Coca-Cola', desc: '', badge: '0.5L' }, //desc-et átkell írogatni
-  { name: 'Coca-Cola Zero', desc: '', badge: '0.5L' },
-  { name: 'Ásványvíz', desc: '', badge: '0.5L'},
-  { name: 'Narancslé', desc: '', badge: '0.3L'},
-  { name: 'Házi limonádé', desc: '', badge: '0.5L'}
+const tesztak = [
+  { name: 'Spaghetti Carbonara', desc:"" , badge: 'Klasszikus' },
+  { name: 'Bolognai spagetti', desc: "", badge: 'Csípős' },
+  { name: 'Penne Arrabiata', desc: '', badge: 'Szimpla'},
+  { name: 'Lasagne', desc: '', badge: 'Extra sajtos'},
+  { name: 'Tejszínes csirkés tészta', desc: '', badge: 'Csirkeimádó'}
 ];
 
-export default function ItalMenu() {
+export default function TesztaMenu() {
   const navigate = useNavigate();
 
   return (
     <>
-      <PageHeader title="ITAL" theme="light" />
+      <PageHeader title="TESZTA" theme="light" />
       <main className="menu-main">
         <div className="menu-grid">
-          {itals.map((ital, index) => (
+          {tesztak.map((teszta, index) => (
             <div key={index} className="menu-card" onClick={() => navigate('/customize')}>
               <div className="menu-img-wrapper">
                 <div style={{width: '100%', height: '100%', backgroundColor: '#eee'}}></div> {/* Kép helye */}
               </div>
               <div className="menu-info">
-                <h2 className="font-display">{ital.name}</h2>
-                <p>{ital.desc}</p>
-                {ital.badge && (
+                <h2 className="font-display">{teszta.name}</h2>
+                <p>{teszta.desc}</p>
+                {teszta.badge && (
                   <div style={{ marginTop: 'auto', textAlign: 'right' }}>
-                    <span className="badge">{ital.badge}</span>
+                    <span className="badge">{teszta.badge}</span>
                   </div>
                 )}
               </div>
