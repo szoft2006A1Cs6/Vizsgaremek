@@ -4,7 +4,9 @@ import { FloatingHelpBtn, PageHeader } from '../components/Shared';
 const pizzas = [
   { name: 'Margherita', desc: 'Paradicsomszósz, mozzarella sajt, friss bazsalikom', badge: 'Klasszikus' },
   { name: 'Pepperoni', desc: 'Paradicsomszósz, mozzarella, fűszeres szalámi', badge: 'Csípős' },
-  { name: 'Sonkás-Gombás', desc: 'Paradicsomszósz, mozzarella, sonka, gomba' },
+  { name: 'Sonkás-Gombás', desc: 'Paradicsomszósz, mozzarella, sonka, gomba', badge: 'Szimpla'},
+  { name: 'Négysajtos', desc: 'Paradicsomszósz, mozarella, parmezán, gorgonzola, ricotta', badge: 'Extra sajtos'},
+  { name: 'BBQ csirkés', desc: 'Paradicsomszósz, BBQ szósz, mozarella, csirkemell', badge: 'Csirkeimádó'}
 ];
 
 export default function PizzaMenu() {
