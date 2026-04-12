@@ -194,6 +194,90 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "Rendel\u0151TabletApi.Controllers.PincerHivasController",
+    "Method": "Get",
+    "RelativePath": "api/PincerHivas",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Rendel\u0151TabletApi.Controllers.PincerHivasController",
+    "Method": "Post",
+    "RelativePath": "api/PincerHivas",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "hivas",
+        "Type": "Rendel\u0151TabletApi.Model.PincerHivas",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Rendel\u0151TabletApi.Controllers.PincerHivasController",
+    "Method": "Get",
+    "RelativePath": "api/PincerHivas/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "ext",
+        "Type": "System.Boolean",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Rendel\u0151TabletApi.Controllers.PincerHivasController",
+    "Method": "Put",
+    "RelativePath": "api/PincerHivas/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "hivas",
+        "Type": "Rendel\u0151TabletApi.Model.PincerHivas",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Rendel\u0151TabletApi.Controllers.PincerHivasController",
+    "Method": "Delete",
+    "RelativePath": "api/PincerHivas/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "Rendel\u0151TabletApi.Controllers.RendelesController",
     "Method": "Get",
     "RelativePath": "api/Rendeles",

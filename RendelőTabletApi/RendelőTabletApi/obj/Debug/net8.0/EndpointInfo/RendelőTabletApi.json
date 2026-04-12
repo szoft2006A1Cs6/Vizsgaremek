@@ -311,6 +311,139 @@
         }
       }
     },
+    "/api/PincerHivas": {
+      "get": {
+        "tags": [
+          "PincerHivas"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "PincerHivas"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/PincerHivas"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/PincerHivas"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/PincerHivas"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/PincerHivas/{id}": {
+      "get": {
+        "tags": [
+          "PincerHivas"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "ext",
+            "in": "query",
+            "schema": {
+              "type": "boolean",
+              "default": false
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "PincerHivas"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/PincerHivas"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/PincerHivas"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/PincerHivas"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "PincerHivas"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/api/Rendeles": {
       "get": {
         "tags": [
@@ -794,6 +927,31 @@
         },
         "additionalProperties": false
       },
+      "PincerHivas": {
+        "type": "object",
+        "properties": {
+          "hivasId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "asztalId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "idopont": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "statusz": {
+            "type": "string",
+            "nullable": true
+          },
+          "asztal": {
+            "$ref": "#/components/schemas/Asztal"
+          }
+        },
+        "additionalProperties": false
+      },
       "Rendeles": {
         "type": "object",
         "properties": {
@@ -882,6 +1040,10 @@
           "ar": {
             "type": "integer",
             "format": "int32"
+          },
+          "allergenek": {
+            "type": "string",
+            "nullable": true
           },
           "etelTipus": {
             "$ref": "#/components/schemas/EtelTipus"

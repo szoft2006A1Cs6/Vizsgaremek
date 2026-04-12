@@ -6,12 +6,15 @@
         public int EteltipusId { get; set; }
         public string? TermekNev { get; set; }
         public int Ar { get; set; }
+        public string? Allergenek { get; set; }
 
         public EtelTipus? EtelTipus { get; set; }
 
         public override string ToString()
         {
-            return $"{TermekNev} - {Ar} Ft";
+            // Opcionális: Ha akarod, a ToString-be is beleteheted az allergéneket
+            string allergenSzoveg = string.IsNullOrEmpty(Allergenek) ? "" : $" (Allergének: {Allergenek})";
+            return $"{TermekNev} - {Ar} Ft{allergenSzoveg}";
         }
     }
 }

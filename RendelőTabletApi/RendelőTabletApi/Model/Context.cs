@@ -16,6 +16,8 @@ namespace RendelőTabletApi.Model
         public DbSet<RendelesTetel> RendelesTetelek { get; set; }
         public DbSet<Ertekeles> Ertekelesek { get; set; }
 
+        public DbSet<PincerHivas> PincerHivasok { get; set; }
+
         public Context(DbContextOptions<Context> options) : base(options)
         {
         }
@@ -67,6 +69,12 @@ namespace RendelőTabletApi.Model
             modelBuilder.Entity<Ertekeles>().Property(e => e.ErtekId).HasColumnName("ertek_id");
             modelBuilder.Entity<Ertekeles>().Property(e => e.RendelesId).HasColumnName("rendeles_id");
 
+            // PincerHivas
+            modelBuilder.Entity<PincerHivas>().ToTable("pincer_hivas");
+            modelBuilder.Entity<PincerHivas>().HasKey(ph => ph.HivasId);
+            modelBuilder.Entity<PincerHivas>().Property(ph => ph.HivasId).HasColumnName("hivas_id");
+            modelBuilder.Entity<PincerHivas>().Property(ph => ph.AsztalId).HasColumnName("asztal_id");
+
 
             modelBuilder.Entity<Termek>()
                 .HasOne(t => t.EtelTipus)
@@ -97,6 +105,11 @@ namespace RendelőTabletApi.Model
                 .HasOne(e => e.Rendeles)
                 .WithOne(r => r.Ertekeles)
                 .HasForeignKey<Ertekeles>(e => e.RendelesId);
+
+            modelBuilder.Entity<PincerHivas>()
+                .HasOne(ph => ph.Asztal)
+                .WithMany()
+                .HasForeignKey(ph => ph.AsztalId);
         }
     }
 }

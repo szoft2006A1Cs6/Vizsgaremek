@@ -1,81 +1,97 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Bende\\Documents\\GitHub\\Vizsgaremek\\Rendel\u0151TabletApi\\",
+  "WorkspaceRootPath": "C:\\Users\\D\u00E9nes Zolt\u00E1n\\Desktop\\Rendel\u0151TabletApi\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{2B5FC97F-2E4E-43FC-B15C-8634F168B0BD}|Rendel\u0151TabletApi.Test\\Rendel\u0151TabletApi.Test.csproj|c:\\users\\bende\\documents\\github\\vizsgaremek\\rendel\u0151tabletapi\\rendel\u0151tabletapi.test\\dbcontexthelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2B5FC97F-2E4E-43FC-B15C-8634F168B0BD}|Rendel\u0151TabletApi.Test\\Rendel\u0151TabletApi.Test.csproj|solutionrelative:rendel\u0151tabletapi.test\\dbcontexthelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{111ED883-AB23-45C6-A17B-642EDD5B6E00}|Rendel\u0151TabletApi\\Rendel\u0151TabletApi.csproj|c:\\users\\d\u00E9nes zolt\u00E1n\\desktop\\rendel\u0151tabletapi\\rendel\u0151tabletapi\\controllers\\termekcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{111ED883-AB23-45C6-A17B-642EDD5B6E00}|Rendel\u0151TabletApi\\Rendel\u0151TabletApi.csproj|solutionrelative:rendel\u0151tabletapi\\controllers\\termekcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2B5FC97F-2E4E-43FC-B15C-8634F168B0BD}|Rendel\u0151TabletApi.Test\\Rendel\u0151TabletApi.Test.csproj|c:\\users\\bende\\documents\\github\\vizsgaremek\\rendel\u0151tabletapi\\rendel\u0151tabletapi.test\\asztalcontrollertest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2B5FC97F-2E4E-43FC-B15C-8634F168B0BD}|Rendel\u0151TabletApi.Test\\Rendel\u0151TabletApi.Test.csproj|solutionrelative:rendel\u0151tabletapi.test\\asztalcontrollertest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{111ED883-AB23-45C6-A17B-642EDD5B6E00}|Rendel\u0151TabletApi\\Rendel\u0151TabletApi.csproj|c:\\users\\d\u00E9nes zolt\u00E1n\\desktop\\rendel\u0151tabletapi\\rendel\u0151tabletapi\\model\\termek.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{111ED883-AB23-45C6-A17B-642EDD5B6E00}|Rendel\u0151TabletApi\\Rendel\u0151TabletApi.csproj|solutionrelative:rendel\u0151tabletapi\\model\\termek.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2B5FC97F-2E4E-43FC-B15C-8634F168B0BD}|Rendel\u0151TabletApi.Test\\Rendel\u0151TabletApi.Test.csproj|c:\\users\\bende\\documents\\github\\vizsgaremek\\rendel\u0151tabletapi\\rendel\u0151tabletapi.test\\rendel\u0151tabletapi.test.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{2B5FC97F-2E4E-43FC-B15C-8634F168B0BD}|Rendel\u0151TabletApi.Test\\Rendel\u0151TabletApi.Test.csproj|solutionrelative:rendel\u0151tabletapi.test\\rendel\u0151tabletapi.test.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{111ED883-AB23-45C6-A17B-642EDD5B6E00}|Rendel\u0151TabletApi\\Rendel\u0151TabletApi.csproj|c:\\users\\bende\\documents\\github\\vizsgaremek\\rendel\u0151tabletapi\\rendel\u0151tabletapi\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{111ED883-AB23-45C6-A17B-642EDD5B6E00}|Rendel\u0151TabletApi\\Rendel\u0151TabletApi.csproj|solutionrelative:rendel\u0151tabletapi\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{111ED883-AB23-45C6-A17B-642EDD5B6E00}|Rendel\u0151TabletApi\\Rendel\u0151TabletApi.csproj|c:\\users\\bende\\documents\\github\\vizsgaremek\\rendel\u0151tabletapi\\rendel\u0151tabletapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{111ED883-AB23-45C6-A17B-642EDD5B6E00}|Rendel\u0151TabletApi\\Rendel\u0151TabletApi.csproj|solutionrelative:rendel\u0151tabletapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{111ED883-AB23-45C6-A17B-642EDD5B6E00}|Rendel\u0151TabletApi\\Rendel\u0151TabletApi.csproj|c:\\users\\bende\\documents\\github\\vizsgaremek\\rendel\u0151tabletapi\\rendel\u0151tabletapi\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{111ED883-AB23-45C6-A17B-642EDD5B6E00}|Rendel\u0151TabletApi\\Rendel\u0151TabletApi.csproj|solutionrelative:rendel\u0151tabletapi\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{111ED883-AB23-45C6-A17B-642EDD5B6E00}|Rendel\u0151TabletApi\\Rendel\u0151TabletApi.csproj|c:\\users\\bende\\documents\\github\\vizsgaremek\\rendel\u0151tabletapi\\rendel\u0151tabletapi\\model\\context.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{111ED883-AB23-45C6-A17B-642EDD5B6E00}|Rendel\u0151TabletApi\\Rendel\u0151TabletApi.csproj|c:\\users\\d\u00E9nes zolt\u00E1n\\desktop\\rendel\u0151tabletapi\\rendel\u0151tabletapi\\model\\context.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{111ED883-AB23-45C6-A17B-642EDD5B6E00}|Rendel\u0151TabletApi\\Rendel\u0151TabletApi.csproj|solutionrelative:rendel\u0151tabletapi\\model\\context.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2B5FC97F-2E4E-43FC-B15C-8634F168B0BD}|Rendel\u0151TabletApi.Test\\Rendel\u0151TabletApi.Test.csproj|c:\\users\\bende\\documents\\github\\vizsgaremek\\rendel\u0151tabletapi\\rendel\u0151tabletapi.test\\rendelescontrollertest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2B5FC97F-2E4E-43FC-B15C-8634F168B0BD}|Rendel\u0151TabletApi.Test\\Rendel\u0151TabletApi.Test.csproj|solutionrelative:rendel\u0151tabletapi.test\\rendelescontrollertest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{111ED883-AB23-45C6-A17B-642EDD5B6E00}|Rendel\u0151TabletApi\\Rendel\u0151TabletApi.csproj|c:\\users\\d\u00E9nes zolt\u00E1n\\desktop\\rendel\u0151tabletapi\\rendel\u0151tabletapi\\controllers\\pincerhivascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{111ED883-AB23-45C6-A17B-642EDD5B6E00}|Rendel\u0151TabletApi\\Rendel\u0151TabletApi.csproj|solutionrelative:rendel\u0151tabletapi\\controllers\\pincerhivascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2B5FC97F-2E4E-43FC-B15C-8634F168B0BD}|Rendel\u0151TabletApi.Test\\Rendel\u0151TabletApi.Test.csproj|c:\\users\\bende\\documents\\github\\vizsgaremek\\rendel\u0151tabletapi\\rendel\u0151tabletapi.test\\termekcontrollertest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2B5FC97F-2E4E-43FC-B15C-8634F168B0BD}|Rendel\u0151TabletApi.Test\\Rendel\u0151TabletApi.Test.csproj|solutionrelative:rendel\u0151tabletapi.test\\termekcontrollertest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{111ED883-AB23-45C6-A17B-642EDD5B6E00}|Rendel\u0151TabletApi\\Rendel\u0151TabletApi.csproj|c:\\users\\d\u00E9nes zolt\u00E1n\\desktop\\rendel\u0151tabletapi\\rendel\u0151tabletapi\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{111ED883-AB23-45C6-A17B-642EDD5B6E00}|Rendel\u0151TabletApi\\Rendel\u0151TabletApi.csproj|solutionrelative:rendel\u0151tabletapi\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2B5FC97F-2E4E-43FC-B15C-8634F168B0BD}|Rendel\u0151TabletApi.Test\\Rendel\u0151TabletApi.Test.csproj|c:\\users\\bende\\documents\\github\\vizsgaremek\\rendel\u0151tabletapi\\rendel\u0151tabletapi.test\\rendelestetelcontrollertest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2B5FC97F-2E4E-43FC-B15C-8634F168B0BD}|Rendel\u0151TabletApi.Test\\Rendel\u0151TabletApi.Test.csproj|solutionrelative:rendel\u0151tabletapi.test\\rendelestetelcontrollertest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{111ED883-AB23-45C6-A17B-642EDD5B6E00}|Rendel\u0151TabletApi\\Rendel\u0151TabletApi.csproj|c:\\users\\d\u00E9nes zolt\u00E1n\\desktop\\rendel\u0151tabletapi\\rendel\u0151tabletapi\\model\\pincerhivas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{111ED883-AB23-45C6-A17B-642EDD5B6E00}|Rendel\u0151TabletApi\\Rendel\u0151TabletApi.csproj|solutionrelative:rendel\u0151tabletapi\\model\\pincerhivas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{111ED883-AB23-45C6-A17B-642EDD5B6E00}|Rendel\u0151TabletApi\\Rendel\u0151TabletApi.csproj|c:\\users\\bende\\documents\\github\\vizsgaremek\\rendel\u0151tabletapi\\rendel\u0151tabletapi\\model\\rendeles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{111ED883-AB23-45C6-A17B-642EDD5B6E00}|Rendel\u0151TabletApi\\Rendel\u0151TabletApi.csproj|solutionrelative:rendel\u0151tabletapi\\model\\rendeles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2B5FC97F-2E4E-43FC-B15C-8634F168B0BD}|Rendel\u0151TabletApi.Test\\Rendel\u0151TabletApi.Test.csproj|c:\\users\\bende\\documents\\github\\vizsgaremek\\rendel\u0151tabletapi\\rendel\u0151tabletapi.test\\pincercontrollertest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2B5FC97F-2E4E-43FC-B15C-8634F168B0BD}|Rendel\u0151TabletApi.Test\\Rendel\u0151TabletApi.Test.csproj|solutionrelative:rendel\u0151tabletapi.test\\pincercontrollertest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2B5FC97F-2E4E-43FC-B15C-8634F168B0BD}|Rendel\u0151TabletApi.Test\\Rendel\u0151TabletApi.Test.csproj|c:\\users\\bende\\documents\\github\\vizsgaremek\\rendel\u0151tabletapi\\rendel\u0151tabletapi.test\\mstestsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2B5FC97F-2E4E-43FC-B15C-8634F168B0BD}|Rendel\u0151TabletApi.Test\\Rendel\u0151TabletApi.Test.csproj|solutionrelative:rendel\u0151tabletapi.test\\mstestsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2B5FC97F-2E4E-43FC-B15C-8634F168B0BD}|Rendel\u0151TabletApi.Test\\Rendel\u0151TabletApi.Test.csproj|c:\\users\\bende\\documents\\github\\vizsgaremek\\rendel\u0151tabletapi\\rendel\u0151tabletapi.test\\eteltipuscontrollertest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2B5FC97F-2E4E-43FC-B15C-8634F168B0BD}|Rendel\u0151TabletApi.Test\\Rendel\u0151TabletApi.Test.csproj|solutionrelative:rendel\u0151tabletapi.test\\eteltipuscontrollertest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2B5FC97F-2E4E-43FC-B15C-8634F168B0BD}|Rendel\u0151TabletApi.Test\\Rendel\u0151TabletApi.Test.csproj|c:\\users\\bende\\documents\\github\\vizsgaremek\\rendel\u0151tabletapi\\rendel\u0151tabletapi.test\\ertekelescontrollertest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2B5FC97F-2E4E-43FC-B15C-8634F168B0BD}|Rendel\u0151TabletApi.Test\\Rendel\u0151TabletApi.Test.csproj|solutionrelative:rendel\u0151tabletapi.test\\ertekelescontrollertest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{111ED883-AB23-45C6-A17B-642EDD5B6E00}|Rendel\u0151TabletApi\\Rendel\u0151TabletApi.csproj|c:\\users\\bende\\documents\\github\\vizsgaremek\\rendel\u0151tabletapi\\rendel\u0151tabletapi\\model\\asztal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{111ED883-AB23-45C6-A17B-642EDD5B6E00}|Rendel\u0151TabletApi\\Rendel\u0151TabletApi.csproj|c:\\users\\d\u00E9nes zolt\u00E1n\\desktop\\rendel\u0151tabletapi\\rendel\u0151tabletapi\\model\\asztal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{111ED883-AB23-45C6-A17B-642EDD5B6E00}|Rendel\u0151TabletApi\\Rendel\u0151TabletApi.csproj|solutionrelative:rendel\u0151tabletapi\\model\\asztal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{111ED883-AB23-45C6-A17B-642EDD5B6E00}|Rendel\u0151TabletApi\\Rendel\u0151TabletApi.csproj|c:\\users\\bende\\documents\\github\\vizsgaremek\\rendel\u0151tabletapi\\rendel\u0151tabletapi\\model\\pincer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{2B5FC97F-2E4E-43FC-B15C-8634F168B0BD}|Rendel\u0151TabletApi.Test\\Rendel\u0151TabletApi.Test.csproj|c:\\users\\d\u00E9nes zolt\u00E1n\\desktop\\rendel\u0151tabletapi\\rendel\u0151tabletapi.test\\dbcontexthelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2B5FC97F-2E4E-43FC-B15C-8634F168B0BD}|Rendel\u0151TabletApi.Test\\Rendel\u0151TabletApi.Test.csproj|solutionrelative:rendel\u0151tabletapi.test\\dbcontexthelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2B5FC97F-2E4E-43FC-B15C-8634F168B0BD}|Rendel\u0151TabletApi.Test\\Rendel\u0151TabletApi.Test.csproj|c:\\users\\d\u00E9nes zolt\u00E1n\\desktop\\rendel\u0151tabletapi\\rendel\u0151tabletapi.test\\asztalcontrollertest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2B5FC97F-2E4E-43FC-B15C-8634F168B0BD}|Rendel\u0151TabletApi.Test\\Rendel\u0151TabletApi.Test.csproj|solutionrelative:rendel\u0151tabletapi.test\\asztalcontrollertest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2B5FC97F-2E4E-43FC-B15C-8634F168B0BD}|Rendel\u0151TabletApi.Test\\Rendel\u0151TabletApi.Test.csproj|c:\\users\\d\u00E9nes zolt\u00E1n\\desktop\\rendel\u0151tabletapi\\rendel\u0151tabletapi.test\\rendel\u0151tabletapi.test.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{2B5FC97F-2E4E-43FC-B15C-8634F168B0BD}|Rendel\u0151TabletApi.Test\\Rendel\u0151TabletApi.Test.csproj|solutionrelative:rendel\u0151tabletapi.test\\rendel\u0151tabletapi.test.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{111ED883-AB23-45C6-A17B-642EDD5B6E00}|Rendel\u0151TabletApi\\Rendel\u0151TabletApi.csproj|c:\\users\\d\u00E9nes zolt\u00E1n\\desktop\\rendel\u0151tabletapi\\rendel\u0151tabletapi\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{111ED883-AB23-45C6-A17B-642EDD5B6E00}|Rendel\u0151TabletApi\\Rendel\u0151TabletApi.csproj|solutionrelative:rendel\u0151tabletapi\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{111ED883-AB23-45C6-A17B-642EDD5B6E00}|Rendel\u0151TabletApi\\Rendel\u0151TabletApi.csproj|c:\\users\\d\u00E9nes zolt\u00E1n\\desktop\\rendel\u0151tabletapi\\rendel\u0151tabletapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{111ED883-AB23-45C6-A17B-642EDD5B6E00}|Rendel\u0151TabletApi\\Rendel\u0151TabletApi.csproj|solutionrelative:rendel\u0151tabletapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2B5FC97F-2E4E-43FC-B15C-8634F168B0BD}|Rendel\u0151TabletApi.Test\\Rendel\u0151TabletApi.Test.csproj|c:\\users\\d\u00E9nes zolt\u00E1n\\desktop\\rendel\u0151tabletapi\\rendel\u0151tabletapi.test\\rendelescontrollertest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2B5FC97F-2E4E-43FC-B15C-8634F168B0BD}|Rendel\u0151TabletApi.Test\\Rendel\u0151TabletApi.Test.csproj|solutionrelative:rendel\u0151tabletapi.test\\rendelescontrollertest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2B5FC97F-2E4E-43FC-B15C-8634F168B0BD}|Rendel\u0151TabletApi.Test\\Rendel\u0151TabletApi.Test.csproj|c:\\users\\d\u00E9nes zolt\u00E1n\\desktop\\rendel\u0151tabletapi\\rendel\u0151tabletapi.test\\termekcontrollertest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2B5FC97F-2E4E-43FC-B15C-8634F168B0BD}|Rendel\u0151TabletApi.Test\\Rendel\u0151TabletApi.Test.csproj|solutionrelative:rendel\u0151tabletapi.test\\termekcontrollertest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2B5FC97F-2E4E-43FC-B15C-8634F168B0BD}|Rendel\u0151TabletApi.Test\\Rendel\u0151TabletApi.Test.csproj|c:\\users\\d\u00E9nes zolt\u00E1n\\desktop\\rendel\u0151tabletapi\\rendel\u0151tabletapi.test\\rendelestetelcontrollertest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2B5FC97F-2E4E-43FC-B15C-8634F168B0BD}|Rendel\u0151TabletApi.Test\\Rendel\u0151TabletApi.Test.csproj|solutionrelative:rendel\u0151tabletapi.test\\rendelestetelcontrollertest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{111ED883-AB23-45C6-A17B-642EDD5B6E00}|Rendel\u0151TabletApi\\Rendel\u0151TabletApi.csproj|c:\\users\\d\u00E9nes zolt\u00E1n\\desktop\\rendel\u0151tabletapi\\rendel\u0151tabletapi\\model\\rendeles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{111ED883-AB23-45C6-A17B-642EDD5B6E00}|Rendel\u0151TabletApi\\Rendel\u0151TabletApi.csproj|solutionrelative:rendel\u0151tabletapi\\model\\rendeles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2B5FC97F-2E4E-43FC-B15C-8634F168B0BD}|Rendel\u0151TabletApi.Test\\Rendel\u0151TabletApi.Test.csproj|c:\\users\\d\u00E9nes zolt\u00E1n\\desktop\\rendel\u0151tabletapi\\rendel\u0151tabletapi.test\\pincercontrollertest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2B5FC97F-2E4E-43FC-B15C-8634F168B0BD}|Rendel\u0151TabletApi.Test\\Rendel\u0151TabletApi.Test.csproj|solutionrelative:rendel\u0151tabletapi.test\\pincercontrollertest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2B5FC97F-2E4E-43FC-B15C-8634F168B0BD}|Rendel\u0151TabletApi.Test\\Rendel\u0151TabletApi.Test.csproj|c:\\users\\d\u00E9nes zolt\u00E1n\\desktop\\rendel\u0151tabletapi\\rendel\u0151tabletapi.test\\mstestsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2B5FC97F-2E4E-43FC-B15C-8634F168B0BD}|Rendel\u0151TabletApi.Test\\Rendel\u0151TabletApi.Test.csproj|solutionrelative:rendel\u0151tabletapi.test\\mstestsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2B5FC97F-2E4E-43FC-B15C-8634F168B0BD}|Rendel\u0151TabletApi.Test\\Rendel\u0151TabletApi.Test.csproj|c:\\users\\d\u00E9nes zolt\u00E1n\\desktop\\rendel\u0151tabletapi\\rendel\u0151tabletapi.test\\eteltipuscontrollertest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2B5FC97F-2E4E-43FC-B15C-8634F168B0BD}|Rendel\u0151TabletApi.Test\\Rendel\u0151TabletApi.Test.csproj|solutionrelative:rendel\u0151tabletapi.test\\eteltipuscontrollertest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2B5FC97F-2E4E-43FC-B15C-8634F168B0BD}|Rendel\u0151TabletApi.Test\\Rendel\u0151TabletApi.Test.csproj|c:\\users\\d\u00E9nes zolt\u00E1n\\desktop\\rendel\u0151tabletapi\\rendel\u0151tabletapi.test\\ertekelescontrollertest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2B5FC97F-2E4E-43FC-B15C-8634F168B0BD}|Rendel\u0151TabletApi.Test\\Rendel\u0151TabletApi.Test.csproj|solutionrelative:rendel\u0151tabletapi.test\\ertekelescontrollertest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{111ED883-AB23-45C6-A17B-642EDD5B6E00}|Rendel\u0151TabletApi\\Rendel\u0151TabletApi.csproj|c:\\users\\d\u00E9nes zolt\u00E1n\\desktop\\rendel\u0151tabletapi\\rendel\u0151tabletapi\\model\\pincer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{111ED883-AB23-45C6-A17B-642EDD5B6E00}|Rendel\u0151TabletApi\\Rendel\u0151TabletApi.csproj|solutionrelative:rendel\u0151tabletapi\\model\\pincer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{111ED883-AB23-45C6-A17B-642EDD5B6E00}|Rendel\u0151TabletApi\\Rendel\u0151TabletApi.csproj|c:\\users\\bende\\documents\\github\\vizsgaremek\\rendel\u0151tabletapi\\rendel\u0151tabletapi\\model\\ertekeles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{111ED883-AB23-45C6-A17B-642EDD5B6E00}|Rendel\u0151TabletApi\\Rendel\u0151TabletApi.csproj|c:\\users\\d\u00E9nes zolt\u00E1n\\desktop\\rendel\u0151tabletapi\\rendel\u0151tabletapi\\model\\ertekeles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{111ED883-AB23-45C6-A17B-642EDD5B6E00}|Rendel\u0151TabletApi\\Rendel\u0151TabletApi.csproj|solutionrelative:rendel\u0151tabletapi\\model\\ertekeles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{111ED883-AB23-45C6-A17B-642EDD5B6E00}|Rendel\u0151TabletApi\\Rendel\u0151TabletApi.csproj|c:\\users\\bende\\documents\\github\\vizsgaremek\\rendel\u0151tabletapi\\rendel\u0151tabletapi\\model\\eteltipus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{111ED883-AB23-45C6-A17B-642EDD5B6E00}|Rendel\u0151TabletApi\\Rendel\u0151TabletApi.csproj|c:\\users\\d\u00E9nes zolt\u00E1n\\desktop\\rendel\u0151tabletapi\\rendel\u0151tabletapi\\model\\eteltipus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{111ED883-AB23-45C6-A17B-642EDD5B6E00}|Rendel\u0151TabletApi\\Rendel\u0151TabletApi.csproj|solutionrelative:rendel\u0151tabletapi\\model\\eteltipus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -86,149 +102,188 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 0,
           "Children": [
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
-            },
-            {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "RendelesTetelControllerTest.cs",
-              "DocumentMoniker": "C:\\Users\\Bende\\Documents\\GitHub\\Vizsgaremek\\Rendel\u0151TabletApi\\Rendel\u0151TabletApi.Test\\RendelesTetelControllerTest.cs",
-              "RelativeDocumentMoniker": "Rendel\u0151TabletApi.Test\\RendelesTetelControllerTest.cs",
-              "ToolTip": "C:\\Users\\Bende\\Documents\\GitHub\\Vizsgaremek\\Rendel\u0151TabletApi\\Rendel\u0151TabletApi.Test\\RendelesTetelControllerTest.cs",
-              "RelativeToolTip": "Rendel\u0151TabletApi.Test\\RendelesTetelControllerTest.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEUAAAABAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "TermekController.cs",
+              "DocumentMoniker": "C:\\Users\\D\u00E9nes Zolt\u00E1n\\Desktop\\Rendel\u0151TabletApi\\Rendel\u0151TabletApi\\Controllers\\TermekController.cs",
+              "RelativeDocumentMoniker": "Rendel\u0151TabletApi\\Controllers\\TermekController.cs",
+              "ToolTip": "C:\\Users\\D\u00E9nes Zolt\u00E1n\\Desktop\\Rendel\u0151TabletApi\\Rendel\u0151TabletApi\\Controllers\\TermekController.cs",
+              "RelativeToolTip": "Rendel\u0151TabletApi\\Controllers\\TermekController.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAQwCkAAAAyAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-08T19:32:32.235Z",
+              "WhenOpened": "2026-04-12T19:13:10.068Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
+              "Title": "Termek.cs",
+              "DocumentMoniker": "C:\\Users\\D\u00E9nes Zolt\u00E1n\\Desktop\\Rendel\u0151TabletApi\\Rendel\u0151TabletApi\\Model\\Termek.cs",
+              "RelativeDocumentMoniker": "Rendel\u0151TabletApi\\Model\\Termek.cs",
+              "ToolTip": "C:\\Users\\D\u00E9nes Zolt\u00E1n\\Desktop\\Rendel\u0151TabletApi\\Rendel\u0151TabletApi\\Model\\Termek.cs",
+              "RelativeToolTip": "Rendel\u0151TabletApi\\Model\\Termek.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAABpAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-12T19:12:57.809Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "PincerHivasController.cs",
+              "DocumentMoniker": "C:\\Users\\D\u00E9nes Zolt\u00E1n\\Desktop\\Rendel\u0151TabletApi\\Rendel\u0151TabletApi\\Controllers\\PincerHivasController.cs",
+              "RelativeDocumentMoniker": "Rendel\u0151TabletApi\\Controllers\\PincerHivasController.cs",
+              "ToolTip": "C:\\Users\\D\u00E9nes Zolt\u00E1n\\Desktop\\Rendel\u0151TabletApi\\Rendel\u0151TabletApi\\Controllers\\PincerHivasController.cs",
+              "RelativeToolTip": "Rendel\u0151TabletApi\\Controllers\\PincerHivasController.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAQwE4AAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-12T19:01:46.669Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "PincerHivas.cs",
+              "DocumentMoniker": "C:\\Users\\D\u00E9nes Zolt\u00E1n\\Desktop\\Rendel\u0151TabletApi\\Rendel\u0151TabletApi\\Model\\PincerHivas.cs",
+              "RelativeDocumentMoniker": "Rendel\u0151TabletApi\\Model\\PincerHivas.cs",
+              "ToolTip": "C:\\Users\\D\u00E9nes Zolt\u00E1n\\Desktop\\Rendel\u0151TabletApi\\Rendel\u0151TabletApi\\Model\\PincerHivas.cs",
+              "RelativeToolTip": "Rendel\u0151TabletApi\\Model\\PincerHivas.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAABmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-12T19:01:09.625Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "RendelesTetelControllerTest.cs",
+              "DocumentMoniker": "C:\\Users\\D\u00E9nes Zolt\u00E1n\\Desktop\\Rendel\u0151TabletApi\\Rendel\u0151TabletApi.Test\\RendelesTetelControllerTest.cs",
+              "RelativeDocumentMoniker": "Rendel\u0151TabletApi.Test\\RendelesTetelControllerTest.cs",
+              "ToolTip": "C:\\Users\\D\u00E9nes Zolt\u00E1n\\Desktop\\Rendel\u0151TabletApi\\Rendel\u0151TabletApi.Test\\RendelesTetelControllerTest.cs",
+              "RelativeToolTip": "Rendel\u0151TabletApi.Test\\RendelesTetelControllerTest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEUAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-08T19:32:32.235Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "DbContextHelper.cs",
-              "DocumentMoniker": "C:\\Users\\Bende\\Documents\\GitHub\\Vizsgaremek\\Rendel\u0151TabletApi\\Rendel\u0151TabletApi.Test\\DbContextHelper.cs",
+              "DocumentMoniker": "C:\\Users\\D\u00E9nes Zolt\u00E1n\\Desktop\\Rendel\u0151TabletApi\\Rendel\u0151TabletApi.Test\\DbContextHelper.cs",
               "RelativeDocumentMoniker": "Rendel\u0151TabletApi.Test\\DbContextHelper.cs",
-              "ToolTip": "C:\\Users\\Bende\\Documents\\GitHub\\Vizsgaremek\\Rendel\u0151TabletApi\\Rendel\u0151TabletApi.Test\\DbContextHelper.cs",
+              "ToolTip": "C:\\Users\\D\u00E9nes Zolt\u00E1n\\Desktop\\Rendel\u0151TabletApi\\Rendel\u0151TabletApi.Test\\DbContextHelper.cs",
               "RelativeToolTip": "Rendel\u0151TabletApi.Test\\DbContextHelper.cs",
-              "ViewState": "AgIAABsAAAAAAAAAAAAowC0AAABqAAAAAAAAAA==",
+              "ViewState": "AgIAABIAAAAAAAAAAAAowC0AAABqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-03-08T19:17:41.459Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 17,
               "Title": "MSTestSettings.cs",
-              "DocumentMoniker": "C:\\Users\\Bende\\Documents\\GitHub\\Vizsgaremek\\Rendel\u0151TabletApi\\Rendel\u0151TabletApi.Test\\MSTestSettings.cs",
+              "DocumentMoniker": "C:\\Users\\D\u00E9nes Zolt\u00E1n\\Desktop\\Rendel\u0151TabletApi\\Rendel\u0151TabletApi.Test\\MSTestSettings.cs",
               "RelativeDocumentMoniker": "Rendel\u0151TabletApi.Test\\MSTestSettings.cs",
-              "ToolTip": "C:\\Users\\Bende\\Documents\\GitHub\\Vizsgaremek\\Rendel\u0151TabletApi\\Rendel\u0151TabletApi.Test\\MSTestSettings.cs",
+              "ToolTip": "C:\\Users\\D\u00E9nes Zolt\u00E1n\\Desktop\\Rendel\u0151TabletApi\\Rendel\u0151TabletApi.Test\\MSTestSettings.cs",
               "RelativeToolTip": "Rendel\u0151TabletApi.Test\\MSTestSettings.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAA7AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-08T19:13:54.364Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-08T19:13:54.364Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "PincerControllerTest.cs",
+              "DocumentMoniker": "C:\\Users\\D\u00E9nes Zolt\u00E1n\\Desktop\\Rendel\u0151TabletApi\\Rendel\u0151TabletApi.Test\\PincerControllerTest.cs",
+              "RelativeDocumentMoniker": "Rendel\u0151TabletApi.Test\\PincerControllerTest.cs",
+              "ToolTip": "C:\\Users\\D\u00E9nes Zolt\u00E1n\\Desktop\\Rendel\u0151TabletApi\\Rendel\u0151TabletApi.Test\\PincerControllerTest.cs",
+              "RelativeToolTip": "Rendel\u0151TabletApi.Test\\PincerControllerTest.cs",
+              "ViewState": "AgIAADEAAAAAAAAAAAAcwDwAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-08T19:31:14.294Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "RendelesControllerTest.cs",
+              "DocumentMoniker": "C:\\Users\\D\u00E9nes Zolt\u00E1n\\Desktop\\Rendel\u0151TabletApi\\Rendel\u0151TabletApi.Test\\RendelesControllerTest.cs",
+              "RelativeDocumentMoniker": "Rendel\u0151TabletApi.Test\\RendelesControllerTest.cs",
+              "ToolTip": "C:\\Users\\D\u00E9nes Zolt\u00E1n\\Desktop\\Rendel\u0151TabletApi\\Rendel\u0151TabletApi.Test\\RendelesControllerTest.cs",
+              "RelativeToolTip": "Rendel\u0151TabletApi.Test\\RendelesControllerTest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFEAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-08T19:31:51.353Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "appsettings.Development.json",
+              "DocumentMoniker": "C:\\Users\\D\u00E9nes Zolt\u00E1n\\Desktop\\Rendel\u0151TabletApi\\Rendel\u0151TabletApi\\appsettings.Development.json",
+              "RelativeDocumentMoniker": "Rendel\u0151TabletApi\\appsettings.Development.json",
+              "ToolTip": "C:\\Users\\D\u00E9nes Zolt\u00E1n\\Desktop\\Rendel\u0151TabletApi\\Rendel\u0151TabletApi\\appsettings.Development.json",
+              "RelativeToolTip": "Rendel\u0151TabletApi\\appsettings.Development.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-01-28T08:21:16.376Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Rendel\u0151TabletApi.Test.csproj",
+              "DocumentMoniker": "C:\\Users\\D\u00E9nes Zolt\u00E1n\\Desktop\\Rendel\u0151TabletApi\\Rendel\u0151TabletApi.Test\\Rendel\u0151TabletApi.Test.csproj",
+              "RelativeDocumentMoniker": "Rendel\u0151TabletApi.Test\\Rendel\u0151TabletApi.Test.csproj",
+              "ToolTip": "C:\\Users\\D\u00E9nes Zolt\u00E1n\\Desktop\\Rendel\u0151TabletApi\\Rendel\u0151TabletApi.Test\\Rendel\u0151TabletApi.Test.csproj",
+              "RelativeToolTip": "Rendel\u0151TabletApi.Test\\Rendel\u0151TabletApi.Test.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-03-08T19:16:10.657Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "AsztalControllerTest.cs",
+              "DocumentMoniker": "C:\\Users\\D\u00E9nes Zolt\u00E1n\\Desktop\\Rendel\u0151TabletApi\\Rendel\u0151TabletApi.Test\\AsztalControllerTest.cs",
+              "RelativeDocumentMoniker": "Rendel\u0151TabletApi.Test\\AsztalControllerTest.cs",
+              "ToolTip": "C:\\Users\\D\u00E9nes Zolt\u00E1n\\Desktop\\Rendel\u0151TabletApi\\Rendel\u0151TabletApi.Test\\AsztalControllerTest.cs",
+              "RelativeToolTip": "Rendel\u0151TabletApi.Test\\AsztalControllerTest.cs",
+              "ViewState": "AgIAAE0AAAAAAAAAAAAuwFUAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-08T19:30:40.63Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "EtelTipusControllerTest.cs",
+              "DocumentMoniker": "C:\\Users\\D\u00E9nes Zolt\u00E1n\\Desktop\\Rendel\u0151TabletApi\\Rendel\u0151TabletApi.Test\\EtelTipusControllerTest.cs",
+              "RelativeDocumentMoniker": "Rendel\u0151TabletApi.Test\\EtelTipusControllerTest.cs",
+              "ToolTip": "C:\\Users\\D\u00E9nes Zolt\u00E1n\\Desktop\\Rendel\u0151TabletApi\\Rendel\u0151TabletApi.Test\\EtelTipusControllerTest.cs",
+              "RelativeToolTip": "Rendel\u0151TabletApi.Test\\EtelTipusControllerTest.cs",
+              "ViewState": "AgIAADwAAAAAAAAAAAAmwEsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-08T19:32:48.066Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 11,
-              "Title": "PincerControllerTest.cs",
-              "DocumentMoniker": "C:\\Users\\Bende\\Documents\\GitHub\\Vizsgaremek\\Rendel\u0151TabletApi\\Rendel\u0151TabletApi.Test\\PincerControllerTest.cs",
-              "RelativeDocumentMoniker": "Rendel\u0151TabletApi.Test\\PincerControllerTest.cs",
-              "ToolTip": "C:\\Users\\Bende\\Documents\\GitHub\\Vizsgaremek\\Rendel\u0151TabletApi\\Rendel\u0151TabletApi.Test\\PincerControllerTest.cs",
-              "RelativeToolTip": "Rendel\u0151TabletApi.Test\\PincerControllerTest.cs",
-              "ViewState": "AgIAADEAAAAAAAAAAAAcwDwAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-08T19:31:14.294Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "RendelesControllerTest.cs",
-              "DocumentMoniker": "C:\\Users\\Bende\\Documents\\GitHub\\Vizsgaremek\\Rendel\u0151TabletApi\\Rendel\u0151TabletApi.Test\\RendelesControllerTest.cs",
-              "RelativeDocumentMoniker": "Rendel\u0151TabletApi.Test\\RendelesControllerTest.cs",
-              "ToolTip": "C:\\Users\\Bende\\Documents\\GitHub\\Vizsgaremek\\Rendel\u0151TabletApi\\Rendel\u0151TabletApi.Test\\RendelesControllerTest.cs",
-              "RelativeToolTip": "Rendel\u0151TabletApi.Test\\RendelesControllerTest.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFEAAAAdAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-08T19:31:51.353Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "appsettings.Development.json",
-              "DocumentMoniker": "C:\\Users\\Bende\\Documents\\GitHub\\Vizsgaremek\\Rendel\u0151TabletApi\\Rendel\u0151TabletApi\\appsettings.Development.json",
-              "RelativeDocumentMoniker": "Rendel\u0151TabletApi\\appsettings.Development.json",
-              "ToolTip": "C:\\Users\\Bende\\Documents\\GitHub\\Vizsgaremek\\Rendel\u0151TabletApi\\Rendel\u0151TabletApi\\appsettings.Development.json",
-              "RelativeToolTip": "Rendel\u0151TabletApi\\appsettings.Development.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAA0AAAAAAAAAA==",
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\D\u00E9nes Zolt\u00E1n\\Desktop\\Rendel\u0151TabletApi\\Rendel\u0151TabletApi\\appsettings.json",
+              "RelativeDocumentMoniker": "Rendel\u0151TabletApi\\appsettings.json",
+              "ToolTip": "C:\\Users\\D\u00E9nes Zolt\u00E1n\\Desktop\\Rendel\u0151TabletApi\\Rendel\u0151TabletApi\\appsettings.json",
+              "RelativeToolTip": "Rendel\u0151TabletApi\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2026-01-28T08:21:16.376Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Rendel\u0151TabletApi.Test",
-              "DocumentMoniker": "C:\\Users\\Bende\\Documents\\GitHub\\Vizsgaremek\\Rendel\u0151TabletApi\\Rendel\u0151TabletApi.Test\\Rendel\u0151TabletApi.Test.csproj",
-              "RelativeDocumentMoniker": "Rendel\u0151TabletApi.Test\\Rendel\u0151TabletApi.Test.csproj",
-              "ToolTip": "C:\\Users\\Bende\\Documents\\GitHub\\Vizsgaremek\\Rendel\u0151TabletApi\\Rendel\u0151TabletApi.Test\\Rendel\u0151TabletApi.Test.csproj",
-              "RelativeToolTip": "Rendel\u0151TabletApi.Test\\Rendel\u0151TabletApi.Test.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAKAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2026-03-08T19:16:10.657Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "AsztalControllerTest.cs",
-              "DocumentMoniker": "C:\\Users\\Bende\\Documents\\GitHub\\Vizsgaremek\\Rendel\u0151TabletApi\\Rendel\u0151TabletApi.Test\\AsztalControllerTest.cs",
-              "RelativeDocumentMoniker": "Rendel\u0151TabletApi.Test\\AsztalControllerTest.cs",
-              "ToolTip": "C:\\Users\\Bende\\Documents\\GitHub\\Vizsgaremek\\Rendel\u0151TabletApi\\Rendel\u0151TabletApi.Test\\AsztalControllerTest.cs",
-              "RelativeToolTip": "Rendel\u0151TabletApi.Test\\AsztalControllerTest.cs",
-              "ViewState": "AgIAAE0AAAAAAAAAAAAuwFUAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-08T19:30:40.63Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "EtelTipusControllerTest.cs",
-              "DocumentMoniker": "C:\\Users\\Bende\\Documents\\GitHub\\Vizsgaremek\\Rendel\u0151TabletApi\\Rendel\u0151TabletApi.Test\\EtelTipusControllerTest.cs",
-              "RelativeDocumentMoniker": "Rendel\u0151TabletApi.Test\\EtelTipusControllerTest.cs",
-              "ToolTip": "C:\\Users\\Bende\\Documents\\GitHub\\Vizsgaremek\\Rendel\u0151TabletApi\\Rendel\u0151TabletApi.Test\\EtelTipusControllerTest.cs",
-              "RelativeToolTip": "Rendel\u0151TabletApi.Test\\EtelTipusControllerTest.cs",
-              "ViewState": "AgIAADwAAAAAAAAAAAAmwEsAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-08T19:32:48.066Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-08T19:40:05.046Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\Bende\\Documents\\GitHub\\Vizsgaremek\\Rendel\u0151TabletApi\\Rendel\u0151TabletApi\\appsettings.json",
-              "RelativeDocumentMoniker": "Rendel\u0151TabletApi\\appsettings.json",
-              "ToolTip": "C:\\Users\\Bende\\Documents\\GitHub\\Vizsgaremek\\Rendel\u0151TabletApi\\Rendel\u0151TabletApi\\appsettings.json",
-              "RelativeToolTip": "Rendel\u0151TabletApi\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2026-03-08T19:40:05.046Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
               "Title": "AuthController.cs",
-              "DocumentMoniker": "C:\\Users\\Bende\\Documents\\GitHub\\Vizsgaremek\\Rendel\u0151TabletApi\\Rendel\u0151TabletApi\\Controllers\\AuthController.cs",
+              "DocumentMoniker": "C:\\Users\\D\u00E9nes Zolt\u00E1n\\Desktop\\Rendel\u0151TabletApi\\Rendel\u0151TabletApi\\Controllers\\AuthController.cs",
               "RelativeDocumentMoniker": "Rendel\u0151TabletApi\\Controllers\\AuthController.cs",
-              "ToolTip": "C:\\Users\\Bende\\Documents\\GitHub\\Vizsgaremek\\Rendel\u0151TabletApi\\Rendel\u0151TabletApi\\Controllers\\AuthController.cs",
+              "ToolTip": "C:\\Users\\D\u00E9nes Zolt\u00E1n\\Desktop\\Rendel\u0151TabletApi\\Rendel\u0151TabletApi\\Controllers\\AuthController.cs",
               "RelativeToolTip": "Rendel\u0151TabletApi\\Controllers\\AuthController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -237,107 +292,101 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 13,
               "Title": "TermekControllerTest.cs",
-              "DocumentMoniker": "C:\\Users\\Bende\\Documents\\GitHub\\Vizsgaremek\\Rendel\u0151TabletApi\\Rendel\u0151TabletApi.Test\\TermekControllerTest.cs",
+              "DocumentMoniker": "C:\\Users\\D\u00E9nes Zolt\u00E1n\\Desktop\\Rendel\u0151TabletApi\\Rendel\u0151TabletApi.Test\\TermekControllerTest.cs",
               "RelativeDocumentMoniker": "Rendel\u0151TabletApi.Test\\TermekControllerTest.cs",
-              "ToolTip": "C:\\Users\\Bende\\Documents\\GitHub\\Vizsgaremek\\Rendel\u0151TabletApi\\Rendel\u0151TabletApi.Test\\TermekControllerTest.cs",
+              "ToolTip": "C:\\Users\\D\u00E9nes Zolt\u00E1n\\Desktop\\Rendel\u0151TabletApi\\Rendel\u0151TabletApi.Test\\TermekControllerTest.cs",
               "RelativeToolTip": "Rendel\u0151TabletApi.Test\\TermekControllerTest.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAGIAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-08T19:32:12.128Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-08T19:32:12.128Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 19,
               "Title": "ErtekelesControllerTest.cs",
-              "DocumentMoniker": "C:\\Users\\Bende\\Documents\\GitHub\\Vizsgaremek\\Rendel\u0151TabletApi\\Rendel\u0151TabletApi.Test\\ErtekelesControllerTest.cs",
+              "DocumentMoniker": "C:\\Users\\D\u00E9nes Zolt\u00E1n\\Desktop\\Rendel\u0151TabletApi\\Rendel\u0151TabletApi.Test\\ErtekelesControllerTest.cs",
               "RelativeDocumentMoniker": "Rendel\u0151TabletApi.Test\\ErtekelesControllerTest.cs",
-              "ToolTip": "C:\\Users\\Bende\\Documents\\GitHub\\Vizsgaremek\\Rendel\u0151TabletApi\\Rendel\u0151TabletApi.Test\\ErtekelesControllerTest.cs",
+              "ToolTip": "C:\\Users\\D\u00E9nes Zolt\u00E1n\\Desktop\\Rendel\u0151TabletApi\\Rendel\u0151TabletApi.Test\\ErtekelesControllerTest.cs",
               "RelativeToolTip": "Rendel\u0151TabletApi.Test\\ErtekelesControllerTest.cs",
               "ViewState": "AgIAACsAAAAAAAAAAAAiwDwAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-08T19:31:31.629Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-08T19:31:31.629Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 2,
               "Title": "Context.cs",
-              "DocumentMoniker": "C:\\Users\\Bende\\Documents\\GitHub\\Vizsgaremek\\Rendel\u0151TabletApi\\Rendel\u0151TabletApi\\Model\\Context.cs",
+              "DocumentMoniker": "C:\\Users\\D\u00E9nes Zolt\u00E1n\\Desktop\\Rendel\u0151TabletApi\\Rendel\u0151TabletApi\\Model\\Context.cs",
               "RelativeDocumentMoniker": "Rendel\u0151TabletApi\\Model\\Context.cs",
-              "ToolTip": "C:\\Users\\Bende\\Documents\\GitHub\\Vizsgaremek\\Rendel\u0151TabletApi\\Rendel\u0151TabletApi\\Model\\Context.cs",
+              "ToolTip": "C:\\Users\\D\u00E9nes Zolt\u00E1n\\Desktop\\Rendel\u0151TabletApi\\Rendel\u0151TabletApi\\Model\\Context.cs",
               "RelativeToolTip": "Rendel\u0151TabletApi\\Model\\Context.cs",
-              "ViewState": "AgIAAAoAAAAAAAAAAAA1wAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAEQAAAAAAAAAAAAAwEsAAABmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-01-27T10:30:22.443Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 15,
               "Title": "Rendeles.cs",
-              "DocumentMoniker": "C:\\Users\\Bende\\Documents\\GitHub\\Vizsgaremek\\Rendel\u0151TabletApi\\Rendel\u0151TabletApi\\Model\\Rendeles.cs",
+              "DocumentMoniker": "C:\\Users\\D\u00E9nes Zolt\u00E1n\\Desktop\\Rendel\u0151TabletApi\\Rendel\u0151TabletApi\\Model\\Rendeles.cs",
               "RelativeDocumentMoniker": "Rendel\u0151TabletApi\\Model\\Rendeles.cs",
-              "ToolTip": "C:\\Users\\Bende\\Documents\\GitHub\\Vizsgaremek\\Rendel\u0151TabletApi\\Rendel\u0151TabletApi\\Model\\Rendeles.cs",
+              "ToolTip": "C:\\Users\\D\u00E9nes Zolt\u00E1n\\Desktop\\Rendel\u0151TabletApi\\Rendel\u0151TabletApi\\Model\\Rendeles.cs",
               "RelativeToolTip": "Rendel\u0151TabletApi\\Model\\Rendeles.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-08T19:35:42.279Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-08T19:35:42.279Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 20,
               "Title": "Pincer.cs",
-              "DocumentMoniker": "C:\\Users\\Bende\\Documents\\GitHub\\Vizsgaremek\\Rendel\u0151TabletApi\\Rendel\u0151TabletApi\\Model\\Pincer.cs",
+              "DocumentMoniker": "C:\\Users\\D\u00E9nes Zolt\u00E1n\\Desktop\\Rendel\u0151TabletApi\\Rendel\u0151TabletApi\\Model\\Pincer.cs",
               "RelativeDocumentMoniker": "Rendel\u0151TabletApi\\Model\\Pincer.cs",
-              "ToolTip": "C:\\Users\\Bende\\Documents\\GitHub\\Vizsgaremek\\Rendel\u0151TabletApi\\Rendel\u0151TabletApi\\Model\\Pincer.cs",
+              "ToolTip": "C:\\Users\\D\u00E9nes Zolt\u00E1n\\Desktop\\Rendel\u0151TabletApi\\Rendel\u0151TabletApi\\Model\\Pincer.cs",
               "RelativeToolTip": "Rendel\u0151TabletApi\\Model\\Pincer.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-08T19:19:21.376Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-08T19:19:21.376Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 21,
               "Title": "Ertekeles.cs",
-              "DocumentMoniker": "C:\\Users\\Bende\\Documents\\GitHub\\Vizsgaremek\\Rendel\u0151TabletApi\\Rendel\u0151TabletApi\\Model\\Ertekeles.cs",
+              "DocumentMoniker": "C:\\Users\\D\u00E9nes Zolt\u00E1n\\Desktop\\Rendel\u0151TabletApi\\Rendel\u0151TabletApi\\Model\\Ertekeles.cs",
               "RelativeDocumentMoniker": "Rendel\u0151TabletApi\\Model\\Ertekeles.cs",
-              "ToolTip": "C:\\Users\\Bende\\Documents\\GitHub\\Vizsgaremek\\Rendel\u0151TabletApi\\Rendel\u0151TabletApi\\Model\\Ertekeles.cs",
+              "ToolTip": "C:\\Users\\D\u00E9nes Zolt\u00E1n\\Desktop\\Rendel\u0151TabletApi\\Rendel\u0151TabletApi\\Model\\Ertekeles.cs",
               "RelativeToolTip": "Rendel\u0151TabletApi\\Model\\Ertekeles.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-08T19:19:19.987Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-08T19:19:19.987Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 6,
               "Title": "Asztal.cs",
-              "DocumentMoniker": "C:\\Users\\Bende\\Documents\\GitHub\\Vizsgaremek\\Rendel\u0151TabletApi\\Rendel\u0151TabletApi\\Model\\Asztal.cs",
+              "DocumentMoniker": "C:\\Users\\D\u00E9nes Zolt\u00E1n\\Desktop\\Rendel\u0151TabletApi\\Rendel\u0151TabletApi\\Model\\Asztal.cs",
               "RelativeDocumentMoniker": "Rendel\u0151TabletApi\\Model\\Asztal.cs",
-              "ToolTip": "C:\\Users\\Bende\\Documents\\GitHub\\Vizsgaremek\\Rendel\u0151TabletApi\\Rendel\u0151TabletApi\\Model\\Asztal.cs",
+              "ToolTip": "C:\\Users\\D\u00E9nes Zolt\u00E1n\\Desktop\\Rendel\u0151TabletApi\\Rendel\u0151TabletApi\\Model\\Asztal.cs",
               "RelativeToolTip": "Rendel\u0151TabletApi\\Model\\Asztal.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAKAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-03-08T19:19:13.033Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 22,
               "Title": "EtelTipus.cs",
-              "DocumentMoniker": "C:\\Users\\Bende\\Documents\\GitHub\\Vizsgaremek\\Rendel\u0151TabletApi\\Rendel\u0151TabletApi\\Model\\EtelTipus.cs",
+              "DocumentMoniker": "C:\\Users\\D\u00E9nes Zolt\u00E1n\\Desktop\\Rendel\u0151TabletApi\\Rendel\u0151TabletApi\\Model\\EtelTipus.cs",
               "RelativeDocumentMoniker": "Rendel\u0151TabletApi\\Model\\EtelTipus.cs",
-              "ToolTip": "C:\\Users\\Bende\\Documents\\GitHub\\Vizsgaremek\\Rendel\u0151TabletApi\\Rendel\u0151TabletApi\\Model\\EtelTipus.cs",
+              "ToolTip": "C:\\Users\\D\u00E9nes Zolt\u00E1n\\Desktop\\Rendel\u0151TabletApi\\Rendel\u0151TabletApi\\Model\\EtelTipus.cs",
               "RelativeToolTip": "Rendel\u0151TabletApi\\Model\\EtelTipus.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-27T10:30:51.635Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-27T10:30:51.635Z"
             }
           ]
         }

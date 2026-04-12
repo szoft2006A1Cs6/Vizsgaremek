@@ -16,12 +16,14 @@ namespace RendelőTabletApi.Controllers
         {
             _context = context;
         }
+
         [Authorize]
         [HttpGet]
         public IActionResult Get()
         {
             return Ok(_context.Termekek);
         }
+
         [Authorize]
         [HttpGet("{id}")]
         public IActionResult Get(int id, [FromQuery] bool ext = false)
@@ -40,6 +42,7 @@ namespace RendelőTabletApi.Controllers
             if (termek == null) return NotFound();
             return Ok(termek);
         }
+
         [Authorize(Roles = "Staff")]
         [HttpPost]
         public IActionResult Post(Termek termek)
@@ -48,6 +51,7 @@ namespace RendelőTabletApi.Controllers
             _context.SaveChanges();
             return CreatedAtAction(nameof(Get), new { id = termek.TermekId }, termek);
         }
+
         [Authorize(Roles = "Staff")]
         [HttpPut("{id}")]
         public IActionResult Put(int id, Termek termek)
@@ -59,9 +63,12 @@ namespace RendelőTabletApi.Controllers
             oldTermek.Ar = termek.Ar;
             oldTermek.EteltipusId = termek.EteltipusId;
 
+            oldTermek.Allergenek = termek.Allergenek;
+
             _context.SaveChanges();
             return Ok(oldTermek);
         }
+
         [Authorize(Roles = "Staff")]
         [HttpDelete("{id}")]
         public IActionResult Delete(int id)
