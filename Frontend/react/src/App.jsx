@@ -15,6 +15,7 @@ import TesztaMenu from './pages/TesztaMenu';
 import GrillMenu from './pages/GrillMenu';
 import HalMenu from './pages/HalMenu';
 import VeganMenu from './pages/VeganMenu';
+import Pincer from './pages/Pincer';
 
 
 function App() {
@@ -37,6 +38,7 @@ function App() {
         <Route path="/payment" element={<Payment />} />
         <Route path="/status" element={<Status />} />
         <Route path="/rating" element={<Rating />} />
+        <Route path='/pincer' element={<Pincer/>} />
       </Routes>
     </Router>
   );

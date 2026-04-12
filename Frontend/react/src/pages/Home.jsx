@@ -39,7 +39,7 @@ export default function Home() {
           </div>
         </div>
         <div className="help-section">
-          <button className="help-btn">
+          <button className="help-btn" onClick={() => navigate('/pincer')}>
             <div className="help-text">
               <span className="title">Segítség</span>
               <span className="subtitle">Pincér hívása</span>
