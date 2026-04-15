@@ -1,5 +1,5 @@
 import { useNavigate } from 'react-router-dom';
-import { FloatingHelpBtn, PageHeader } from '../components/Shared';
+import { FloatingHelpBtn, PageHeader } from '../../components/Shared';
 
 const PIZZAS = [
   { name: 'Margherita', desc: 'Paradicsomszósz, mozzarella sajt, friss bazsalikom', badge: 'Klasszikus' },
@@ -17,23 +17,22 @@ export default function PizzaMenu() {
       <PageHeader title="Pizzák" />
       
       <main className="main-content">
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '1.5rem' }}>
+        <div className="menu-grid">
           {PIZZAS.map((pizza, index) => (
             <div 
               key={index} 
-              className="card" 
-              style={{ display: 'flex', cursor: 'pointer', padding: '1rem', gap: '1rem', alignItems: 'center' }} 
+              className="card menu-item-card" 
               onClick={() => navigate('/payment')}
             >
-              <div style={{ width: '100px', height: '100px', backgroundColor: 'var(--accent-light)', borderRadius: 'var(--radius-md)', flexShrink: 0, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-                <span className="material-icons" style={{ color: 'var(--accent)', fontSize: '3rem' }}>local_pizza</span>
+              <div className="menu-item-img-wrapper">
+                <span className="material-icons menu-item-icon">local_pizza</span>
               </div>
               
-              <div style={{ flexGrow: 1 }}>
-                <h2 className="font-display" style={{ fontSize: '1.25rem', marginBottom: '0.25rem' }}>{pizza.name}</h2>
-                <p style={{ fontSize: '0.9rem', color: 'var(--text-muted)', marginBottom: '0.5rem', lineHeight: 1.4 }}>{pizza.desc}</p>
+              <div className="menu-item-info">
+                <h2 className="font-display menu-item-title">{pizza.name}</h2>
+                <p className="menu-item-desc">{pizza.desc}</p>
                 {pizza.badge && (
-                  <span style={{ background: 'var(--primary)', color: 'white', fontSize: '0.75rem', padding: '0.2rem 0.5rem', borderRadius: '4px', fontWeight: 'bold' }}>
+                  <span className="menu-item-badge">
                     {pizza.badge}
                   </span>
                 )}

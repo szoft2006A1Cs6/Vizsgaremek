@@ -79,6 +79,16 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "Rendel\u0151TabletApi.Controllers.AuthController",
+    "Method": "GetUsers",
+    "RelativePath": "api/Auth/users",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "Rendel\u0151TabletApi.Controllers.ErtekelesController",
     "Method": "Get",
     "RelativePath": "api/Ertekeles",

@@ -13,11 +13,11 @@ namespace RendelőTabletApi.Controllers
     [ApiController]
     public class AuthController : ControllerBase
     {
-        // Jelenleg a "Password" hash-e van beírva példaként.
-        private const string MasterPasswordHash = "e7cf3ef4f17c3999a94f2c6f612e8a888e5b1026878e4e19398b23bd38ec221a";
+        // Jelenleg a "1234" hash-e van beírva példaként.
+        private const string MasterPasswordHash = "03ac674216f3e15c761ee1a5e255f067953623c8b388b4459e13f978d7c846f4";
 
         // Itt adhatod meg a fix felhasználóneveket
-        private readonly string[] _fixUsers = { "konyha", "pénztár", "pult", "asztal1" };
+        private readonly string[] _fixUsers = { "Konyha", "Asztal 1", "Asztal 2", "Asztal 3" };
 
         private readonly IConfiguration _configuration;
 
@@ -32,10 +32,13 @@ namespace RendelőTabletApi.Controllers
             if (request == null || string.IsNullOrEmpty(request.Username) || string.IsNullOrEmpty(request.Password))
                 return BadRequest("Hiányzó adatok.");
 
-            if (!IsValidUser(request.Username) || !VerifyPassword(request.Password))
-                return Unauthorized(new { message = "Hibás felhasználónév vagy jelszó." });
+            if (!IsValidUser(request.Username))
+                return Unauthorized(new { message = $"Ismeretlen felhasználó: '{request.Username}'" });
 
-            var role = request.Username.StartsWith("asztal") ? "Guest" : "Staff";
+            if (!VerifyPassword(request.Password))
+                return Unauthorized(new { message = $"Helytelen jelszó lett megadva ehhez: '{request.Username}'" });
+
+            var role = request.Username.StartsWith("Asztal") ? "Guest" : "Staff";
             var token = GenerateJwtToken(request.Username, role);
 
             return Ok(new
@@ -44,6 +47,17 @@ namespace RendelőTabletApi.Controllers
                 token = token,
                 role = role
             });
+        }
+
+        [HttpGet("users")]
+        public IActionResult GetUsers()
+        {
+            var users = _fixUsers.Select(u => new {
+                id = u.ToLower().Replace(" ", ""),
+                name = u
+            }).ToList();
+
+            return Ok(users);
         }
 
         private string GenerateJwtToken(string username, string role)
@@ -71,18 +85,9 @@ namespace RendelőTabletApi.Controllers
         {
             string lowerUser = username.ToLower().Trim();
 
-            if (_fixUsers.Contains(lowerUser))
+            if (_fixUsers.Contains(username))
             {
                 return true;
-            }
-
-            if (lowerUser.StartsWith("asztal"))
-            {
-                string numberPart = lowerUser.Substring(6);
-                if (int.TryParse(numberPart, out int tableNumber))
-                {
-                    return tableNumber > 0 && tableNumber < 100;
-                }
             }
 
             return false;
