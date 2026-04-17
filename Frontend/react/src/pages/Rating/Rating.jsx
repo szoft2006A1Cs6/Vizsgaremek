@@ -1,5 +1,6 @@
 import { useNavigate } from 'react-router-dom';
 import { PageHeader } from '../../components/Shared';
+import './Rating.css'
 
 export default function Rating() {
   const navigate = useNavigate();

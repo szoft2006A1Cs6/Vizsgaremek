@@ -1,5 +1,6 @@
 import { useNavigate } from 'react-router-dom';
 import { PageHeader, FloatingHelpBtn } from '../../components/Shared';
+import './Categories.css'
 
 const CATEGORIES = [
   { icon: 'local_pizza', name: 'Pizza', path: '/menu' },

@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import './Kitchen.css'
 
 const INITIAL_ORDERS = [
   { id: 1, asztal: 3, ido: '18:15', pincer: 'Kiss Péter', tetelek: [{ nev: 'Margherita pizza', db: 2 }, { nev: 'Coca-Cola 0.5l', db: 2 }] },

@@ -1,5 +1,6 @@
 import { useNavigate } from 'react-router-dom';
 import { PageHeader } from '../../components/Shared';
+import './Payment.css'
 
 export default function Payment() {
   const navigate = useNavigate();

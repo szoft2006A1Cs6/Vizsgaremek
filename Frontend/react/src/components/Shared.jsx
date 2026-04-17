@@ -1,4 +1,5 @@
 import { useNavigate } from 'react-router-dom';
+import './Shared.css'
 
 export function PageHeader({ title, theme = 'light', rightContent = null }) {
   const navigate = useNavigate();

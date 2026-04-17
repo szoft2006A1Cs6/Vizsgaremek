@@ -1,5 +1,6 @@
 import { useNavigate } from 'react-router-dom';
 import { FloatingHelpBtn, PageHeader } from '../../components/Shared';
+import './Menu.css'
 
 const PIZZAS = [
   { name: 'Margherita', desc: 'Paradicsomszósz, mozzarella sajt, friss bazsalikom', badge: 'Klasszikus' },

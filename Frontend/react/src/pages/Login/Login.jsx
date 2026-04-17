@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
+import './Login.css'
 
 const API_BASE_URL = 'https://localhost:7235'; 
 
@@ -57,7 +58,7 @@ export default function Login() {
         localStorage.setItem('token', data.token);
         localStorage.setItem('role', data.role);
         
-        if (data.role === 'Staff') navigate('/pincer');
+        if (data.role === 'Staff') navigate('/kitchen');
         else navigate('/home');
       } else {
         setError(data.message || 'Hibás jelszó!');

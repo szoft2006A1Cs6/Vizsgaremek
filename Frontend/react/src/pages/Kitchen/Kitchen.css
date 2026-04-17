@@ -1,0 +1,189 @@
+.kds-theme {
+  background: #111827;
+  color: white;
+  min-height: 100vh;
+  padding: 1.5rem;
+  font-family: sans-serif;
+}
+
+.kds-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #374151;
+  padding-bottom: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.kds-title {
+  color: var(--accent);
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.kds-title-icon {
+  font-size: 2.5rem;
+}
+
+.kds-clock {
+  background: #1F2937;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  font-size: 1.5rem;
+  font-family: monospace;
+  color: #60A5FA;
+}
+
+.kds-layout {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  gap: 2rem;
+}
+
+.kds-section-title {
+  color: #9CA3AF;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.kds-orders-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.kds-card {
+  background: #1F2937;
+  border-radius: 1rem;
+  border-top: 6px solid var(--primary);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.kds-card-header {
+  padding: 1rem;
+  background: rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #374151;
+}
+
+.kds-card-table {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.kds-card-time {
+  color: var(--accent);
+  font-family: monospace;
+  font-size: 1.2rem;
+}
+
+.kds-card-body {
+  padding: 1rem;
+  flex-grow: 1;
+}
+
+.kds-card-waiter {
+  color: #9CA3AF;
+  margin-bottom: 1rem;
+  border-bottom: 1px dashed #374151;
+  padding-bottom: 0.5rem;
+}
+
+.kds-item-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.kds-item {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 0.75rem;
+  font-size: 1.1rem;
+}
+
+.kds-item-qty {
+  background: var(--accent);
+  color: var(--dark);
+  padding: 0.2rem 0.5rem;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+.kds-btn-ready {
+  background: #16A34A;
+  color: white;
+  padding: 1rem;
+  border: none;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.kds-sidebar {
+  background: #1F2937;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  align-self: start;
+}
+
+.kds-sidebar-title {
+  color: #9CA3AF;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  border-bottom: 1px solid #374151;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.kds-calls-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.kds-call-card {
+  background: rgba(220, 38, 38, 0.2);
+  border-left: 4px solid var(--primary);
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+
+.kds-call-header {
+  display: flex;
+  justify-content: space-between;
+  color: #FCA5A5;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.kds-call-type {
+  color: white;
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+}
+
+.kds-btn-ack {
+  width: 100%;
+  padding: 0.75rem;
+  background: #991B1B;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.kds-empty-calls {
+  color: #9CA3AF;
+  text-align: center;
+  margin-top: 2rem;
+}
