@@ -23,7 +23,6 @@ namespace RendelőTabletApi.Controllers
             return Ok(_context.RendelesTetelek);
         }
 
-        [Authorize(Roles = "Staff")]
         [HttpPost]
         public IActionResult Post(RendelesTetel tetel)
         {

@@ -1,0 +1,79 @@
+.page-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  background: var(--surface);
+  box-shadow: var(--shadow-sm);
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  min-height: 90px;
+}
+
+.header-left, .header-right {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+.header-right {
+  justify-content: flex-end;
+  gap: 1rem;
+}
+
+.table-badge {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: var(--accent-light);
+  color: var(--primary);
+  padding: 0.4rem 1.25rem;
+  border-radius: 2rem;
+  border: none;
+}
+
+.table-badge-icon {
+  font-size: 1.8rem !important;
+}
+
+.table-badge-text-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  line-height: 1;
+}
+
+.table-badge-label {
+  font-size: 0.75rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 0.1rem;
+}
+
+.table-badge-number {
+  font-size: 1.4rem;
+  font-weight: bold;
+  font-family: 'Playfair Display', serif; 
+}
+
+.page-header.dark .table-badge {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: var(--accent);
+}
+
+.floating-help {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  background: var(--surface);
+  color: var(--dark);
+  padding: 1rem;
+  border-radius: 50%;
+  box-shadow: var(--shadow-md);
+  border: 1px solid #E5E7EB;
+  cursor: pointer;
+  transition: var(--transition);
+  z-index: 100;
+}

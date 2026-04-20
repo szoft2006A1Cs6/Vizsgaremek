@@ -1,5 +1,5 @@
 import { useNavigate } from 'react-router-dom';
-import { PageHeader } from '../../components/Shared';
+import { PageHeader } from '../../components/Shared/Shared';
 import './Status.css'
 
 export default function Status() {
