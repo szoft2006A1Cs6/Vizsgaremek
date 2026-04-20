@@ -869,10 +869,6 @@
             "type": "integer",
             "format": "int32"
           },
-          "szoveg": {
-            "type": "string",
-            "nullable": true
-          },
           "rendeles": {
             "$ref": "#/components/schemas/Rendeles"
           }

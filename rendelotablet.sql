@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Gép: 127.0.0.1
--- Létrehozás ideje: 2026. Ápr 12. 20:44
+-- Létrehozás ideje: 2026. Ápr 20. 20:58
 -- Kiszolgáló verziója: 10.4.32-MariaDB
 -- PHP verzió: 8.2.12
 
@@ -20,10 +20,6 @@ SET time_zone = "+00:00";
 --
 -- Adatbázis: `rendelotablet`
 --
-
-DROP DATABASE IF EXISTS rendelotablet;
-CREATE DATABASE rendelotablet;
-USE rendelotablet;
 
 -- --------------------------------------------------------
 
@@ -61,26 +57,27 @@ INSERT INTO `asztal` (`asztal_id`, `ferohely`) VALUES
 CREATE TABLE `ertekeles` (
   `ertek_id` int(11) NOT NULL,
   `rendeles_id` int(11) NOT NULL,
-  `idopont` date NOT NULL,
-  `pontszam` int(11) NOT NULL,
-  `szoveg` text DEFAULT NULL
+  `idopont` datetime NOT NULL,
+  `pontszam` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_hungarian_ci;
 
 --
 -- A tábla adatainak kiíratása `ertekeles`
 --
 
-INSERT INTO `ertekeles` (`ertek_id`, `rendeles_id`, `idopont`, `pontszam`, `szoveg`) VALUES
-(1, 1, '2025-11-02', 5, 'Nagyon finom volt'),
-(2, 2, '2025-11-02', 4, 'Gyors kiszolgálás'),
-(3, 3, '2025-11-02', 5, 'Szuper élmény'),
-(4, 4, '2025-11-02', 3, 'Kicsit lassú'),
-(5, 5, '2025-11-02', 4, 'Finom ételek'),
-(6, 6, '2025-11-02', 5, 'Kiváló'),
-(7, 7, '2025-11-02', 4, 'Ajánlom'),
-(8, 8, '2025-11-02', 2, 'Hideg volt az étel'),
-(9, 9, '2025-11-02', 5, 'Minden tökéletes'),
-(10, 10, '2025-11-02', 4, 'Visszatérünk');
+INSERT INTO `ertekeles` (`ertek_id`, `rendeles_id`, `idopont`, `pontszam`) VALUES
+(1, 1, '2025-11-02 00:00:00', 5),
+(2, 2, '2025-11-02 00:00:00', 4),
+(3, 3, '2025-11-02 00:00:00', 5),
+(4, 4, '2025-11-02 00:00:00', 3),
+(5, 5, '2025-11-02 00:00:00', 4),
+(6, 6, '2025-11-02 00:00:00', 5),
+(7, 7, '2025-11-02 00:00:00', 4),
+(8, 8, '2025-11-02 00:00:00', 2),
+(9, 9, '2025-11-02 00:00:00', 5),
+(10, 10, '2025-11-02 00:00:00', 4),
+(11, 15, '0001-01-01 00:00:00', 4),
+(12, 16, '2026-04-20 20:44:14', 5);
 
 -- --------------------------------------------------------
 
@@ -154,10 +151,26 @@ CREATE TABLE `pincer_hivas` (
 --
 
 INSERT INTO `pincer_hivas` (`hivas_id`, `asztal_id`, `idopont`, `statusz`) VALUES
-(1, 2, '2025-11-02 12:15:30', 'Bankártyás Fizetés'),
+(1, 2, '2025-11-02 12:15:30', 'Bankkártyás Fizetés'),
 (2, 4, '2025-11-02 13:05:10', 'Készpénzes Fizetés'),
-(3, 7, '2025-11-02 13:40:00', 'Segítség Kérés'),
-(4, 1, '2025-11-02 14:22:45', 'Teljesítve');
+(3, 7, '2025-11-02 13:40:00', 'Segítségkérés'),
+(4, 7, '2025-11-02 14:22:45', 'Teljesítve'),
+(5, 1, '2026-04-19 19:05:08', 'Segítség Kérés'),
+(6, 1, '2026-04-19 19:05:43', 'Segítség Kérés'),
+(7, 1, '2026-04-19 19:10:48', 'Segítség Kérés'),
+(8, 1, '2026-04-19 19:13:48', 'Függőben'),
+(9, 1, '2026-04-19 21:16:32', 'Segítség Kérés'),
+(10, 1, '2026-04-20 20:02:35', 'Készpénzes Fizetés'),
+(11, 1, '2026-04-20 20:21:14', 'Készpénzes Fizetés'),
+(12, 1, '2026-04-20 20:21:45', 'Pincér hívása'),
+(13, 1, '2026-04-20 20:26:09', 'Pincér hívása'),
+(14, 1, '2026-04-20 20:29:05', 'Pincér hívása'),
+(15, 1, '2026-04-20 20:39:44', 'Készpénzes Fizetés'),
+(16, 1, '2026-04-20 20:43:17', 'Készpénzes Fizetés'),
+(17, 1, '2026-04-20 20:46:41', 'Bankkártyás Fizetés'),
+(18, 1, '2026-04-20 20:46:55', 'Pincér hívása'),
+(19, 1, '2026-04-20 20:47:26', 'Pincér hívása'),
+(20, 1, '2026-04-20 20:53:08', 'Segítség Kérés');
 
 -- --------------------------------------------------------
 
@@ -169,7 +182,7 @@ CREATE TABLE `rendeles` (
   `rendeles_id` int(11) NOT NULL,
   `pincer_id` int(11) NOT NULL,
   `asztal_id` int(11) NOT NULL,
-  `idopont` date NOT NULL,
+  `idopont` datetime NOT NULL,
   `statusz` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_hungarian_ci;
 
@@ -178,16 +191,21 @@ CREATE TABLE `rendeles` (
 --
 
 INSERT INTO `rendeles` (`rendeles_id`, `pincer_id`, `asztal_id`, `idopont`, `statusz`) VALUES
-(1, 1, 1, '2025-11-01', 1),
-(2, 2, 2, '2025-11-01', 1),
-(3, 3, 3, '2025-11-01', 2),
-(4, 4, 4, '2025-11-02', 1),
-(5, 5, 5, '2025-11-02', 2),
-(6, 6, 6, '2025-11-02', 1),
-(7, 7, 7, '2025-11-02', 1),
-(8, 8, 8, '2025-11-02', 2),
-(9, 9, 9, '2025-11-02', 1),
-(10, 10, 10, '2025-11-02', 2);
+(1, 1, 1, '2025-11-01 04:04:33', 1),
+(2, 2, 2, '2025-11-01 10:13:44', 1),
+(3, 3, 3, '2025-11-01 03:25:13', 2),
+(4, 4, 4, '2025-11-02 07:08:32', 1),
+(5, 5, 5, '2025-11-02 20:11:35', 0),
+(6, 6, 6, '2025-11-02 02:20:35', 2),
+(7, 7, 7, '2025-11-02 13:13:36', 3),
+(8, 8, 8, '2025-11-02 08:12:45', 2),
+(9, 9, 9, '2025-11-02 01:29:16', 3),
+(10, 10, 10, '2025-11-02 03:37:12', 2),
+(13, 7, 1, '2026-04-20 20:02:35', 0),
+(14, 8, 1, '2026-04-20 20:21:14', 3),
+(15, 4, 1, '2026-04-20 20:39:44', 0),
+(16, 6, 1, '2026-04-20 20:43:17', 3),
+(17, 10, 1, '2026-04-20 20:46:41', 3);
 
 -- --------------------------------------------------------
 
@@ -215,8 +233,22 @@ INSERT INTO `rendeles_tetel` (`tetel_id`, `rendeles_id`, `termek_id`, `mennyiseg
 (6, 6, 6, 1),
 (7, 7, 7, 2),
 (8, 8, 8, 1),
-(9, 9, 9, 3),
-(10, 10, 10, 1);
+(9, 10, 9, 3),
+(10, 10, 10, 1),
+(11, 13, 48, 1),
+(12, 14, 45, 2),
+(13, 14, 15, 1),
+(14, 14, 40, 1),
+(15, 15, 45, 2),
+(16, 15, 9, 1),
+(17, 15, 11, 1),
+(18, 15, 34, 1),
+(19, 15, 12, 2),
+(20, 16, 11, 2),
+(21, 16, 40, 1),
+(22, 16, 15, 1),
+(23, 16, 37, 1),
+(24, 17, 3, 1);
 
 -- --------------------------------------------------------
 
@@ -303,7 +335,7 @@ ALTER TABLE `asztal`
 --
 ALTER TABLE `ertekeles`
   ADD PRIMARY KEY (`ertek_id`),
-  ADD UNIQUE KEY `rendeles_id` (`rendeles_id`);
+  ADD KEY `rendeles_id` (`rendeles_id`) USING BTREE;
 
 --
 -- A tábla indexei `etel_tipus`
@@ -329,16 +361,16 @@ ALTER TABLE `pincer_hivas`
 --
 ALTER TABLE `rendeles`
   ADD PRIMARY KEY (`rendeles_id`),
-  ADD UNIQUE KEY `pincer_id` (`pincer_id`),
-  ADD UNIQUE KEY `asztal_id` (`asztal_id`);
+  ADD KEY `pincer_id` (`pincer_id`) USING BTREE,
+  ADD KEY `asztal_id` (`asztal_id`) USING BTREE;
 
 --
 -- A tábla indexei `rendeles_tetel`
 --
 ALTER TABLE `rendeles_tetel`
   ADD PRIMARY KEY (`tetel_id`),
-  ADD UNIQUE KEY `rendeles_id` (`rendeles_id`),
-  ADD UNIQUE KEY `termek_id` (`termek_id`);
+  ADD KEY `rendeles_id` (`rendeles_id`) USING BTREE,
+  ADD KEY `termek_id` (`termek_id`) USING BTREE;
 
 --
 -- A tábla indexei `termek`
@@ -361,7 +393,7 @@ ALTER TABLE `asztal`
 -- AUTO_INCREMENT a táblához `ertekeles`
 --
 ALTER TABLE `ertekeles`
-  MODIFY `ertek_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+  MODIFY `ertek_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
 
 --
 -- AUTO_INCREMENT a táblához `etel_tipus`
@@ -379,19 +411,19 @@ ALTER TABLE `pincer`
 -- AUTO_INCREMENT a táblához `pincer_hivas`
 --
 ALTER TABLE `pincer_hivas`
-  MODIFY `hivas_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `hivas_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=21;
 
 --
 -- AUTO_INCREMENT a táblához `rendeles`
 --
 ALTER TABLE `rendeles`
-  MODIFY `rendeles_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+  MODIFY `rendeles_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
 
 --
 -- AUTO_INCREMENT a táblához `rendeles_tetel`
 --
 ALTER TABLE `rendeles_tetel`
-  MODIFY `tetel_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+  MODIFY `tetel_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=25;
 
 --
 -- AUTO_INCREMENT a táblához `termek`

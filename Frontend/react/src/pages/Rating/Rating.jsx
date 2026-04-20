@@ -1,43 +1,96 @@
-import { useNavigate } from 'react-router-dom';
+import { useState } from 'react';
+import { useLocation, useNavigate } from 'react-router-dom';
 import { PageHeader } from '../../components/Shared/Shared';
-import './Rating.css'
+import './Rating.css';
+
+const API_BASE_URL = 'https://localhost:7235';
 
 export default function Rating() {
   const navigate = useNavigate();
+  const location = useLocation();
+  
+  const orderId = location.state?.orderId || localStorage.getItem('lastOrderId');
+  
+  const [rating, setRating] = useState(0);
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
-  const handleFinish = () => navigate('/home');
+  const handleFinish = () => {
+    localStorage.removeItem('lastOrderId');
+    navigate('/categories'); 
+  };
+
+  const handleSubmit = async () => {
+    if (rating === 0) {
+      alert("Kérjük, válasszon ki legalább egy csillagot az értékeléshez!");
+      return;
+    }
+
+    if (!orderId) {
+      handleFinish();
+      return;
+    }
+
+    setIsSubmitting(true);
+    const token = localStorage.getItem('token');
+
+    const now = new Date();
+    const localTime = new Date(now.getTime() - now.getTimezoneOffset() * 60000)
+      .toISOString()
+      .substring(0, 19);
+
+    try {
+      await fetch(`${API_BASE_URL}/api/Ertekeles`, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'Authorization': `Bearer ${token}`
+        },
+        body: JSON.stringify({
+          rendelesId: parseInt(orderId, 10),
+          pontszam: rating,
+          idopont: localTime
+        })
+      });
+    } catch (err) {
+      console.error("Hiba az értékelés elküldésekor:", err);
+    } finally {
+      handleFinish();
+    }
+  };
 
   return (
     <div className="page-layout bg-dark">
-      <PageHeader title="Gusto Bistro" theme="dark" />
+      <PageHeader title="Gusto Bistro" theme="dark" showBackButton={false} />
 
       <main className="main-content flex-center">
         <div className="card rating-container">
           <span className="material-icons rating-top-icon">restaurant</span>
           <h2 className="font-display rating-title">Hogy ízlett az étel?</h2>
-          <p className="rating-subtitle">Kérjük, értékelje a rendelését, hogy még jobb élményt nyújthassunk!</p>
+          <p className="rating-subtitle">Kérjük, értékelje a rendelését egy kattintással, hogy még jobb élményt nyújthassunk!</p>
             
-          <div className="rating-stars">
-            {[1, 2, 3, 4].map(star => (
-              <span key={star} className="material-icons filled">star</span>
+          <div className="rating-stars stars">
+            {[1, 2, 3, 4, 5].map((star) => (
+              <span 
+                key={star} 
+                className={`material-icons ${star <= rating ? 'filled' : 'empty'}`}
+                onClick={() => setRating(star)}
+                style={{ cursor: 'pointer', fontSize: '4rem' }}
+              >
+                star
+              </span>
             ))}
-            <span className="material-icons empty">star</span>
           </div>
 
-          <div className="rating-feedback">
-            <label className="form-label">Megjegyzés (Opcionális)</label>
-            <textarea 
-              rows="4" 
-              placeholder="Írja meg véleményét..." 
-              className="form-textarea"
-            />
-          </div>
-
-          <button className="btn btn-primary rating-submit-btn" onClick={handleFinish}>
-            Értékelés Beküldése <span className="material-icons">send</span>
+          <button 
+            className="btn btn-primary rating-submit-btn" 
+            onClick={handleSubmit}
+            disabled={isSubmitting || rating === 0}
+            style={{ opacity: (isSubmitting || rating === 0) ? 0.5 : 1 }}
+          >
+            {isSubmitting ? 'Küldés...' : 'Értékelés Beküldése'} <span className="material-icons">send</span>
           </button>
             
-          <button className="rating-skip-btn" onClick={handleFinish}>
+          <button className="rating-skip-btn" onClick={handleFinish} disabled={isSubmitting}>
             Kihagyom az értékelést
           </button>
         </div>

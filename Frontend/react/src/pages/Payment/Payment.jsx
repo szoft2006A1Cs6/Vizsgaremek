@@ -11,12 +11,12 @@ export default function Payment() {
   const [isProcessing, setIsProcessing] = useState(false);
   const [asztalSzam, setAsztalSzam] = useState(null);
 
-  // Kosár adatok kinyerése (state-ből vagy tárolóból)
+  const [waiters, setWaiters] = useState([]);
+
   const cart = location.state?.cart || JSON.parse(localStorage.getItem('cart')) || [];
   const total = location.state?.total || cart.reduce((sum, item) => sum + (item.ar * item.quantity), 0);
 
   useEffect(() => {
-    // Ha üres a kosár, visszairányítunk
     if (cart.length === 0) {
       navigate('/categories');
       return;
@@ -28,7 +28,6 @@ export default function Payment() {
       return;
     }
 
-    // Asztalszám kinyerése a JWT tokenből
     try {
       const base64Url = token.split('.')[1];
       const base64 = base64Url.replace(/-/g, '+').replace(/_/g, '/');
@@ -47,14 +46,38 @@ export default function Payment() {
     } catch (error) {
       console.error("Token dekódolási hiba:", error);
     }
+
+    const fetchWaiters = async () => {
+      try {
+        const response = await fetch(`${API_BASE_URL}/api/Pincer`, {
+          headers: { 'Authorization': `Bearer ${token}` }
+        });
+        
+        if (response.ok) {
+          const data = await response.json();
+          setWaiters(data);
+        }
+      } catch (err) {
+        console.error("Hiba a pincérek betöltésekor:", err);
+      }
+    };
+
+    fetchWaiters();
   }, [cart, navigate]);
 
   const handlePayment = async (fizetesiMod) => {
     if (isProcessing) return;
 
-    // Biztonsági fallback asztalszámra
     const veglegesAsztal = asztalSzam || 1;
     setIsProcessing(true);
+
+
+    let randomPincerId = 1;
+    
+    if (waiters && waiters.length > 0) {
+      const randomIndex = Math.floor(Math.random() * waiters.length);
+      randomPincerId = waiters[randomIndex].pincerId; // Ha az azonosító máshogy van a modeledben (pl. 'id'), itt írd át!
+    }
 
     const token = localStorage.getItem('token');
     const headers = {
@@ -62,14 +85,12 @@ export default function Payment() {
       'Authorization': `Bearer ${token}`
     };
 
-    // Helyi idő formázása (ISO Z betű nélkül)
     const now = new Date();
     const localTime = new Date(now.getTime() - now.getTimezoneOffset() * 60000)
       .toISOString()
       .substring(0, 19);
 
     try {
-      // 1. Rendelés létrehozása
       const orderRes = await fetch(`${API_BASE_URL}/api/Rendeles`, {
         method: 'POST',
         headers,
@@ -77,7 +98,7 @@ export default function Payment() {
           asztalId: veglegesAsztal,
           idopont: localTime,
           statusz: 0,
-          pincerId: 1 
+          pincerId: randomPincerId // Dinamikusan API-ból választott pincér ID-ja
         })
       });
 
@@ -85,7 +106,6 @@ export default function Payment() {
       const createdOrder = await orderRes.json();
       const newOrderId = createdOrder.rendelesId;
 
-      // 2. Rendelés tételek mentése egyenként
       const itemRequests = cart.map(item => 
         fetch(`${API_BASE_URL}/api/RendelesTetel`, {
           method: 'POST',
@@ -103,7 +123,6 @@ export default function Payment() {
           throw new Error("Hiba történt a tételek mentésekor");
       }
 
-      // 3. Pincérhívás (Fizetés kérése)
       await fetch(`${API_BASE_URL}/api/PincerHivas`, {
         method: 'POST',
         headers,
@@ -114,7 +133,6 @@ export default function Payment() {
         })
       });
 
-      // Sikeres befejezés: Kosár ürítése és továbbítás
       localStorage.removeItem('cart');
       navigate('/status', { state: { orderId: newOrderId } });
 
@@ -130,8 +148,6 @@ export default function Payment() {
       <PageHeader title="Fizetés" />
       
       <main className="main-content payment-main">
-        
-        {/* Összesítő szekció */}
         <section className="card payment-summary">
           <div className="summary-header">
             Rendelés Összesítése <span className="material-icons">shopping_cart</span>
@@ -162,7 +178,6 @@ export default function Payment() {
           </div>
         </section>
 
-        {/* Fizetési módok szekció */}
         <section className="payment-methods-section">
           <h2 className="font-display">Válasszon fizetési módot</h2>
           
@@ -192,7 +207,6 @@ export default function Payment() {
             </button>
           </div>
         </section>
-        
       </main>
     </div>
   );

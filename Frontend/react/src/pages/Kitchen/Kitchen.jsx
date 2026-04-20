@@ -57,9 +57,11 @@ export default function KonyhaiKijelzo() {
             tetelek: tetelek,
             raw: o 
           };
-        });
+        })
+        .sort((a, b) => new Date(b.raw.idopont) - new Date(a.raw.idopont));
 
       setOrders(activeOrders);
+
       const activeCalls = rawCalls
         .filter(c => c.statusz !== 'Teljesítve') 
         .map(c => ({
@@ -68,7 +70,8 @@ export default function KonyhaiKijelzo() {
           tipus: c.statusz || 'Fizetés',
           ido: new Date(c.idopont).toLocaleTimeString('hu-HU', { hour: '2-digit', minute: '2-digit' }),
           raw: c
-        }));
+        }))
+        .sort((a, b) => new Date(b.raw.idopont) - new Date(a.raw.idopont));
 
       setCalls(activeCalls);
       setError('');
@@ -116,11 +119,6 @@ export default function KonyhaiKijelzo() {
     }
   };
 
-  const getStatusText = (status) => {
-    const texts = ['Leadva', 'Készül', 'Tálalás', 'Elkészült'];
-    return texts[status] || 'Ismeretlen';
-  };
-
   const resolveCall = async (call) => {
     const token = localStorage.getItem('token');
     try {
@@ -132,12 +130,11 @@ export default function KonyhaiKijelzo() {
         },
         body: JSON.stringify({
           ...call.raw,
-          statusz: 'Teljesítve' // <--- Itt módosítjuk a státuszt
+          statusz: 'Teljesítve'
         })
       });
 
       if (response.ok) {
-        // Ha sikeres a mentés, levesszük a képernyőről
         setCalls(prev => prev.filter(c => c.id !== call.id));
       } else {
         console.error("API hiba a nyugtázáskor");
@@ -150,7 +147,7 @@ export default function KonyhaiKijelzo() {
   return (
     <div className="kds-theme">
       <header className="kds-header">
-        <h1 className="kds-title"><span className="material-icons kds-title-icon">soup_kitchen</span> Konyha</h1>
+        <h1 className="kds-title"><span className="material-icons kds-title-icon">soup_kitchen</span> Gusto Bistro</h1>
         <div style={{ display: 'flex', alignItems: 'center', gap: '1rem' }}>
           {error && <span style={{ color: '#FCA5A5' }}>{error}</span>}
           <div className="kds-clock">{time}</div>
