@@ -1,54 +1,5 @@
-.menu-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  gap: 1.5rem;
-}
-
-.menu-item-card {
-  display: flex;
-  cursor: pointer;
-  padding: 1rem;
-  gap: 1rem;
-  align-items: center;
-}
-
-.menu-item-img-wrapper {
-  width: 100px;
-  height: 100px;
-  background-color: var(--accent-light);
-  border-radius: var(--radius-md);
-  flex-shrink: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.menu-item-icon {
-  color: var(--accent);
-  font-size: 3rem;
-}
-
-.menu-item-info {
-  flex-grow: 1;
-}
-
-.menu-item-title {
-  font-size: 1.25rem;
-  margin-bottom: 0.25rem;
-}
-
-.menu-item-desc {
-  font-size: 0.9rem;
-  color: var(--text-muted);
-  margin-bottom: 0.5rem;
-  line-height: 1.4;
-}
-
-.menu-item-badge {
-  background: var(--primary);
-  color: white;
-  font-size: 0.75rem;
-  padding: 0.2rem 0.5rem;
-  border-radius: 4px;
-  font-weight: bold;
+.menu-grid { 
+  display: grid; 
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); 
+  gap: 1.5rem; 
 }

@@ -82,8 +82,12 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
             {
               "$type": "Document",
               "DocumentIndex": 1,
@@ -94,8 +98,7 @@
               "RelativeToolTip": "Rendel\u0151TabletApi\\Model\\Ertekeles.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-20T18:34:36.631Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-20T18:34:36.631Z"
             },
             {
               "$type": "Document",
@@ -105,7 +108,7 @@
               "RelativeDocumentMoniker": "Rendel\u0151TabletApi\\Controllers\\ErtekelesController.cs",
               "ToolTip": "C:\\Users\\Bende\\Documents\\GitHub\\Vizsgaremek\\Rendel\u0151TabletApi\\Rendel\u0151TabletApi\\Controllers\\ErtekelesController.cs",
               "RelativeToolTip": "Rendel\u0151TabletApi\\Controllers\\ErtekelesController.cs",
-              "ViewState": "AgIAAAIAAAAAAAAAAAAmwBoAAAAPAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAuwBoAAAAPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-04-20T18:34:28.414Z",
               "EditorCaption": ""
@@ -120,8 +123,7 @@
               "RelativeToolTip": "Rendel\u0151TabletApi\\Controllers\\PincerHivasController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-20T17:46:20.774Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-20T17:46:20.774Z"
             },
             {
               "$type": "Document",
@@ -133,8 +135,7 @@
               "RelativeToolTip": "Rendel\u0151TabletApi\\Controllers\\RendelesTetelController.cs",
               "ViewState": "AgIAACAAAAAAAAAAAAAgwBgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-20T09:19:57.448Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-20T09:19:57.448Z"
             },
             {
               "$type": "Document",
@@ -146,8 +147,7 @@
               "RelativeToolTip": "Rendel\u0151TabletApi\\Controllers\\AuthController.cs",
               "ViewState": "AgIAACEAAAAAAAAAAAAiwG4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-20T07:40:33.78Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-20T07:40:33.78Z"
             },
             {
               "$type": "Document",

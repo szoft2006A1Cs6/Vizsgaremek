@@ -1,0 +1,27 @@
+.promo-card { 
+  flex: 2; 
+  background: rgba(255, 255, 255, 0.1); 
+  padding: 1.5rem; 
+  display: flex; 
+  flex-direction: column; 
+  justify-content: center; 
+}
+
+.promo-badge { 
+  background: var(--accent); 
+  color: var(--dark); 
+  padding: 0.25rem 0.5rem; 
+  border-radius: 4px; 
+  font-size: 0.8rem; 
+  font-weight: bold; 
+}
+
+.promo-title { 
+  color: var(--accent); 
+  margin: 0.5rem 0; 
+}
+
+.promo-desc { 
+  margin: 0; 
+  opacity: 0.8; 
+}
