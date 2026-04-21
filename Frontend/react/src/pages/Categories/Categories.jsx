@@ -1,8 +1,10 @@
 import { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { PageHeader, FloatingHelpBtn } from '../../components/Shared/Shared';
+import PageHeader from '../../components/PageHeader/PageHeader'; // FRISSÍTVE
+import FloatingHelpBtn from '../../components/FloatingHelpBtn/FloatingHelpBtn'; // FRISSÍTVE
 import CategoryCard from '../../components/CategoryCard/CategoryCard';
 import Cart from '../../components/Cart/Cart';
+import AfkTimeout from '../../components/AfkTimeout/AfkTimeout';
 import './Categories.css';
 
 const API_BASE_URL = 'https://localhost:7235';
@@ -29,6 +31,7 @@ export default function Categories() {
 
   return (
     <div className="page-layout">
+      <AfkTimeout timeoutMinutes={5} countdownSeconds={60} />
       <PageHeader title="Étlap" showBackButton={false} />
       <div className="kds-layout">
         <main className="main-content">

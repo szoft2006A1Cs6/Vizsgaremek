@@ -1,7 +1,8 @@
 import { useState } from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
-import { PageHeader } from '../../components/Shared/Shared';
+import PageHeader from '../../components/PageHeader/PageHeader'; // FRISSÍTVE
 import RatingStars from '../../components/RatingStars/RatingStars';
+import AfkTimeout from '../../components/AfkTimeout/AfkTimeout';
 import './Rating.css';
 
 const API_BASE_URL = 'https://localhost:7235';
@@ -37,6 +38,7 @@ export default function Rating() {
 
   return (
     <div className="page-layout bg-dark">
+      <AfkTimeout timeoutMinutes={5} countdownSeconds={60} />
       <PageHeader title="Gusto Bistro" theme="dark" showBackButton={false} />
       <main className="main-content flex-center">
         <div className="card rating-container">

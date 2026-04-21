@@ -1,8 +1,9 @@
 import { useState, useEffect } from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
-import { PageHeader } from '../../components/Shared/Shared';
+import PageHeader from '../../components/PageHeader/PageHeader'; // FRISSÍTVE
 import StatusTracker from '../../components/StatusTracker/StatusTracker';
 import OrderDetailsList from '../../components/OrderDetailsList/OrderDetailsList';
+import AfkTimeout from '../../components/AfkTimeout/AfkTimeout';
 import './Status.css';
 
 const API_BASE_URL = 'https://localhost:7235';
@@ -86,11 +87,11 @@ export default function Status() {
 
   const getProgress = () => {
     switch(orderStatus) {
-      case 0: return { w: '10%', step: 0, t: 'Rendelés leadva' };
-      case 1: return { w: '35%', step: 1, t: 'Rendelésed készül!' };
-      case 2: return { w: '70%', step: 2, t: 'Tálalás alatt' };
-      case 3: return { w: '100%', step: 3, t: 'Jó étvágyat!' };
-      default: return { w: '10%', step: 0, t: 'Feldolgozás alatt' };
+      case 0: return { w: '0%', step: 0, t: 'Rendelés leadva' };
+      case 1: return { w: 'calc((100% - 5rem) * 0.3333)', step: 1, t: 'Rendelésed készül!' };
+      case 2: return { w: 'calc((100% - 5rem) * 0.6666)', step: 2, t: 'Tálalás alatt' };
+      case 3: return { w: 'calc(100% - 5rem)', step: 3, t: 'Jó étvágyat!' };
+      default: return { w: '0%', step: 0, t: 'Feldolgozás alatt' };
     }
   };
 
@@ -98,7 +99,9 @@ export default function Status() {
 
   return (
     <div className="page-layout">
-      <PageHeader title="Rendelés Állapota" />
+      <AfkTimeout timeoutMinutes={15} countdownSeconds={120} /> 
+      
+      <PageHeader title="Rendelés Állapota" showBackButton={false} />
       <main className="main-content status-main">
         <div className="text-center">
           <p className="status-order-num">Rendelésszám: #{orderId}</p>

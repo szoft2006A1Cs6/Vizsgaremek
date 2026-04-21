@@ -7,28 +7,28 @@
   margin: 1rem 0 2rem 0; 
 }
 
-.progress-bar-bg { 
-  position: absolute; 
-  top: 2rem; 
-  left: 0; 
-  width: 100%; 
-  height: 8px; 
-  background-color: #E5E7EB; 
-  transform: translateY(-50%); 
-  border-radius: var(--radius-full); 
-  z-index: 1; 
+.progress-bar-bg {
+  position: absolute;
+  top: 2rem;
+  left: 2.5rem; 
+  width: calc(100% - 5rem);
+  height: 8px;
+  background-color: #E5E7EB;
+  transform: translateY(-50%);
+  border-radius: var(--radius-full);
+  z-index: 1;
 }
 
-.progress-bar-fill { 
-  position: absolute; 
-  top: 2rem; 
-  left: 0; 
-  height: 8px; 
-  background-color: var(--primary); 
-  transform: translateY(-50%); 
-  border-radius: var(--radius-full); 
-  transition: width 1s ease-in-out; 
-  z-index: 2; 
+.progress-bar-fill {
+  position: absolute;
+  top: 2rem;
+  left: 2.5rem;
+  height: 8px;
+  background-color: var(--primary);
+  transform: translateY(-50%);
+  border-radius: var(--radius-full);
+  transition: width 1s ease-in-out;
+  z-index: 2;
 }
 
 .steps-container { 

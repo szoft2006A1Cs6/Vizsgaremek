@@ -1,72 +1,9 @@
 import { useState, useEffect } from 'react';
-import { useNavigate } from 'react-router-dom';
-import './Shared.css';
+import './FloatingHelpBtn.css';
 
 const API_BASE_URL = 'https://localhost:7235';
 
-export function PageHeader({ title, theme = 'light', rightContent = null, showBackButton = true }) {
-  const navigate = useNavigate();
-  const isDark = theme === 'dark';
-  const [asztalSzam, setAsztalSzam] = useState(null);
-
-  useEffect(() => {
-    const token = localStorage.getItem('token');
-    if (!token) return;
-
-    try {
-      const base64Url = token.split('.')[1];
-      const base64 = base64Url.replace(/-/g, '+').replace(/_/g, '/');
-      const jsonPayload = decodeURIComponent(atob(base64).split('').map(function(c) {
-          return '%' + ('00' + c.charCodeAt(0).toString(16)).slice(-2);
-      }).join(''));
-      
-      const payload = JSON.parse(jsonPayload);
-      const nameClaim = payload["http://schemas.xmlsoap.org/ws/2005/05/identity/claims/name"] 
-                        || payload.name 
-                        || payload.unique_name 
-                        || "";
-      
-      const szam = nameClaim.replace(/\D/g, '');
-      if (szam) setAsztalSzam(szam);
-    } catch (error) {
-      console.error("Token hiba:", error);
-    }
-  }, []);
-
-  return (
-    <header className={`page-header ${isDark ? 'dark' : ''}`}>
-      <div className="header-left">
-        {showBackButton && (
-          <button className="btn-back-pill" onClick={() => navigate(-1)}>
-            <span className="material-icons">arrow_back</span>
-            <span className="btn-back-text">VISSZA</span>
-          </button>
-        )}
-      </div>
-      
-      <div className="header-center">
-        <h1 className="font-display page-header-title">{title}</h1>
-      </div>
-      
-      <div className="header-right">
-        {rightContent}
-        {asztalSzam && (
-          <div className="table-badge-pill">
-            <div className="table-badge-icon-container">
-              <span className="material-icons">table_restaurant</span>
-            </div>
-            <div className="table-badge-details">
-              <span className="table-badge-label">Asztal</span>
-              <span className="table-badge-number">{asztalSzam}</span>
-            </div>
-          </div>
-        )}
-      </div>
-    </header>
-  );
-}
-
-export function FloatingHelpBtn() {
+export default function FloatingHelpBtn() {
   const [asztalSzam, setAsztalSzam] = useState('?');
   const [callStatus, setCallStatus] = useState('idle');
   const [showAllergens, setShowAllergens] = useState(false);
@@ -96,16 +33,14 @@ export function FloatingHelpBtn() {
     }
   }, []);
 
-  // Ez a függvény csak megnyitja a megerősítő ablakot
   const triggerCall = () => {
     if (callStatus === 'idle' && asztalSzam !== '?') {
       setShowConfirm(true);
     }
   };
 
-  // Ez a függvény fut le, ha az "Igen"-re nyomnak
   const executeCall = async () => {
-    setShowConfirm(false); // Ablak bezárása
+    setShowConfirm(false);
     setCallStatus('calling');
     
     const token = localStorage.getItem('token');
@@ -139,7 +74,6 @@ export function FloatingHelpBtn() {
     }
   };
 
-  // Hivatalos 14-es allergén lista
   const allergens = [
     { id: 1, name: "Glutént tartalmazó gabonafélék" },
     { id: 2, name: "Rákfélék és azokból készült termékek" },
@@ -160,7 +94,6 @@ export function FloatingHelpBtn() {
   return (
     <>
       <div className="floating-actions-container">
-        {/* Allergén Info Gomb */}
         <button 
           className="floating-btn info-btn" 
           onClick={() => setShowAllergens(true)}
@@ -169,7 +102,6 @@ export function FloatingHelpBtn() {
           <span className="material-icons">medical_information</span>
         </button>
 
-        {/* Pincérhívó (Segítség) Gomb - Most már a triggerCall-t hívja */}
         <button 
           className="floating-btn help-btn" 
           onClick={triggerCall}
@@ -182,7 +114,6 @@ export function FloatingHelpBtn() {
         </button>
       </div>
 
-      {/* 1. MODÁL: PINCÉRHÍVÁS MEGERŐSÍTÉSE */}
       {showConfirm && (
         <div className="modal-overlay" onClick={() => setShowConfirm(false)}>
           <div className="modal-content" onClick={e => e.stopPropagation()} style={{ maxWidth: '400px' }}>
@@ -221,7 +152,6 @@ export function FloatingHelpBtn() {
         </div>
       )}
 
-      {/* 2. MODÁL: ALLERGÉN ÚTMUTATÓ */}
       {showAllergens && (
         <div className="modal-overlay" onClick={() => setShowAllergens(false)}>
           <div className="modal-content" onClick={e => e.stopPropagation()}>

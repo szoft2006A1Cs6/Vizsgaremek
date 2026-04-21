@@ -1,8 +1,9 @@
 import { useState, useEffect } from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
-import { PageHeader } from '../../components/Shared/Shared';
+import PageHeader from '../../components/PageHeader/PageHeader'; // FRISSÍTVE
 import PaymentSummary from '../../components/PaymentSummary/PaymentSummary';
 import PaymentMethods from '../../components/PaymentMethods/PaymentMethods';
+import AfkTimeout from '../../components/AfkTimeout/AfkTimeout';
 import './Payment.css';
 
 const API_BASE_URL = 'https://localhost:7235';
@@ -61,7 +62,7 @@ export default function Payment() {
       });
 
       localStorage.removeItem('cart');
-      navigate('/status', { state: { orderId: newOrderId } });
+      navigate('/status', { state: { orderId: newOrderId }, replace: true });
     } catch (err) {
       alert("Hiba történt a fizetési folyamat során.");
       setIsProcessing(false);
@@ -70,6 +71,7 @@ export default function Payment() {
 
   return (
     <div className="page-layout">
+      <AfkTimeout timeoutMinutes={5} countdownSeconds={60} />
       <PageHeader title="Fizetés" />
       <main className="main-content payment-main">
         <PaymentSummary cart={cart} total={total} />
