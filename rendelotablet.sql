@@ -3,8 +3,8 @@
 -- https://www.phpmyadmin.net/
 --
 -- Gép: 127.0.0.1
--- Létrehozás ideje: 2026. Ápr 22. 12:24
--- Kiszolgáló verziója: 10.4.32-MariaDB
+-- Létrehozás ideje: 2026. Ápr 22. 12:58
+-- Kiszolgáló verziója: 9.9.0
 -- PHP verzió: 8.2.12
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
@@ -20,10 +20,6 @@ SET time_zone = "+00:00";
 --
 -- Adatbázis: `rendelotablet`
 --
-
-DROP DATABASE IF EXISTS rendelotablet;
-CREATE DATABASE rendelotablet;
-USE rendelotablet;
 
 -- --------------------------------------------------------
 
@@ -333,26 +329,26 @@ CREATE TABLE `termek` (
 --
 
 INSERT INTO `termek` (`termek_id`, `eteltipus_id`, `termek_nev`, `ar`, `allergenek`, `featured`, `kep`) VALUES
-(1, 1, 'Margherita pizza', 2790, '1,7', 1, '0'),
-(2, 1, 'Pepperoni pizza', 2990, '1,7', 0, '0'),
-(3, 1, 'Sonkás pizza', 2890, '1,7', 0, '0'),
-(4, 1, 'Négysajtos pizza', 3190, '1,7', 0, '0'),
-(5, 1, 'BBQ csirkés pizza', 3290, '1,7,9', 0, '0'),
-(6, 2, 'Sajtburger', 3290, '1,3,7,11', 0, '0'),
-(7, 2, 'Dupla burger', 3690, '1,3,7,11', 0, '0'),
-(8, 2, 'Bacon burger', 3490, '1,3,7,11', 0, '0'),
-(9, 2, 'Csirkeburger', 3190, '1,3,7,11', 0, '0'),
-(10, 2, 'Vegán burger', 3390, '1,6,11', 0, '0'),
-(11, 3, 'Coca-Cola 0.5l', 790, NULL, 0, '0'),
-(12, 3, 'Coca-Cola Zero 0.5l', 790, NULL, 0, '0'),
-(13, 3, 'Ásványvíz 0.5l', 590, NULL, 0, '0'),
-(14, 3, 'Narancslé 0.3l', 890, NULL, 0, '0'),
-(15, 3, 'Házi limonádé', 990, NULL, 0, '0'),
-(16, 4, 'Csokoládétorta', 1490, '1,3,7,8', 0, '0'),
-(17, 4, 'Somlói galuska', 1590, '1,3,7,8', 0, '0'),
-(18, 4, 'Palacsinta (2 db)', 1290, '1,3,7', 0, '0'),
-(19, 4, 'Sajttorta', 1690, '1,3,7', 0, '0'),
-(20, 4, 'Brownie', 1390, '1,3,7,8', 0, '0'),
+(1, 1, 'Margherita pizza', 2790, '1,7', 1, 'https://i.imgur.com/rePSz6B.jpeg'),
+(2, 1, 'Pepperoni pizza', 2990, '1,7', 0, 'https://i.imgur.com/DKu4NKJ.jpeg'),
+(3, 1, 'Sonkás pizza', 2890, '1,7', 0, 'https://i.imgur.com/wQwspNl.jpeg'),
+(4, 1, 'Négysajtos pizza', 3190, '1,7', 0, 'https://i.imgur.com/1drCWYl.jpeg'),
+(5, 1, 'BBQ csirkés pizza', 3290, '1,7,9', 0, 'https://i.imgur.com/UXmAYop.jpeg'),
+(6, 2, 'Sajtburger', 3290, '1,3,7,11', 0, 'https://i.imgur.com/D3O5VSq.jpeg'),
+(7, 2, 'Dupla burger', 3690, '1,3,7,11', 0, 'https://i.imgur.com/ib4j4ps.jpeg'),
+(8, 2, 'Bacon burger', 3490, '1,3,7,11', 0, 'https://i.imgur.com/qcBIDCN.jpeg'),
+(9, 2, 'Csirkeburger', 3190, '1,3,7,11', 0, 'https://i.imgur.com/pMq1hvF.jpeg'),
+(10, 2, 'Vegán burger', 3390, '1,6,11', 0, 'https://i.imgur.com/02ZMOrS.jpeg'),
+(11, 3, 'Coca-Cola 0.5l', 790, '', 0, 'https://i.imgur.com/Wjn6qKS.jpeg'),
+(12, 3, 'Coca-Cola Zero 0.5l', 790, '', 0, 'https://i.imgur.com/zdZMFrh.jpeg'),
+(13, 3, 'Ásványvíz 0.5l', 590, '', 0, 'https://i.imgur.com/dkgA0hA.jpeg'),
+(14, 3, 'Narancslé 0.3l', 890, '', 0, 'https://i.imgur.com/9prS7PQ.jpeg'),
+(15, 3, 'Házi limonádé', 990, '', 0, 'https://i.imgur.com/gUUYBgB.jpeg'),
+(16, 4, 'Csokoládétorta', 1490, '1,3,7,8', 0, 'https://i.imgur.com/7QwtLxu.jpeg'),
+(17, 4, 'Somlói galuska', 1590, '1,3,7,8', 0, 'https://i.imgur.com/vbspZlE.jpeg'),
+(18, 4, 'Palacsinta (2 db)', 1290, '1,3,7', 0, 'https://i.imgur.com/Dq0Zvai.jpeg'),
+(19, 4, 'Sajttorta', 1690, '1,3,7', 0, 'https://i.imgur.com/2CFpsev.jpeg'),
+(20, 4, 'Brownie', 1390, '1,3,7,8', 0, 'https://i.imgur.com/dl0ec4E.jpeg'),
 (21, 5, 'Cézár saláta', 2190, '1,3,4,7,10', 0, '0'),
 (22, 5, 'Görög saláta', 1990, '7', 0, '0'),
 (23, 5, 'Tonhalsaláta', 2390, '4,10', 0, '0'),
