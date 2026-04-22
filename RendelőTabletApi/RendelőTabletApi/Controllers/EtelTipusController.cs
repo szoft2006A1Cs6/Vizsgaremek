@@ -42,5 +42,43 @@ namespace RendelőTabletApi.Controllers
             if (tipus == null) return NotFound();
             return Ok(tipus);
         }
+
+        [HttpPost]
+        public async Task<ActionResult<EtelTipus>> PostEtelTipus(EtelTipus etelTipus)
+        {
+            _context.EtelTipusok.Add(etelTipus);
+            await _context.SaveChangesAsync();
+
+            return Ok(etelTipus);
+        }
+
+        [HttpPut("{id}")]
+        public async Task<IActionResult> PutEtelTipus(int id, EtelTipus etelTipus)
+        {
+            if (id != etelTipus.EteltipusId)
+            {
+                return BadRequest();
+            }
+
+            _context.Entry(etelTipus).State = EntityState.Modified;
+            await _context.SaveChangesAsync();
+
+            return NoContent();
+        }
+
+        [HttpDelete("{id}")]
+        public async Task<IActionResult> DeleteEtelTipus(int id)
+        {
+            var etelTipus = await _context.EtelTipusok.FindAsync(id);
+            if (etelTipus == null)
+            {
+                return NotFound();
+            }
+
+            _context.EtelTipusok.Remove(etelTipus);
+            await _context.SaveChangesAsync();
+
+            return NoContent();
+        }
     }
 }

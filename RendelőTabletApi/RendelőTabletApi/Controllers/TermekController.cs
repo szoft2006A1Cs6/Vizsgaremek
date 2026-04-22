@@ -62,8 +62,9 @@ namespace RendelőTabletApi.Controllers
             oldTermek.TermekNev = termek.TermekNev;
             oldTermek.Ar = termek.Ar;
             oldTermek.EteltipusId = termek.EteltipusId;
-
             oldTermek.Allergenek = termek.Allergenek;
+            oldTermek.Featured = termek.Featured;
+            oldTermek.Kep = termek.Kep;
 
             _context.SaveChanges();
             return Ok(oldTermek);

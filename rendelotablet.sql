@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Gép: 127.0.0.1
--- Létrehozás ideje: 2026. Ápr 20. 20:58
+-- Létrehozás ideje: 2026. Ápr 22. 11:23
 -- Kiszolgáló verziója: 10.4.32-MariaDB
 -- PHP verzió: 8.2.12
 
@@ -81,7 +81,12 @@ INSERT INTO `ertekeles` (`ertek_id`, `rendeles_id`, `idopont`, `pontszam`) VALUE
 (9, 9, '2025-11-02 00:00:00', 5),
 (10, 10, '2025-11-02 00:00:00', 4),
 (11, 15, '0001-01-01 00:00:00', 4),
-(12, 16, '2026-04-20 20:44:14', 5);
+(12, 16, '2026-04-20 20:44:14', 5),
+(13, 18, '2026-04-21 09:02:58', 3),
+(14, 22, '2026-04-21 10:32:17', 4),
+(15, 23, '2026-04-21 10:38:02', 5),
+(16, 25, '2026-04-21 10:51:10', 5),
+(17, 26, '2026-04-21 11:50:35', 4);
 
 -- --------------------------------------------------------
 
@@ -174,7 +179,21 @@ INSERT INTO `pincer_hivas` (`hivas_id`, `asztal_id`, `idopont`, `statusz`) VALUE
 (17, 1, '2026-04-20 20:46:41', 'Bankkártyás Fizetés'),
 (18, 1, '2026-04-20 20:46:55', 'Pincér hívása'),
 (19, 1, '2026-04-20 20:47:26', 'Pincér hívása'),
-(20, 1, '2026-04-20 20:53:08', 'Segítség Kérés');
+(20, 1, '2026-04-20 20:53:08', 'Segítség Kérés'),
+(21, 1, '2026-04-21 08:19:25', 'Segítség Kérés'),
+(22, 1, '2026-04-21 09:02:09', 'Készpénzes Fizetés'),
+(23, 1, '2026-04-21 09:23:18', 'Segítség Kérés'),
+(24, 1, '2026-04-21 09:23:39', 'Segítség Kérés'),
+(25, 1, '2026-04-21 09:24:02', 'Bankkártyás Fizetés'),
+(26, 3, '2026-04-21 09:30:04', 'Készpénzes Fizetés'),
+(27, 1, '2026-04-21 10:26:30', 'Bankkártyás Fizetés'),
+(28, 1, '2026-04-21 10:30:04', 'Teljesítve'),
+(29, 1, '2026-04-21 10:37:16', 'Teljesítve'),
+(30, 1, '2026-04-21 10:38:37', 'Teljesítve'),
+(31, 1, '2026-04-21 10:50:19', 'Bankkártyás Fizetés'),
+(32, 1, '2026-04-21 10:51:16', 'Teljesítve'),
+(33, 1, '2026-04-21 11:42:06', 'Bankkártyás Fizetés'),
+(34, 1, '2026-04-21 13:23:47', 'Bankkártyás Fizetés');
 
 -- --------------------------------------------------------
 
@@ -199,7 +218,7 @@ INSERT INTO `rendeles` (`rendeles_id`, `pincer_id`, `asztal_id`, `idopont`, `sta
 (2, 2, 2, '2025-11-01 10:13:44', 1),
 (3, 3, 3, '2025-11-01 03:25:13', 2),
 (4, 4, 4, '2025-11-02 07:08:32', 1),
-(5, 5, 5, '2025-11-02 20:11:35', 0),
+(5, 5, 5, '2025-11-02 20:11:35', 1),
 (6, 6, 6, '2025-11-02 02:20:35', 2),
 (7, 7, 7, '2025-11-02 13:13:36', 3),
 (8, 8, 8, '2025-11-02 08:12:45', 2),
@@ -209,7 +228,17 @@ INSERT INTO `rendeles` (`rendeles_id`, `pincer_id`, `asztal_id`, `idopont`, `sta
 (14, 8, 1, '2026-04-20 20:21:14', 3),
 (15, 4, 1, '2026-04-20 20:39:44', 0),
 (16, 6, 1, '2026-04-20 20:43:17', 3),
-(17, 10, 1, '2026-04-20 20:46:41', 3);
+(17, 10, 1, '2026-04-20 20:46:41', 3),
+(18, 4, 1, '2026-04-21 09:02:09', 3),
+(19, 4, 1, '2026-04-21 09:24:02', 2),
+(20, 8, 3, '2026-04-21 09:30:04', 2),
+(21, 5, 1, '2026-04-21 10:26:30', 3),
+(22, 3, 1, '2026-04-21 10:30:04', 3),
+(23, 7, 1, '2026-04-21 10:37:16', 3),
+(24, 2, 1, '2026-04-21 10:38:37', 3),
+(25, 7, 1, '2026-04-21 10:50:19', 3),
+(26, 8, 1, '2026-04-21 11:42:06', 3),
+(27, 3, 1, '2026-04-21 13:23:47', 0);
 
 -- --------------------------------------------------------
 
@@ -252,7 +281,28 @@ INSERT INTO `rendeles_tetel` (`tetel_id`, `rendeles_id`, `termek_id`, `mennyiseg
 (21, 16, 40, 1),
 (22, 16, 15, 1),
 (23, 16, 37, 1),
-(24, 17, 3, 1);
+(24, 17, 3, 1),
+(25, 18, 4, 1),
+(26, 18, 37, 1),
+(27, 19, 25, 1),
+(28, 19, 2, 1),
+(29, 19, 15, 1),
+(30, 20, 27, 1),
+(31, 21, 1, 1),
+(32, 22, 1, 1),
+(33, 22, 5, 1),
+(34, 23, 32, 1),
+(35, 24, 7, 1),
+(36, 24, 50, 1),
+(37, 24, 17, 1),
+(38, 25, 11, 1),
+(39, 25, 1, 1),
+(40, 26, 15, 2),
+(41, 26, 32, 1),
+(42, 26, 2, 1),
+(43, 27, 7, 1),
+(44, 27, 15, 1),
+(45, 27, 35, 1);
 
 -- --------------------------------------------------------
 
@@ -265,64 +315,66 @@ CREATE TABLE `termek` (
   `eteltipus_id` int(11) NOT NULL,
   `termek_nev` text NOT NULL,
   `ar` int(11) NOT NULL,
-  `allergenek` varchar(50) DEFAULT NULL
+  `allergenek` varchar(50) DEFAULT NULL,
+  `featured` tinyint(1) NOT NULL DEFAULT 0,
+  `kep` text NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_hungarian_ci;
 
 --
 -- A tábla adatainak kiíratása `termek`
 --
 
-INSERT INTO `termek` (`termek_id`, `eteltipus_id`, `termek_nev`, `ar`, `allergenek`) VALUES
-(1, 1, 'Margherita pizza', 2790, '1,7'),
-(2, 1, 'Pepperoni pizza', 2990, '1,7'),
-(3, 1, 'Sonkás pizza', 2890, '1,7'),
-(4, 1, 'Négysajtos pizza', 3190, '1,7'),
-(5, 1, 'BBQ csirkés pizza', 3290, '1,7,9'),
-(6, 2, 'Sajtburger', 3290, '1,3,7,11'),
-(7, 2, 'Dupla burger', 3690, '1,3,7,11'),
-(8, 2, 'Bacon burger', 3490, '1,3,7,11'),
-(9, 2, 'Csirkeburger', 3190, '1,3,7,11'),
-(10, 2, 'Vegán burger', 3390, '1,6,11'),
-(11, 3, 'Coca-Cola 0.5l', 790, NULL),
-(12, 3, 'Coca-Cola Zero 0.5l', 790, NULL),
-(13, 3, 'Ásványvíz 0.5l', 590, NULL),
-(14, 3, 'Narancslé 0.3l', 890, NULL),
-(15, 3, 'Házi limonádé', 990, NULL),
-(16, 4, 'Csokoládétorta', 1490, '1,3,7,8'),
-(17, 4, 'Somlói galuska', 1590, '1,3,7,8'),
-(18, 4, 'Palacsinta (2 db)', 1290, '1,3,7'),
-(19, 4, 'Sajttorta', 1690, '1,3,7'),
-(20, 4, 'Brownie', 1390, '1,3,7,8'),
-(21, 5, 'Cézár saláta', 2190, '1,3,4,7,10'),
-(22, 5, 'Görög saláta', 1990, '7'),
-(23, 5, 'Tonhalsaláta', 2390, '4,10'),
-(24, 5, 'Csirkés saláta', 2290, '10'),
-(25, 5, 'Vegán saláta', 2090, '8'),
-(26, 6, 'Gulyásleves', 1890, '9'),
-(27, 6, 'Húsleves', 1690, '1,3,9'),
-(28, 6, 'Paradicsomleves', 1490, '1,9'),
-(29, 6, 'Brokkolikrémleves', 1590, '1,7'),
-(30, 6, 'Halászlé', 2190, '4'),
-(31, 7, 'Spaghetti Carbonara', 2590, '1,3,7'),
-(32, 7, 'Bolognai spagetti', 2490, '1,3,7,9'),
-(33, 7, 'Penne Arrabiata', 2390, '1'),
-(34, 7, 'Lasagne', 2790, '1,3,7,9'),
-(35, 7, 'Tejszínes csirkés tészta', 2690, '1,3,7'),
-(36, 8, 'Grillezett csirkemell', 2990, NULL),
-(37, 8, 'Grill kolbász', 2790, '10'),
-(38, 8, 'BBQ oldalas', 3490, '9,10'),
-(39, 8, 'Grill zöldségtál', 2590, NULL),
-(40, 8, 'Grill lazac', 3890, '4'),
-(41, 9, 'Rántott hekk', 2890, '1,3,4'),
-(42, 9, 'Grillezett pisztráng', 3390, '4'),
-(43, 9, 'Lazac steak', 3990, '4'),
-(44, 9, 'Harcsa paprikás', 3190, '1,4,7'),
-(45, 9, 'Tőkehal filé', 2990, '4'),
-(46, 10, 'Vegán Buddha tál', 2490, '11'),
-(47, 10, 'Vegán curry', 2590, NULL),
-(48, 10, 'Falafel tál', 2390, '11'),
-(49, 10, 'Vegán wrap', 2290, '1,10,11'),
-(50, 10, 'Sült zöldségek hummusszal', 2190, '11');
+INSERT INTO `termek` (`termek_id`, `eteltipus_id`, `termek_nev`, `ar`, `allergenek`, `featured`, `kep`) VALUES
+(1, 1, 'Margherita pizza', 2790, '1,7', 1, '0'),
+(2, 1, 'Pepperoni pizza', 2990, '1,7', 0, '0'),
+(3, 1, 'Sonkás pizza', 2890, '1,7', 0, '0'),
+(4, 1, 'Négysajtos pizza', 3190, '1,7', 0, '0'),
+(5, 1, 'BBQ csirkés pizza', 3290, '1,7,9', 0, '0'),
+(6, 2, 'Sajtburger', 3290, '1,3,7,11', 0, '0'),
+(7, 2, 'Dupla burger', 3690, '1,3,7,11', 0, '0'),
+(8, 2, 'Bacon burger', 3490, '1,3,7,11', 0, '0'),
+(9, 2, 'Csirkeburger', 3190, '1,3,7,11', 0, '0'),
+(10, 2, 'Vegán burger', 3390, '1,6,11', 0, '0'),
+(11, 3, 'Coca-Cola 0.5l', 790, NULL, 0, '0'),
+(12, 3, 'Coca-Cola Zero 0.5l', 790, NULL, 0, '0'),
+(13, 3, 'Ásványvíz 0.5l', 590, NULL, 0, '0'),
+(14, 3, 'Narancslé 0.3l', 890, NULL, 0, '0'),
+(15, 3, 'Házi limonádé', 990, NULL, 0, '0'),
+(16, 4, 'Csokoládétorta', 1490, '1,3,7,8', 0, '0'),
+(17, 4, 'Somlói galuska', 1590, '1,3,7,8', 0, '0'),
+(18, 4, 'Palacsinta (2 db)', 1290, '1,3,7', 0, '0'),
+(19, 4, 'Sajttorta', 1690, '1,3,7', 0, '0'),
+(20, 4, 'Brownie', 1390, '1,3,7,8', 0, '0'),
+(21, 5, 'Cézár saláta', 2190, '1,3,4,7,10', 0, '0'),
+(22, 5, 'Görög saláta', 1990, '7', 0, '0'),
+(23, 5, 'Tonhalsaláta', 2390, '4,10', 0, '0'),
+(24, 5, 'Csirkés saláta', 2290, '10', 0, '0'),
+(25, 5, 'Vegán saláta', 2090, '8', 0, '0'),
+(26, 6, 'Gulyásleves', 1890, '9', 0, '0'),
+(27, 6, 'Húsleves', 1690, '1,3,9', 0, '0'),
+(28, 6, 'Paradicsomleves', 1490, '1,9', 0, '0'),
+(29, 6, 'Brokkolikrémleves', 1590, '1,7', 0, '0'),
+(30, 6, 'Halászlé', 2190, '4', 0, '0'),
+(31, 7, 'Spaghetti Carbonara', 2590, '1,3,7', 0, '0'),
+(32, 7, 'Bolognai spagetti', 2490, '1,3,7,9', 0, '0'),
+(33, 7, 'Penne Arrabiata', 2390, '1', 0, '0'),
+(34, 7, 'Lasagne', 2790, '1,3,7,9', 0, '0'),
+(35, 7, 'Tejszínes csirkés tészta', 2690, '1,3,7', 0, '0'),
+(36, 8, 'Grillezett csirkemell', 2990, NULL, 0, '0'),
+(37, 8, 'Grill kolbász', 2790, '10', 0, '0'),
+(38, 8, 'BBQ oldalas', 3490, '9,10', 0, '0'),
+(39, 8, 'Grill zöldségtál', 2590, NULL, 0, '0'),
+(40, 8, 'Grill lazac', 3890, '4', 0, '0'),
+(41, 9, 'Rántott hekk', 2890, '1,3,4', 0, '0'),
+(42, 9, 'Grillezett pisztráng', 3390, '4', 0, '0'),
+(43, 9, 'Lazac steak', 3990, '4', 0, '0'),
+(44, 9, 'Harcsa paprikás', 3190, '1,4,7', 0, '0'),
+(45, 9, 'Tőkehal filé', 2990, '4', 0, '0'),
+(46, 10, 'Vegán Buddha tál', 2490, '11', 0, '0'),
+(47, 10, 'Vegán curry', 2590, NULL, 0, '0'),
+(48, 10, 'Falafel tál', 2390, '11', 0, '0'),
+(49, 10, 'Vegán wrap', 2290, '1,10,11', 0, '0'),
+(50, 10, 'Sült zöldségek hummusszal', 2190, '11', 0, '0');
 
 --
 -- Indexek a kiírt táblákhoz
@@ -397,13 +449,13 @@ ALTER TABLE `asztal`
 -- AUTO_INCREMENT a táblához `ertekeles`
 --
 ALTER TABLE `ertekeles`
-  MODIFY `ertek_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
+  MODIFY `ertek_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
 
 --
 -- AUTO_INCREMENT a táblához `etel_tipus`
 --
 ALTER TABLE `etel_tipus`
-  MODIFY `eteltipus_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+  MODIFY `eteltipus_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
 
 --
 -- AUTO_INCREMENT a táblához `pincer`
@@ -415,19 +467,19 @@ ALTER TABLE `pincer`
 -- AUTO_INCREMENT a táblához `pincer_hivas`
 --
 ALTER TABLE `pincer_hivas`
-  MODIFY `hivas_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=21;
+  MODIFY `hivas_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=35;
 
 --
 -- AUTO_INCREMENT a táblához `rendeles`
 --
 ALTER TABLE `rendeles`
-  MODIFY `rendeles_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
+  MODIFY `rendeles_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=28;
 
 --
 -- AUTO_INCREMENT a táblához `rendeles_tetel`
 --
 ALTER TABLE `rendeles_tetel`
-  MODIFY `tetel_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=25;
+  MODIFY `tetel_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=46;
 
 --
 -- AUTO_INCREMENT a táblához `termek`

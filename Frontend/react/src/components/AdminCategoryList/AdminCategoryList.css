@@ -1,0 +1,94 @@
+.admin-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  overflow-y: auto; /* Belső görgetés engedélyezése */
+  flex-grow: 1; /* Kitölti a maradék helyet */
+  padding-right: 0.5rem; /* Hely a görgetősávnak */
+}
+
+/* Sötét görgetősáv a listához */
+.admin-list::-webkit-scrollbar {
+  width: 6px;
+}
+.admin-list::-webkit-scrollbar-track {
+  background: rgba(0,0,0,0.2);
+  border-radius: 10px;
+}
+.admin-list::-webkit-scrollbar-thumb {
+  background: #4B5563;
+  border-radius: 10px;
+}
+.admin-list::-webkit-scrollbar-thumb:hover {
+  background: #6B7280;
+}
+
+/* Sötétített kategória lista elemek */
+.admin-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.25rem;
+  border-radius: var(--radius-md);
+  margin-bottom: 0.75rem;
+  transition: all 0.2s;
+  background: #111827;
+  color: #F3F4F6;
+  border: 1px solid #374151;
+}
+
+.list-text {
+  flex-grow: 1;
+  cursor: pointer;
+  padding: 0.25rem 0;
+  font-size: 1.1rem;
+}
+
+.list-actions {
+  display: flex;
+  gap: 0.25rem;
+}
+
+.admin-list li:hover {
+  background: #374151;
+}
+
+/* Aktív (kiválasztott) kategória */
+.admin-list li.active {
+  background: var(--primary);
+  color: white;
+  border-color: var(--primary);
+}
+
+.admin-list li.active .btn-icon {
+  color: white;
+}
+
+.btn-icon {
+  background: none;
+  border: none;
+  color: #9CA3AF;
+  cursor: pointer;
+  padding: 4px;
+  transition: color 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-icon:hover {
+  color: #60A5FA; /* Kék hover a szerkesztéshez */
+}
+
+/* Törlés gomb specifikus hover (piros) */
+.btn-icon.delete-icon:hover {
+  color: #EF4444 !important; 
+}
+
+.admin-list li.active .btn-icon:hover {
+  color: #f1f1f1;
+}
+
+.admin-list li.active .btn-icon.delete-icon:hover {
+  color: #ffb3b3 !important; /* Világosabb piros aktív kategóriánál */
+}

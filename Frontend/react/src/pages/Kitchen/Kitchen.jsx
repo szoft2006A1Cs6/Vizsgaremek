@@ -25,9 +25,14 @@ export default function KonyhaiKijelzo() {
         fetch(`${API_BASE_URL}/api/Pincer`, { headers }),
         fetch(`${API_BASE_URL}/api/PincerHivas`, { headers })
       ]);
+      
       if (!ordersRes.ok || !callsRes.ok) throw new Error('API hiba történt.');
-      const rawOrders = await ordersRes.json(), rawItems = await itemsRes.json(), rawProducts = await productsRes.json();
-      const rawWaiters = await waitersRes.json(), rawCalls = await callsRes.json();
+      
+      const rawOrders = await ordersRes.json(), 
+            rawItems = await itemsRes.json(), 
+            rawProducts = await productsRes.json(),
+            rawWaiters = await waitersRes.json(), 
+            rawCalls = await callsRes.json();
 
       setOrders(rawOrders.filter(o => o.statusz < 3).map(o => {
         const pincer = rawWaiters.find(p => p.pincerId === o.pincerId);
@@ -35,12 +40,25 @@ export default function KonyhaiKijelzo() {
           const termek = rawProducts.find(t => t.termekId === rt.termekId);
           return { nev: termek ? termek.termekNev : 'Ismeretlen', db: rt.mennyiseg };
         });
-        return { id: o.rendelesId, asztal: o.asztalId, statusz: o.statusz, ido: new Date(o.idopont).toLocaleTimeString('hu-HU', { hour: '2-digit', minute: '2-digit' }), pincer: pincer ? pincer.pincerNev : 'Ismeretlen', tetelek: tetelek, raw: o };
+        return { 
+          id: o.rendelesId, 
+          asztal: o.asztalId, 
+          statusz: o.statusz, 
+          ido: new Date(o.idopont).toLocaleTimeString('hu-HU', { hour: '2-digit', minute: '2-digit' }), 
+          pincer: pincer ? pincer.pincerNev : 'Ismeretlen', 
+          tetelek: tetelek, 
+          raw: o 
+        };
       }).sort((a, b) => new Date(b.raw.idopont) - new Date(a.raw.idopont)));
 
       setCalls(rawCalls.filter(c => c.statusz !== 'Teljesítve').map(c => ({
-        id: c.hivasId, asztal: c.asztalId, tipus: c.statusz || 'Fizetés', ido: new Date(c.idopont).toLocaleTimeString('hu-HU', { hour: '2-digit', minute: '2-digit' }), raw: c
+        id: c.hivasId, 
+        asztal: c.asztalId, 
+        tipus: c.statusz || 'Fizetés', 
+        ido: new Date(c.idopont).toLocaleTimeString('hu-HU', { hour: '2-digit', minute: '2-digit' }), 
+        raw: c
       })).sort((a, b) => new Date(b.raw.idopont) - new Date(a.raw.idopont)));
+      
       setError('');
     } catch (err) { setError('Hiba a szerverhez való kapcsolódás során.'); }
   };
@@ -75,10 +93,24 @@ export default function KonyhaiKijelzo() {
   return (
     <div className="kds-theme">
       <header className="kds-header">
-        <h1 className="kds-title"><span className="material-icons kds-title-icon">soup_kitchen</span> Gusto Bistro</h1>
-        <div style={{ display: 'flex', alignItems: 'center', gap: '1rem' }}>
-          {error && <span style={{ color: '#FCA5A5' }}>{error}</span>}
+        <h1 className="kds-title">
+          <span className="material-icons kds-title-icon">soup_kitchen</span> 
+          Gusto Bistro
+        </h1>
+        
+        <div className="kds-header-actions">
+          {error && <span className="kds-error-msg">{error}</span>}
+          
+          <button onClick={() => navigate('/editmenu')} className="kds-nav-btn" title="Menü szerkesztése">
+            <span className="material-icons">edit_note</span>
+          </button>
+          
+          <button onClick={() => navigate('/editstaff')} className="kds-nav-btn" title="Személyzet szerkesztése">
+            <span className="material-icons">people_alt</span>
+          </button>
+
           <div className="kds-clock">{time}</div>
+          
           <button onClick={() => { localStorage.clear(); navigate('/'); }} className="logout-btn" title="Kijelentkezés">
             <span className="material-icons">logout</span>
           </button>
@@ -95,7 +127,7 @@ export default function KonyhaiKijelzo() {
           <h2 className="kds-sidebar-title"><span className="material-icons">notifications</span> Hívások</h2>
           <div className="kds-calls-list">
             {calls.map(c => ( <KitchenCallAlert key={c.id} call={c} resolveCall={resolveCall} /> ))}
-            {calls.length === 0 && (<div style={{ color: '#9CA3AF', textAlign: 'center', marginTop: '2rem' }}>Nincs aktív hívás</div>)}
+            {calls.length === 0 && (<div className="kds-empty-msg">Nincs aktív hívás</div>)}
           </div>
         </aside>
       </div>

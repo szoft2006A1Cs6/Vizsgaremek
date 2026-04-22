@@ -142,6 +142,32 @@
   },
   {
     "ContainingType": "Rendel\u0151TabletApi.Controllers.EtelTipusController",
+    "Method": "PostEtelTipus",
+    "RelativePath": "api/EtelTipus",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "etelTipus",
+        "Type": "Rendel\u0151TabletApi.Model.EtelTipus",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Rendel\u0151TabletApi.Model.EtelTipus",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Rendel\u0151TabletApi.Controllers.EtelTipusController",
     "Method": "Get",
     "RelativePath": "api/EtelTipus/{id}",
     "HttpMethod": "GET",
@@ -157,6 +183,43 @@
         "Name": "ext",
         "Type": "System.Boolean",
         "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Rendel\u0151TabletApi.Controllers.EtelTipusController",
+    "Method": "PutEtelTipus",
+    "RelativePath": "api/EtelTipus/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "etelTipus",
+        "Type": "Rendel\u0151TabletApi.Model.EtelTipus",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Rendel\u0151TabletApi.Controllers.EtelTipusController",
+    "Method": "DeleteEtelTipus",
+    "RelativePath": "api/EtelTipus/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
       }
     ],
     "ReturnTypes": []

@@ -7,6 +7,8 @@
         public string? TermekNev { get; set; }
         public int Ar { get; set; }
         public string? Allergenek { get; set; }
+        public int Featured {get; set; }
+        public int Kep { get; set; }
 
         public EtelTipus? EtelTipus { get; set; }
 

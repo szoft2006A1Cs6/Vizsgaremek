@@ -1,0 +1,41 @@
+.confirm-modal {
+  max-width: 450px !important;
+}
+
+.confirm-header {
+  justify-content: flex-start !important;
+  gap: 1rem;
+}
+
+.warning-icon {
+  color: #EF4444;
+  font-size: 2.5rem;
+}
+
+.confirm-header h2 {
+  color: #EF4444 !important;
+}
+
+.confirm-message {
+  font-size: 1.1rem;
+  color: #F3F4F6;
+  line-height: 1.5;
+  white-space: pre-wrap;
+  margin: 0;
+}
+
+.btn-delete-confirm {
+  flex: 2;
+  padding: 1rem;
+  background: #EF4444;
+  color: white;
+  border: none;
+  border-radius: var(--radius-md);
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.btn-delete-confirm:hover {
+  background: #DC2626;
+}
