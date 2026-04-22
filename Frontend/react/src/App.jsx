@@ -7,7 +7,7 @@ import Status from './pages/Status/Status';
 import Rating from './pages/Rating/Rating';
 import Kitchen from './pages/Kitchen/Kitchen';
 import Login from './pages/Login/Login';
-
+import EditMenu from './pages/EditMenu/EditMenu';
 
 function App() {
   return (
@@ -20,7 +20,9 @@ function App() {
         <Route path="/payment" element={<Payment />} />
         <Route path="/status" element={<Status />} />
         <Route path="/rating" element={<Rating />} />
-        <Route path='/kitchen' element={<Kitchen/>} />
+        <Route path="/kitchen" element={<Kitchen />} />
+        <Route path="/editmenu" element={<EditMenu />} />
+        <Route path="/editstaff" element={<div>Személyzet szerkesztése oldal (Fejlesztés alatt)</div>} />
       </Routes>
     </Router>
   );

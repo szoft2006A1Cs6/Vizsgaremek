@@ -19,6 +19,41 @@
   margin-bottom: 2rem; 
 }
 
+.kds-header-actions {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.kds-error-msg {
+  color: #FCA5A5;
+}
+
+/* NAVIGÁCIÓS GOMBOK - Most már négyzet alakúak és az óra magasságával egyeznek */
+.kds-nav-btn {
+  background: #1F2937;
+  border: 1px solid #374151;
+  color: #FBC02D;
+  height: 3.5rem; /* Fix magasság */
+  width: 3.5rem;  /* Ugyanaz a szélesség -> Négyzet */
+  border-radius: 0.75rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s;
+}
+
+.kds-nav-btn:hover {
+  background: #374151;
+  color: white;
+  border-color: #6B7280;
+}
+
+.kds-nav-btn .material-icons {
+  font-size: 2rem;
+}
+
 .kds-title { 
   font-family: 'Playfair Display', serif; 
   font-size: 2.5rem; 
@@ -35,9 +70,14 @@
   font-size: 2.5rem; 
 }
 
+/* ÓRA - Fix magasságra állítva, hogy a gombok igazodhassanak hozzá */
 .kds-clock { 
   background-color: #1F2937; 
-  padding: 0.75rem 1.5rem; 
+  height: 3.5rem; /* A gombokkal megegyező magasság */
+  padding: 0 1.5rem; /* Csak oldalsó margó */
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border-radius: 0.75rem; 
   font-size: 1.5rem; 
   font-family: monospace; 
@@ -56,7 +96,7 @@
 }
 
 .logout-btn:hover { 
-  color: white; 
+  color: #EF4444; 
 }
 
 .kds-layout { 
@@ -66,12 +106,6 @@
   flex-grow: 1; 
   min-height: 0; 
   overflow: hidden; 
-}
-
-@media (max-width: 1024px) { 
-  .kds-layout { 
-    grid-template-columns: 1fr; 
-  } 
 }
 
 .kds-orders-grid { 
@@ -113,6 +147,13 @@
   gap: 1rem; 
 }
 
+.kds-empty-msg {
+  color: #9CA3AF; 
+  text-align: center; 
+  margin-top: 2rem;
+}
+
+/* Webkit görgetősávok */
 .kds-orders-section::-webkit-scrollbar, 
 .kds-sidebar::-webkit-scrollbar { 
   width: 6px; 
@@ -121,16 +162,10 @@
 .kds-orders-section::-webkit-scrollbar-track, 
 .kds-sidebar::-webkit-scrollbar-track { 
   background: rgba(0,0,0,0.2); 
-  border-radius: 10px; 
 }
 
 .kds-orders-section::-webkit-scrollbar-thumb, 
 .kds-sidebar::-webkit-scrollbar-thumb { 
   background: #4B5563; 
   border-radius: 10px; 
-}
-
-.kds-orders-section::-webkit-scrollbar-thumb:hover, 
-.kds-sidebar::-webkit-scrollbar-thumb:hover { 
-  background: #6B7280; 
 }
