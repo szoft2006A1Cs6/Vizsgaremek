@@ -45,7 +45,7 @@ export default function KonyhaiKijelzo() {
           asztal: o.asztalId, 
           statusz: o.statusz, 
           ido: new Date(o.idopont).toLocaleTimeString('hu-HU', { hour: '2-digit', minute: '2-digit' }), 
-          pincer: pincer ? pincer.pincerNev : 'Ismeretlen', 
+          pincer: pincer ? pincer.pincerNev : 'Nincs pincér', 
           tetelek: tetelek, 
           raw: o 
         };

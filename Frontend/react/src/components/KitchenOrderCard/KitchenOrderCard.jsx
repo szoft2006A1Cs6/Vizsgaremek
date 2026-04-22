@@ -12,11 +12,17 @@ export default function KitchenOrderCard({ order, updateStatus }) {
 
   const config = getButtonConfig(order.statusz);
 
+  const isNoWaiter = order.raw?.pincerId === 0 || order.pincer.includes('Nincs pincér');
+
   return (
     <div className={`kds-card status-${order.statusz}`}>
       <div className="kds-card-header">
         <span className="kds-table-num">#{order.asztal}</span>
-        <span className="kds-status-badge">{order.pincer}</span>
+        
+        <span className={`kds-status-badge ${isNoWaiter ? 'no-waiter-badge' : ''}`}>
+          {order.pincer}
+        </span>
+        
         <span className="kds-time">{order.ido}</span>
       </div>
       <div className="kds-card-body">

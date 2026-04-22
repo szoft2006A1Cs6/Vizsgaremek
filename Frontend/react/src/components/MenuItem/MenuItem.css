@@ -33,16 +33,18 @@
 
 .menu-item-desc { 
   font-size: 0.9rem; 
-  color: var(--text-muted); 
+  color: var(--tex,t-muted); 
   margin-bottom: 0.5rem; 
   line-height: 1.4; 
 }
 
 .menu-item-badge { 
-  background: var(--primary); 
-  color: white; 
+  background-color: #FCD34D; 
+  color: #000000; 
   font-size: 0.75rem; 
-  padding: 0.2rem 0.5rem; 
-  border-radius: 4px; 
+  padding: 0.3rem 0.6rem; 
+  border-radius: 6px; 
   font-weight: bold; 
+  display: inline-block;
+  margin-top: 0.5rem;
 }

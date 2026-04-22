@@ -45,7 +45,6 @@ export default function AdminProductTable({ products, onEditProduct, onDeletePro
                       <span className="material-icons">edit</span>
                     </button>
                     
-                    {/* ÚJ TÖRLÉS GOMB */}
                     <button className="btn-icon delete-icon" onClick={() => onDeleteProduct(prod)} title="Törlés">
                       <span className="material-icons">delete</span>
                     </button>

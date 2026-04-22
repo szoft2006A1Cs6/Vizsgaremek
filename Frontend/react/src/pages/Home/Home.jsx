@@ -11,9 +11,13 @@ export default function Home() {
   const [asztalSzam, setAsztalSzam] = useState('?');
   const [callStatus, setCallStatus] = useState('idle');
 
+  const [displayList, setDisplayList] = useState([]);
+  const [currentIndex, setCurrentIndex] = useState(0);
+
   useEffect(() => {
     const token = localStorage.getItem('token');
     if (!token) { navigate('/'); return; }
+    
     try {
       const base64Url = token.split('.')[1];
       const base64 = base64Url.replace(/-/g, '+').replace(/_/g, '/');
@@ -23,7 +27,56 @@ export default function Home() {
       const szam = nameClaim.replace(/\D/g, '');
       if (szam) setAsztalSzam(szam);
     } catch (error) { console.error(error); }
+
+    const fetchFeaturedDishes = async () => {
+      try {
+        const res = await fetch(`${API_BASE_URL}/api/Termek`, {
+          headers: { 'Authorization': `Bearer ${token}` }
+        });
+        if (res.ok) {
+          const data = await res.json();
+          const featured = data.filter(p => p.featured === 1 || p.featured === true);
+          
+          if (featured.length > 0) {
+            setDisplayList(featured);
+          } else if (data.length > 0) {
+            setDisplayList(data);
+          }
+        }
+      } catch (error) { console.error("Hiba az ételek betöltésekor:", error); }
+    };
+
+    fetchFeaturedDishes();
   }, [navigate]);
+
+  useEffect(() => {
+    if (displayList.length <= 1) return;
+    
+    const intervalId = setInterval(() => {
+      setCurrentIndex(prevIndex => (prevIndex + 1) % displayList.length);
+    }, 10000);
+
+    return () => clearInterval(intervalId);
+  }, [displayList]);
+
+  const handlePromoClick = () => {
+    if (displayList.length === 0) return;
+    
+    const selectedDish = displayList[currentIndex];
+    
+    const cart = JSON.parse(localStorage.getItem('cart') || '[]');
+    const existingItem = cart.find(item => item.termekId === selectedDish.termekId);
+
+    if (existingItem) {
+      existingItem.quantity += 1;
+    } else {
+      cart.push({ ...selectedDish, quantity: 1 });
+    }
+
+    localStorage.setItem('cart', JSON.stringify(cart));
+    
+    navigate('/categories');
+  };
 
   const handleSegitseg = async () => {
     if (callStatus !== 'idle') return;
@@ -66,7 +119,11 @@ export default function Home() {
       </main>
 
       <footer className="home-footer">
-        <PromoCard />
+        <PromoCard 
+          dish={displayList[currentIndex]} 
+          onClick={handlePromoClick} 
+        />
+        
         <button 
           className="card footer-help-btn"
           onClick={handleSegitseg}

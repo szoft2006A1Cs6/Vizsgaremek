@@ -17,7 +17,7 @@ export default function MenuItem({ product, onAdd }) {
         </div>
         <p className="menu-item-desc"></p>
         {product.allergenek && (
-          <span className="menu-item-badge" style={{ background: 'var(--dark)', color: 'white' }}>
+          <span className="menu-item-badge">
             Allergének: {product.allergenek}
           </span>
         )}

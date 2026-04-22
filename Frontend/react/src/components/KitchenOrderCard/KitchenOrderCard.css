@@ -35,6 +35,21 @@
   border-radius: 8px; 
   text-transform: uppercase; 
   letter-spacing: 1px; 
+  color: #E5E7EB;
+}
+
+.kds-status-badge.no-waiter-badge {
+  background-color: rgba(239, 68, 68, 0.2); 
+  color: #EF4444; 
+  border: 1px solid #EF4444;
+  font-weight: bold;
+  animation: pulse-red 2s infinite;
+}
+
+@keyframes pulse-red {
+  0% { box-shadow: 0 0 0 0 rgba(239, 68, 68, 0.4); }
+  70% { box-shadow: 0 0 0 8px rgba(239, 68, 68, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(239, 68, 68, 0); }
 }
 
 .kds-time { 
@@ -94,26 +109,11 @@
   color: white; 
 }
 
-.kds-btn-accept { 
-  background-color: #3B82F6; 
-}
+.kds-btn-accept { background-color: #3B82F6; }
+.kds-btn-accept:hover { background-color: #2563EB; }
 
-.kds-btn-accept:hover { 
-  background-color: #2563EB; 
-}
+.kds-btn-serve { background-color: #F59E0B; }
+.kds-btn-serve:hover { background-color: #D97706; }
 
-.kds-btn-serve { 
-  background-color: #F59E0B; 
-}
-
-.kds-btn-serve:hover { 
-  background-color: #D97706; 
-}
-
-.kds-btn-ready { 
-  background-color: #16A34A; 
-}
-
-.kds-btn-ready:hover { 
-  background-color: #15803D; 
-}
+.kds-btn-ready { background-color: #16A34A; }
+.kds-btn-ready:hover { background-color: #15803D; }

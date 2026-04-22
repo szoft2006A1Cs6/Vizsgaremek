@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
-import PageHeader from '../../components/PageHeader/PageHeader'; // FRISSÍTVE
+import PageHeader from '../../components/PageHeader/PageHeader';
 import PaymentSummary from '../../components/PaymentSummary/PaymentSummary';
 import PaymentMethods from '../../components/PaymentMethods/PaymentMethods';
 import AfkTimeout from '../../components/AfkTimeout/AfkTimeout';
@@ -36,8 +36,17 @@ export default function Payment() {
   const handlePayment = async (fizetesiMod) => {
     if (isProcessing) return;
     setIsProcessing(true);
-    let randomPincerId = 1;
-    if (waiters && waiters.length > 0) randomPincerId = waiters[Math.floor(Math.random() * waiters.length)].pincerId;
+    
+    let assignedPincerId = 0;
+    
+    if (waiters && waiters.length > 0) {
+      const activeWaiters = waiters.filter(w => w.munka === 1);
+      
+      if (activeWaiters.length > 0) {
+        const randomIndex = Math.floor(Math.random() * activeWaiters.length);
+        assignedPincerId = activeWaiters[randomIndex].pincerId;
+      }
+    }
 
     const token = localStorage.getItem('token');
     const headers = { 'Content-Type': 'application/json', 'Authorization': `Bearer ${token}` };
@@ -46,7 +55,12 @@ export default function Payment() {
     try {
       const orderRes = await fetch(`${API_BASE_URL}/api/Rendeles`, {
         method: 'POST', headers,
-        body: JSON.stringify({ asztalId: asztalSzam || 1, idopont: localTime, statusz: 0, pincerId: randomPincerId })
+        body: JSON.stringify({ 
+          asztalId: asztalSzam || 1, 
+          idopont: localTime, 
+          statusz: 0, 
+          pincerId: assignedPincerId
+        })
       });
       if (!orderRes.ok) throw new Error("Rendelés mentése sikertelen");
       const newOrderId = (await orderRes.json()).rendelesId;
