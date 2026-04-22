@@ -3,8 +3,8 @@
 -- https://www.phpmyadmin.net/
 --
 -- Gép: 127.0.0.1
--- Létrehozás ideje: 2026. Ápr 22. 12:58
--- Kiszolgáló verziója: 9.9.0
+-- Létrehozás ideje: 2026. Ápr 22. 18:16
+-- Kiszolgáló verziója: 10.4.32-MariaDB
 -- PHP verzió: 8.2.12
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
@@ -20,10 +20,6 @@ SET time_zone = "+00:00";
 --
 -- Adatbázis: `rendelotablet`
 --
-
-DROP DATABASE IF EXISTS rendelotablet;
-CREATE DATABASE rendelotablet;
-USE rendelotablet;
 
 -- --------------------------------------------------------
 
@@ -114,7 +110,8 @@ INSERT INTO `etel_tipus` (`eteltipus_id`, `tipus_nev`) VALUES
 (7, 'Tészta'),
 (8, 'Grill'),
 (9, 'Hal'),
-(10, 'Vegán');
+(10, 'Vegán'),
+(18, 'Köretek');
 
 -- --------------------------------------------------------
 
@@ -353,36 +350,42 @@ INSERT INTO `termek` (`termek_id`, `eteltipus_id`, `termek_nev`, `ar`, `allergen
 (18, 4, 'Palacsinta (2 db)', 1290, '1,3,7', 0, 'https://i.imgur.com/Dq0Zvai.jpeg'),
 (19, 4, 'Sajttorta', 1690, '1,3,7', 0, 'https://i.imgur.com/2CFpsev.jpeg'),
 (20, 4, 'Brownie', 1390, '1,3,7,8', 0, 'https://i.imgur.com/dl0ec4E.jpeg'),
-(21, 5, 'Cézár saláta', 2190, '1,3,4,7,10', 0, '0'),
-(22, 5, 'Görög saláta', 1990, '7', 0, '0'),
-(23, 5, 'Tonhalsaláta', 2390, '4,10', 0, '0'),
-(24, 5, 'Csirkés saláta', 2290, '10', 0, '0'),
-(25, 5, 'Vegán saláta', 2090, '8', 0, '0'),
-(26, 6, 'Gulyásleves', 1890, '9', 0, '0'),
-(27, 6, 'Húsleves', 1690, '1,3,9', 0, '0'),
-(28, 6, 'Paradicsomleves', 1490, '1,9', 0, '0'),
-(29, 6, 'Brokkolikrémleves', 1590, '1,7', 0, '0'),
-(30, 6, 'Halászlé', 2190, '4', 0, '0'),
-(31, 7, 'Spaghetti Carbonara', 2590, '1,3,7', 0, '0'),
-(32, 7, 'Bolognai spagetti', 2490, '1,3,7,9', 0, '0'),
-(33, 7, 'Penne Arrabiata', 2390, '1', 0, '0'),
-(34, 7, 'Lasagne', 2790, '1,3,7,9', 0, '0'),
-(35, 7, 'Tejszínes csirkés tészta', 2690, '1,3,7', 0, '0'),
-(36, 8, 'Grillezett csirkemell', 2990, NULL, 0, '0'),
-(37, 8, 'Grill kolbász', 2790, '10', 0, '0'),
-(38, 8, 'BBQ oldalas', 3490, '9,10', 0, '0'),
-(39, 8, 'Grill zöldségtál', 2590, NULL, 0, '0'),
-(40, 8, 'Grill lazac', 3890, '4', 0, '0'),
-(41, 9, 'Rántott hekk', 2890, '1,3,4', 0, '0'),
-(42, 9, 'Grillezett pisztráng', 3390, '4', 0, '0'),
-(43, 9, 'Lazac steak', 3990, '4', 0, '0'),
-(44, 9, 'Harcsa paprikás', 3190, '1,4,7', 0, '0'),
-(45, 9, 'Tőkehal filé', 2990, '4', 0, '0'),
-(46, 10, 'Vegán Buddha tál', 2490, '11', 0, '0'),
-(47, 10, 'Vegán curry', 2590, NULL, 0, '0'),
-(48, 10, 'Falafel tál', 2390, '11', 0, '0'),
-(49, 10, 'Vegán wrap', 2290, '1,10,11', 0, '0'),
-(50, 10, 'Sült zöldségek hummusszal', 2190, '11', 0, '0');
+(21, 5, 'Cézár saláta', 2190, '1,3,4,7,10', 0, 'https://i.imgur.com/Spc1MvX.jpeg'),
+(22, 5, 'Görög saláta', 1990, '7', 0, 'https://i.imgur.com/wNkplTm.jpeg'),
+(23, 5, 'Tonhalsaláta', 2390, '4,10', 0, 'https://i.imgur.com/REWucLT.jpeg'),
+(24, 5, 'Csirkés saláta', 2290, '10', 0, 'https://i.imgur.com/QO1IxVL.jpeg'),
+(25, 5, 'Vegán saláta', 2090, '8', 0, 'https://i.imgur.com/csaptWV.jpeg'),
+(26, 6, 'Gulyásleves', 1890, '9', 0, 'https://i.imgur.com/fuW16Ee.jpeg'),
+(27, 6, 'Húsleves', 1690, '1,3,9', 0, 'https://i.imgur.com/tu6vrDs.jpeg'),
+(28, 6, 'Paradicsomleves', 1490, '1,9', 0, 'https://i.imgur.com/sOVqG29.jpeg'),
+(29, 6, 'Brokkolikrémleves', 1590, '1,7', 0, 'https://i.imgur.com/lwkRo8m.jpeg'),
+(30, 6, 'Halászlé', 2190, '4', 0, 'https://i.imgur.com/9gAOCLj.jpeg'),
+(31, 7, 'Spaghetti Carbonara', 2590, '1,3,7', 0, 'https://i.imgur.com/64MwOEX.jpeg'),
+(32, 7, 'Bolognai spagetti', 2490, '1,3,7,9', 0, 'https://i.imgur.com/uCDGcDx.jpeg'),
+(33, 7, 'Penne Arrabiata', 2390, '1', 0, 'https://i.imgur.com/foVmOiT.jpeg'),
+(34, 7, 'Lasagne', 2790, '1,3,7,9', 0, 'https://i.imgur.com/8mBnzSU.jpeg'),
+(35, 7, 'Tejszínes csirkés tészta', 2690, '1,3,7', 0, 'https://i.imgur.com/VhCmTk2.jpeg'),
+(36, 8, 'Grillezett csirkemell', 2990, '', 0, 'https://i.imgur.com/TkOEP3N.jpeg'),
+(37, 8, 'Grill kolbász', 2790, '10', 0, 'https://i.imgur.com/54mpC9O.jpeg'),
+(38, 8, 'BBQ oldalas', 3490, '9,10', 0, 'https://i.imgur.com/LRJnqsJ.jpeg'),
+(39, 8, 'Grill zöldségtál', 2590, '', 0, 'https://i.imgur.com/JneHIPd.jpeg'),
+(40, 8, 'Grill lazac', 3890, '4', 0, 'https://i.imgur.com/msNBJyT.jpeg'),
+(41, 9, 'Rántott hekk', 2890, '1,3,4', 0, 'https://i.imgur.com/2x5tpsd.jpeg'),
+(42, 9, 'Grillezett pisztráng', 3390, '4', 0, 'https://i.imgur.com/MDUxzRj.jpeg'),
+(43, 9, 'Lazac steak', 3990, '4', 0, 'https://i.imgur.com/mpqaMJV.jpeg'),
+(44, 9, 'Harcsa paprikás', 3190, '1,4,7', 0, 'https://i.imgur.com/2C6kIy3.jpeg'),
+(45, 9, 'Tőkehal filé', 2990, '4', 0, 'https://i.imgur.com/G2Z1RNV.jpeg'),
+(46, 10, 'Vegán Buddha tál', 2490, '11', 0, 'https://i.imgur.com/m2WR5RK.jpeg'),
+(47, 10, 'Vegán curry', 2590, '', 0, 'https://i.imgur.com/EiIs8FU.jpeg'),
+(48, 10, 'Falafel tál', 2390, '11', 0, 'https://i.imgur.com/bxZ677k.jpeg'),
+(49, 10, 'Vegán wrap', 2290, '1,10,11', 0, 'https://i.imgur.com/ElAafQE.jpeg'),
+(50, 10, 'Sült zöldségek hummusszal', 2190, '11', 0, 'https://i.imgur.com/JszmI5C.jpeg'),
+(53, 18, 'Hasábburgonya', 600, '', 0, 'https://i.imgur.com/30sQT7w.jpeg'),
+(54, 18, 'Párolt rizs', 500, '', 0, 'https://i.imgur.com/cySb6Rd.jpeg'),
+(55, 18, 'Vegyes Köret', 650, '', 0, 'https://i.imgur.com/DgEbaVN.jpeg'),
+(56, 18, 'Édesburgonya', 600, '', 0, 'https://i.imgur.com/DWMVAzv.jpeg'),
+(57, 18, 'Burgonyapüré', 600, '7', 0, 'https://i.imgur.com/6rkghLK.jpeg'),
+(58, 18, 'Nokedli', 600, '1', 0, 'https://i.imgur.com/6xtfBKF.jpeg');
 
 --
 -- Indexek a kiírt táblákhoz
@@ -463,7 +466,7 @@ ALTER TABLE `ertekeles`
 -- AUTO_INCREMENT a táblához `etel_tipus`
 --
 ALTER TABLE `etel_tipus`
-  MODIFY `eteltipus_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
+  MODIFY `eteltipus_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
 
 --
 -- AUTO_INCREMENT a táblához `pincer`
@@ -493,7 +496,7 @@ ALTER TABLE `rendeles_tetel`
 -- AUTO_INCREMENT a táblához `termek`
 --
 ALTER TABLE `termek`
-  MODIFY `termek_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=53;
+  MODIFY `termek_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=59;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
