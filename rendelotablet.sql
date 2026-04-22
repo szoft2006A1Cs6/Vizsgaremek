@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Gép: 127.0.0.1
--- Létrehozás ideje: 2026. Ápr 22. 11:23
+-- Létrehozás ideje: 2026. Ápr 22. 12:24
 -- Kiszolgáló verziója: 10.4.32-MariaDB
 -- PHP verzió: 8.2.12
 
@@ -86,7 +86,8 @@ INSERT INTO `ertekeles` (`ertek_id`, `rendeles_id`, `idopont`, `pontszam`) VALUE
 (14, 22, '2026-04-21 10:32:17', 4),
 (15, 23, '2026-04-21 10:38:02', 5),
 (16, 25, '2026-04-21 10:51:10', 5),
-(17, 26, '2026-04-21 11:50:35', 4);
+(17, 26, '2026-04-21 11:50:35', 4),
+(18, 28, '2026-04-22 12:11:33', 3);
 
 -- --------------------------------------------------------
 
@@ -123,24 +124,25 @@ INSERT INTO `etel_tipus` (`eteltipus_id`, `tipus_nev`) VALUES
 
 CREATE TABLE `pincer` (
   `pincer_id` int(11) NOT NULL,
-  `pincer_nev` text NOT NULL
+  `pincer_nev` text NOT NULL,
+  `munka` tinyint(1) NOT NULL DEFAULT 0
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_hungarian_ci;
 
 --
 -- A tábla adatainak kiíratása `pincer`
 --
 
-INSERT INTO `pincer` (`pincer_id`, `pincer_nev`) VALUES
-(1, 'Kiss Péter'),
-(2, 'Nagy Anna'),
-(3, 'Tóth László'),
-(4, 'Szabó Réka'),
-(5, 'Varga Márton'),
-(6, 'Horváth Luca'),
-(7, 'Kovács Bence'),
-(8, 'Fekete Dóra'),
-(9, 'Molnár Ákos'),
-(10, 'Balogh Eszter');
+INSERT INTO `pincer` (`pincer_id`, `pincer_nev`, `munka`) VALUES
+(1, 'Kiss Péter', 0),
+(2, 'Nagy Anna', 0),
+(3, 'Tóth László', 0),
+(4, 'Szabó Réka', 0),
+(5, 'Varga Márton', 0),
+(6, 'Horváth Luca', 0),
+(7, 'Kovács Bence', 0),
+(8, 'Fekete Dóra', 0),
+(9, 'Molnár Ákos', 0),
+(10, 'Balogh Eszter', 0);
 
 -- --------------------------------------------------------
 
@@ -193,7 +195,10 @@ INSERT INTO `pincer_hivas` (`hivas_id`, `asztal_id`, `idopont`, `statusz`) VALUE
 (31, 1, '2026-04-21 10:50:19', 'Bankkártyás Fizetés'),
 (32, 1, '2026-04-21 10:51:16', 'Teljesítve'),
 (33, 1, '2026-04-21 11:42:06', 'Bankkártyás Fizetés'),
-(34, 1, '2026-04-21 13:23:47', 'Bankkártyás Fizetés');
+(34, 1, '2026-04-21 13:23:47', 'Bankkártyás Fizetés'),
+(35, 1, '2026-04-22 12:10:07', 'Segítség Kérés'),
+(36, 1, '2026-04-22 12:11:03', 'Teljesítve'),
+(37, 1, '2026-04-22 12:13:09', 'Teljesítve');
 
 -- --------------------------------------------------------
 
@@ -238,7 +243,8 @@ INSERT INTO `rendeles` (`rendeles_id`, `pincer_id`, `asztal_id`, `idopont`, `sta
 (24, 2, 1, '2026-04-21 10:38:37', 3),
 (25, 7, 1, '2026-04-21 10:50:19', 3),
 (26, 8, 1, '2026-04-21 11:42:06', 3),
-(27, 3, 1, '2026-04-21 13:23:47', 0);
+(27, 3, 1, '2026-04-21 13:23:47', 0),
+(28, 6, 1, '2026-04-22 12:11:03', 3);
 
 -- --------------------------------------------------------
 
@@ -302,7 +308,9 @@ INSERT INTO `rendeles_tetel` (`tetel_id`, `rendeles_id`, `termek_id`, `mennyiseg
 (42, 26, 2, 1),
 (43, 27, 7, 1),
 (44, 27, 15, 1),
-(45, 27, 35, 1);
+(45, 27, 35, 1),
+(46, 28, 32, 1),
+(47, 28, 11, 1);
 
 -- --------------------------------------------------------
 
@@ -449,7 +457,7 @@ ALTER TABLE `asztal`
 -- AUTO_INCREMENT a táblához `ertekeles`
 --
 ALTER TABLE `ertekeles`
-  MODIFY `ertek_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
+  MODIFY `ertek_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
 
 --
 -- AUTO_INCREMENT a táblához `etel_tipus`
@@ -467,25 +475,25 @@ ALTER TABLE `pincer`
 -- AUTO_INCREMENT a táblához `pincer_hivas`
 --
 ALTER TABLE `pincer_hivas`
-  MODIFY `hivas_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=35;
+  MODIFY `hivas_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=38;
 
 --
 -- AUTO_INCREMENT a táblához `rendeles`
 --
 ALTER TABLE `rendeles`
-  MODIFY `rendeles_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=28;
+  MODIFY `rendeles_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=29;
 
 --
 -- AUTO_INCREMENT a táblához `rendeles_tetel`
 --
 ALTER TABLE `rendeles_tetel`
-  MODIFY `tetel_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=46;
+  MODIFY `tetel_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=48;
 
 --
 -- AUTO_INCREMENT a táblához `termek`
 --
 ALTER TABLE `termek`
-  MODIFY `termek_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=51;
+  MODIFY `termek_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=53;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
