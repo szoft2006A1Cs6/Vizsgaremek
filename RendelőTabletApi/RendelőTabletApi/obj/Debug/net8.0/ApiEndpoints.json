@@ -252,6 +252,27 @@
   },
   {
     "ContainingType": "Rendel\u0151TabletApi.Controllers.PincerController",
+    "Method": "PutPincer",
+    "RelativePath": "api/Pincer/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "pincer",
+        "Type": "Rendel\u0151TabletApi.Model.Pincer",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Rendel\u0151TabletApi.Controllers.PincerController",
     "Method": "Delete",
     "RelativePath": "api/Pincer/{id}",
     "HttpMethod": "DELETE",

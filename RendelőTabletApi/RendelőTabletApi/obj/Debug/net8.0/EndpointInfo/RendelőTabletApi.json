@@ -408,6 +408,46 @@
       }
     },
     "/api/Pincer/{id}": {
+      "put": {
+        "tags": [
+          "Pincer"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Pincer"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Pincer"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/Pincer"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
       "delete": {
         "tags": [
           "Pincer"
@@ -1031,6 +1071,10 @@
           "pincerNev": {
             "type": "string",
             "nullable": true
+          },
+          "munka": {
+            "type": "integer",
+            "format": "int32"
           },
           "rendelesek": {
             "type": "array",

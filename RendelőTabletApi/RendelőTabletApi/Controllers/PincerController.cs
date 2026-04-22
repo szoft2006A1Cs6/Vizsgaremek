@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using RendelőTabletApi.Model;
 
 namespace RendelőTabletApi.Controllers
@@ -30,6 +31,33 @@ namespace RendelőTabletApi.Controllers
             _context.Pincerek.Add(pincer);
             _context.SaveChanges();
             return CreatedAtAction(nameof(Get), pincer);
+        }
+
+        [HttpPut("{id}")]
+        public async Task<IActionResult> PutPincer(int id, Pincer pincer)
+        {
+            if (id != pincer.PincerId)
+            {
+                return BadRequest();
+            }
+            _context.Entry(pincer).State = EntityState.Modified;
+
+            try
+            {
+                await _context.SaveChangesAsync();
+            }
+            catch (DbUpdateConcurrencyException)
+            {
+                if (!_context.Pincerek.Any(e => e.PincerId == id))
+                {
+                    return NotFound();
+                }
+                else
+                {
+                    throw;
+                }
+            }
+            return NoContent();
         }
 
         [Authorize(Roles = "Staff")]
