@@ -15,18 +15,20 @@ export default function EditMenu() {
   const [selectedCategoryId, setSelectedCategoryId] = useState(null);
   const [loading, setLoading] = useState(true);
 
+  // Modal állapotok
   const [showCategoryModal, setShowCategoryModal] = useState(false);
   const [showProductModal, setShowProductModal] = useState(false);
   const [editingCategory, setEditingCategory] = useState(null);
   const [editingProduct, setEditingProduct] = useState(null);
   const [itemToDelete, setItemToDelete] = useState(null); 
 
+  // Form állapotok
   const [categoryName, setCategoryName] = useState('');
   const [productName, setProductName] = useState('');
   const [productPrice, setProductPrice] = useState('');
   const [productAllergens, setProductAllergens] = useState('');
   const [productFeatured, setProductFeatured] = useState(false);
-  const [productImage, setProductImage] = useState('');
+  const [productImage, setProductImage] = useState(''); 
 
   useEffect(() => { fetchCategories(); }, []);
   useEffect(() => { if (selectedCategoryId) fetchProducts(selectedCategoryId); }, [selectedCategoryId]);
@@ -61,9 +63,15 @@ export default function EditMenu() {
     const method = editingCategory ? 'PUT' : 'POST';
     const url = editingCategory ? `${API_BASE_URL}/api/EtelTipus/${editingCategory.eteltipusId}` : `${API_BASE_URL}/api/EtelTipus`;
     
-    const body = editingCategory 
-      ? { ...editingCategory, tipusNev: categoryName } 
-      : { tipusNev: categoryName };
+    // Alap body, ID nélkül új létrehozáskor
+    const body = {
+      tipusNev: categoryName
+    };
+
+    // Ha módosítunk, hozzáadjuk az ID-t
+    if (editingCategory) {
+      body.eteltipusId = editingCategory.eteltipusId;
+    }
 
     try {
       const res = await fetch(url, {
@@ -74,6 +82,9 @@ export default function EditMenu() {
       if (res.ok) {
         fetchCategories();
         closeModals();
+      } else {
+        const errorData = await res.json();
+        console.error("Validációs hiba kategóriánál:", errorData);
       }
     } catch (err) { console.error(err); }
   };
@@ -84,15 +95,23 @@ export default function EditMenu() {
     const method = editingProduct ? 'PUT' : 'POST';
     const url = editingProduct ? `${API_BASE_URL}/api/Termek/${editingProduct.termekId}` : `${API_BASE_URL}/api/Termek`;
 
+    // Alap body, ID nélkül új létrehozáskor
     const body = {
-      termekId: editingProduct ? editingProduct.termekId : 0,
       termekNev: productName,
       ar: parseInt(productPrice),
-      allergenek: productAllergens,
+      allergenek: productAllergens || "",
       eteltipusId: selectedCategoryId,
-      featured: productFeatured ? true : false,
-      kep: productImage
+      
+      // JAVÍTÁS: true/false helyett 1-et vagy 0-t küldünk a C# backendnek!
+      featured: productFeatured ? 1 : 0, 
+      
+      kep: productImage || ""
     };
+
+    // Ha módosítunk, hozzáadjuk az ID-t
+    if (editingProduct) {
+      body.termekId = editingProduct.termekId;
+    }
 
     try {
       const res = await fetch(url, {
@@ -100,9 +119,13 @@ export default function EditMenu() {
         headers: { 'Content-Type': 'application/json', 'Authorization': `Bearer ${token}` },
         body: JSON.stringify(body)
       });
+      
       if (res.ok) {
         fetchProducts(selectedCategoryId);
         closeModals();
+      } else {
+        const errorData = await res.json();
+        console.error("Validációs hiba terméknél:", errorData);
       }
     } catch (err) { console.error(err); }
   };
@@ -184,7 +207,10 @@ export default function EditMenu() {
     setProductName(prod.termekNev);
     setProductPrice(prod.ar);
     setProductAllergens(prod.allergenek || '');
-    setProductFeatured(prod.featured ? true : false);
+    
+    // A C#-ból érkező számot (1 vagy 0) true/false-ra alakítjuk a React számára
+    setProductFeatured(prod.featured === 1 || prod.featured === true); 
+    
     setProductImage(prod.kep || '');
     setShowProductModal(true);
   };

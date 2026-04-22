@@ -8,7 +8,7 @@
         public int Ar { get; set; }
         public string? Allergenek { get; set; }
         public int Featured {get; set; }
-        public int Kep { get; set; }
+        public string? Kep { get; set; }
 
         public EtelTipus? EtelTipus { get; set; }
 

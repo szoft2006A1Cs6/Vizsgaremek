@@ -3,20 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\Bende\\Documents\\GitHub\\Vizsgaremek\\Rendel\u0151TabletApi\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{111ED883-AB23-45C6-A17B-642EDD5B6E00}|Rendel\u0151TabletApi\\Rendel\u0151TabletApi.csproj|c:\\users\\bende\\documents\\github\\vizsgaremek\\rendel\u0151tabletapi\\rendel\u0151tabletapi\\controllers\\eteltipuscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{111ED883-AB23-45C6-A17B-642EDD5B6E00}|Rendel\u0151TabletApi\\Rendel\u0151TabletApi.csproj|solutionrelative:rendel\u0151tabletapi\\controllers\\eteltipuscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{111ED883-AB23-45C6-A17B-642EDD5B6E00}|Rendel\u0151TabletApi\\Rendel\u0151TabletApi.csproj|c:\\users\\bende\\documents\\github\\vizsgaremek\\rendel\u0151tabletapi\\rendel\u0151tabletapi\\model\\pincer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{111ED883-AB23-45C6-A17B-642EDD5B6E00}|Rendel\u0151TabletApi\\Rendel\u0151TabletApi.csproj|solutionrelative:rendel\u0151tabletapi\\model\\pincer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{111ED883-AB23-45C6-A17B-642EDD5B6E00}|Rendel\u0151TabletApi\\Rendel\u0151TabletApi.csproj|c:\\users\\bende\\documents\\github\\vizsgaremek\\rendel\u0151tabletapi\\rendel\u0151tabletapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{111ED883-AB23-45C6-A17B-642EDD5B6E00}|Rendel\u0151TabletApi\\Rendel\u0151TabletApi.csproj|solutionrelative:rendel\u0151tabletapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{111ED883-AB23-45C6-A17B-642EDD5B6E00}|Rendel\u0151TabletApi\\Rendel\u0151TabletApi.csproj|c:\\users\\bende\\documents\\github\\vizsgaremek\\rendel\u0151tabletapi\\rendel\u0151tabletapi\\model\\termek.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{111ED883-AB23-45C6-A17B-642EDD5B6E00}|Rendel\u0151TabletApi\\Rendel\u0151TabletApi.csproj|solutionrelative:rendel\u0151tabletapi\\model\\termek.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{111ED883-AB23-45C6-A17B-642EDD5B6E00}|Rendel\u0151TabletApi\\Rendel\u0151TabletApi.csproj|c:\\users\\bende\\documents\\github\\vizsgaremek\\rendel\u0151tabletapi\\rendel\u0151tabletapi\\controllers\\termekcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{111ED883-AB23-45C6-A17B-642EDD5B6E00}|Rendel\u0151TabletApi\\Rendel\u0151TabletApi.csproj|solutionrelative:rendel\u0151tabletapi\\controllers\\termekcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{111ED883-AB23-45C6-A17B-642EDD5B6E00}|Rendel\u0151TabletApi\\Rendel\u0151TabletApi.csproj|c:\\users\\bende\\documents\\github\\vizsgaremek\\rendel\u0151tabletapi\\rendel\u0151tabletapi\\model\\termek.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{111ED883-AB23-45C6-A17B-642EDD5B6E00}|Rendel\u0151TabletApi\\Rendel\u0151TabletApi.csproj|solutionrelative:rendel\u0151tabletapi\\model\\termek.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{111ED883-AB23-45C6-A17B-642EDD5B6E00}|Rendel\u0151TabletApi\\Rendel\u0151TabletApi.csproj|c:\\users\\bende\\documents\\github\\vizsgaremek\\rendel\u0151tabletapi\\rendel\u0151tabletapi\\controllers\\eteltipuscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{111ED883-AB23-45C6-A17B-642EDD5B6E00}|Rendel\u0151TabletApi\\Rendel\u0151TabletApi.csproj|solutionrelative:rendel\u0151tabletapi\\controllers\\eteltipuscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{111ED883-AB23-45C6-A17B-642EDD5B6E00}|Rendel\u0151TabletApi\\Rendel\u0151TabletApi.csproj|c:\\users\\bende\\documents\\github\\vizsgaremek\\rendel\u0151tabletapi\\rendel\u0151tabletapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{111ED883-AB23-45C6-A17B-642EDD5B6E00}|Rendel\u0151TabletApi\\Rendel\u0151TabletApi.csproj|solutionrelative:rendel\u0151tabletapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{111ED883-AB23-45C6-A17B-642EDD5B6E00}|Rendel\u0151TabletApi\\Rendel\u0151TabletApi.csproj|c:\\users\\bende\\documents\\github\\vizsgaremek\\rendel\u0151tabletapi\\rendel\u0151tabletapi\\controllers\\ertekelescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -94,15 +98,28 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Pincer.cs",
+              "DocumentMoniker": "C:\\Users\\Bende\\Documents\\GitHub\\Vizsgaremek\\Rendel\u0151TabletApi\\Rendel\u0151TabletApi\\Model\\Pincer.cs",
+              "RelativeDocumentMoniker": "Rendel\u0151TabletApi\\Model\\Pincer.cs",
+              "ToolTip": "C:\\Users\\Bende\\Documents\\GitHub\\Vizsgaremek\\Rendel\u0151TabletApi\\Rendel\u0151TabletApi\\Model\\Pincer.cs",
+              "RelativeToolTip": "Rendel\u0151TabletApi\\Model\\Pincer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-22T10:19:38.919Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "EtelTipusController.cs",
               "DocumentMoniker": "C:\\Users\\Bende\\Documents\\GitHub\\Vizsgaremek\\Rendel\u0151TabletApi\\Rendel\u0151TabletApi\\Controllers\\EtelTipusController.cs",
               "RelativeDocumentMoniker": "Rendel\u0151TabletApi\\Controllers\\EtelTipusController.cs",
@@ -128,7 +145,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "Termek.cs",
               "DocumentMoniker": "C:\\Users\\Bende\\Documents\\GitHub\\Vizsgaremek\\Rendel\u0151TabletApi\\Rendel\u0151TabletApi\\Model\\Termek.cs",
               "RelativeDocumentMoniker": "Rendel\u0151TabletApi\\Model\\Termek.cs",
@@ -141,7 +158,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "Ertekeles.cs",
               "DocumentMoniker": "C:\\Users\\Bende\\Documents\\GitHub\\Vizsgaremek\\Rendel\u0151TabletApi\\Rendel\u0151TabletApi\\Model\\Ertekeles.cs",
               "RelativeDocumentMoniker": "Rendel\u0151TabletApi\\Model\\Ertekeles.cs",
@@ -153,7 +170,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "ErtekelesController.cs",
               "DocumentMoniker": "C:\\Users\\Bende\\Documents\\GitHub\\Vizsgaremek\\Rendel\u0151TabletApi\\Rendel\u0151TabletApi\\Controllers\\ErtekelesController.cs",
               "RelativeDocumentMoniker": "Rendel\u0151TabletApi\\Controllers\\ErtekelesController.cs",
@@ -161,12 +178,11 @@
               "RelativeToolTip": "Rendel\u0151TabletApi\\Controllers\\ErtekelesController.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAuwBoAAAAPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-20T18:34:28.414Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-20T18:34:28.414Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "PincerHivasController.cs",
               "DocumentMoniker": "C:\\Users\\Bende\\Documents\\GitHub\\Vizsgaremek\\Rendel\u0151TabletApi\\Rendel\u0151TabletApi\\Controllers\\PincerHivasController.cs",
               "RelativeDocumentMoniker": "Rendel\u0151TabletApi\\Controllers\\PincerHivasController.cs",
@@ -178,7 +194,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\Bende\\Documents\\GitHub\\Vizsgaremek\\Rendel\u0151TabletApi\\Rendel\u0151TabletApi\\Program.cs",
               "RelativeDocumentMoniker": "Rendel\u0151TabletApi\\Program.cs",
@@ -186,12 +202,11 @@
               "RelativeToolTip": "Rendel\u0151TabletApi\\Program.cs",
               "ViewState": "AgIAAA0AAAAAAAAAAAAQwGcAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-15T21:24:24.676Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-15T21:24:24.676Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "RendelesTetelController.cs",
               "DocumentMoniker": "C:\\Users\\Bende\\Documents\\GitHub\\Vizsgaremek\\Rendel\u0151TabletApi\\Rendel\u0151TabletApi\\Controllers\\RendelesTetelController.cs",
               "RelativeDocumentMoniker": "Rendel\u0151TabletApi\\Controllers\\RendelesTetelController.cs",
@@ -203,7 +218,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "AuthController.cs",
               "DocumentMoniker": "C:\\Users\\Bende\\Documents\\GitHub\\Vizsgaremek\\Rendel\u0151TabletApi\\Rendel\u0151TabletApi\\Controllers\\AuthController.cs",
               "RelativeDocumentMoniker": "Rendel\u0151TabletApi\\Controllers\\AuthController.cs",
@@ -215,7 +230,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 17,
               "Title": "RendelesTetelControllerTest.cs",
               "DocumentMoniker": "C:\\Users\\Bende\\Documents\\GitHub\\Vizsgaremek\\Rendel\u0151TabletApi\\Rendel\u0151TabletApi.Test\\RendelesTetelControllerTest.cs",
               "RelativeDocumentMoniker": "Rendel\u0151TabletApi.Test\\RendelesTetelControllerTest.cs",
@@ -227,7 +242,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "DbContextHelper.cs",
               "DocumentMoniker": "C:\\Users\\Bende\\Documents\\GitHub\\Vizsgaremek\\Rendel\u0151TabletApi\\Rendel\u0151TabletApi.Test\\DbContextHelper.cs",
               "RelativeDocumentMoniker": "Rendel\u0151TabletApi.Test\\DbContextHelper.cs",
@@ -239,7 +254,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 19,
               "Title": "MSTestSettings.cs",
               "DocumentMoniker": "C:\\Users\\Bende\\Documents\\GitHub\\Vizsgaremek\\Rendel\u0151TabletApi\\Rendel\u0151TabletApi.Test\\MSTestSettings.cs",
               "RelativeDocumentMoniker": "Rendel\u0151TabletApi.Test\\MSTestSettings.cs",
@@ -251,7 +266,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 18,
               "Title": "PincerControllerTest.cs",
               "DocumentMoniker": "C:\\Users\\Bende\\Documents\\GitHub\\Vizsgaremek\\Rendel\u0151TabletApi\\Rendel\u0151TabletApi.Test\\PincerControllerTest.cs",
               "RelativeDocumentMoniker": "Rendel\u0151TabletApi.Test\\PincerControllerTest.cs",
@@ -263,7 +278,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "appsettings.Development.json",
               "DocumentMoniker": "C:\\Users\\Bende\\Documents\\GitHub\\Vizsgaremek\\Rendel\u0151TabletApi\\Rendel\u0151TabletApi\\appsettings.Development.json",
               "RelativeDocumentMoniker": "Rendel\u0151TabletApi\\appsettings.Development.json",
@@ -275,7 +290,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 15,
               "Title": "RendelesControllerTest.cs",
               "DocumentMoniker": "C:\\Users\\Bende\\Documents\\GitHub\\Vizsgaremek\\Rendel\u0151TabletApi\\Rendel\u0151TabletApi.Test\\RendelesControllerTest.cs",
               "RelativeDocumentMoniker": "Rendel\u0151TabletApi.Test\\RendelesControllerTest.cs",
@@ -287,7 +302,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 13,
               "Title": "Rendel\u0151TabletApi.Test.csproj",
               "DocumentMoniker": "C:\\Users\\Bende\\Documents\\GitHub\\Vizsgaremek\\Rendel\u0151TabletApi\\Rendel\u0151TabletApi.Test\\Rendel\u0151TabletApi.Test.csproj",
               "RelativeDocumentMoniker": "Rendel\u0151TabletApi.Test\\Rendel\u0151TabletApi.Test.csproj",
@@ -299,7 +314,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 12,
               "Title": "AsztalControllerTest.cs",
               "DocumentMoniker": "C:\\Users\\Bende\\Documents\\GitHub\\Vizsgaremek\\Rendel\u0151TabletApi\\Rendel\u0151TabletApi.Test\\AsztalControllerTest.cs",
               "RelativeDocumentMoniker": "Rendel\u0151TabletApi.Test\\AsztalControllerTest.cs",
@@ -311,7 +326,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 20,
               "Title": "EtelTipusControllerTest.cs",
               "DocumentMoniker": "C:\\Users\\Bende\\Documents\\GitHub\\Vizsgaremek\\Rendel\u0151TabletApi\\Rendel\u0151TabletApi.Test\\EtelTipusControllerTest.cs",
               "RelativeDocumentMoniker": "Rendel\u0151TabletApi.Test\\EtelTipusControllerTest.cs",
@@ -323,7 +338,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 14,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\Bende\\Documents\\GitHub\\Vizsgaremek\\Rendel\u0151TabletApi\\Rendel\u0151TabletApi\\appsettings.json",
               "RelativeDocumentMoniker": "Rendel\u0151TabletApi\\appsettings.json",
@@ -335,7 +350,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 16,
               "Title": "TermekControllerTest.cs",
               "DocumentMoniker": "C:\\Users\\Bende\\Documents\\GitHub\\Vizsgaremek\\Rendel\u0151TabletApi\\Rendel\u0151TabletApi.Test\\TermekControllerTest.cs",
               "RelativeDocumentMoniker": "Rendel\u0151TabletApi.Test\\TermekControllerTest.cs",
@@ -347,7 +362,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 21,
               "Title": "ErtekelesControllerTest.cs",
               "DocumentMoniker": "C:\\Users\\Bende\\Documents\\GitHub\\Vizsgaremek\\Rendel\u0151TabletApi\\Rendel\u0151TabletApi.Test\\ErtekelesControllerTest.cs",
               "RelativeDocumentMoniker": "Rendel\u0151TabletApi.Test\\ErtekelesControllerTest.cs",

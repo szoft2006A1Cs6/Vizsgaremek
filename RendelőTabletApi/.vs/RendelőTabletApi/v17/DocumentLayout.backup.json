@@ -3,20 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\Bende\\Documents\\GitHub\\Vizsgaremek\\Rendel\u0151TabletApi\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{111ED883-AB23-45C6-A17B-642EDD5B6E00}|Rendel\u0151TabletApi\\Rendel\u0151TabletApi.csproj|c:\\users\\bende\\documents\\github\\vizsgaremek\\rendel\u0151tabletapi\\rendel\u0151tabletapi\\controllers\\eteltipuscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{111ED883-AB23-45C6-A17B-642EDD5B6E00}|Rendel\u0151TabletApi\\Rendel\u0151TabletApi.csproj|solutionrelative:rendel\u0151tabletapi\\controllers\\eteltipuscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{111ED883-AB23-45C6-A17B-642EDD5B6E00}|Rendel\u0151TabletApi\\Rendel\u0151TabletApi.csproj|c:\\users\\bende\\documents\\github\\vizsgaremek\\rendel\u0151tabletapi\\rendel\u0151tabletapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{111ED883-AB23-45C6-A17B-642EDD5B6E00}|Rendel\u0151TabletApi\\Rendel\u0151TabletApi.csproj|solutionrelative:rendel\u0151tabletapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{111ED883-AB23-45C6-A17B-642EDD5B6E00}|Rendel\u0151TabletApi\\Rendel\u0151TabletApi.csproj|c:\\users\\bende\\documents\\github\\vizsgaremek\\rendel\u0151tabletapi\\rendel\u0151tabletapi\\model\\termek.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{111ED883-AB23-45C6-A17B-642EDD5B6E00}|Rendel\u0151TabletApi\\Rendel\u0151TabletApi.csproj|solutionrelative:rendel\u0151tabletapi\\model\\termek.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{111ED883-AB23-45C6-A17B-642EDD5B6E00}|Rendel\u0151TabletApi\\Rendel\u0151TabletApi.csproj|c:\\users\\bende\\documents\\github\\vizsgaremek\\rendel\u0151tabletapi\\rendel\u0151tabletapi\\controllers\\termekcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{111ED883-AB23-45C6-A17B-642EDD5B6E00}|Rendel\u0151TabletApi\\Rendel\u0151TabletApi.csproj|solutionrelative:rendel\u0151tabletapi\\controllers\\termekcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{111ED883-AB23-45C6-A17B-642EDD5B6E00}|Rendel\u0151TabletApi\\Rendel\u0151TabletApi.csproj|c:\\users\\bende\\documents\\github\\vizsgaremek\\rendel\u0151tabletapi\\rendel\u0151tabletapi\\model\\termek.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{111ED883-AB23-45C6-A17B-642EDD5B6E00}|Rendel\u0151TabletApi\\Rendel\u0151TabletApi.csproj|solutionrelative:rendel\u0151tabletapi\\model\\termek.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{111ED883-AB23-45C6-A17B-642EDD5B6E00}|Rendel\u0151TabletApi\\Rendel\u0151TabletApi.csproj|c:\\users\\bende\\documents\\github\\vizsgaremek\\rendel\u0151tabletapi\\rendel\u0151tabletapi\\controllers\\eteltipuscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{111ED883-AB23-45C6-A17B-642EDD5B6E00}|Rendel\u0151TabletApi\\Rendel\u0151TabletApi.csproj|solutionrelative:rendel\u0151tabletapi\\controllers\\eteltipuscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{111ED883-AB23-45C6-A17B-642EDD5B6E00}|Rendel\u0151TabletApi\\Rendel\u0151TabletApi.csproj|c:\\users\\bende\\documents\\github\\vizsgaremek\\rendel\u0151tabletapi\\rendel\u0151tabletapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{111ED883-AB23-45C6-A17B-642EDD5B6E00}|Rendel\u0151TabletApi\\Rendel\u0151TabletApi.csproj|solutionrelative:rendel\u0151tabletapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{111ED883-AB23-45C6-A17B-642EDD5B6E00}|Rendel\u0151TabletApi\\Rendel\u0151TabletApi.csproj|c:\\users\\bende\\documents\\github\\vizsgaremek\\rendel\u0151tabletapi\\rendel\u0151tabletapi\\controllers\\ertekelescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -94,11 +94,15 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 3,
           "Children": [
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "EtelTipusController.cs",
               "DocumentMoniker": "C:\\Users\\Bende\\Documents\\GitHub\\Vizsgaremek\\Rendel\u0151TabletApi\\Rendel\u0151TabletApi\\Controllers\\EtelTipusController.cs",
               "RelativeDocumentMoniker": "Rendel\u0151TabletApi\\Controllers\\EtelTipusController.cs",
@@ -111,7 +115,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "TermekController.cs",
               "DocumentMoniker": "C:\\Users\\Bende\\Documents\\GitHub\\Vizsgaremek\\Rendel\u0151TabletApi\\Rendel\u0151TabletApi\\Controllers\\TermekController.cs",
               "RelativeDocumentMoniker": "Rendel\u0151TabletApi\\Controllers\\TermekController.cs",
@@ -124,12 +128,12 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "Termek.cs",
               "DocumentMoniker": "C:\\Users\\Bende\\Documents\\GitHub\\Vizsgaremek\\Rendel\u0151TabletApi\\Rendel\u0151TabletApi\\Model\\Termek.cs",
               "RelativeDocumentMoniker": "Rendel\u0151TabletApi\\Model\\Termek.cs",
-              "ToolTip": "C:\\Users\\Bende\\Documents\\GitHub\\Vizsgaremek\\Rendel\u0151TabletApi\\Rendel\u0151TabletApi\\Model\\Termek.cs",
-              "RelativeToolTip": "Rendel\u0151TabletApi\\Model\\Termek.cs",
+              "ToolTip": "C:\\Users\\Bende\\Documents\\GitHub\\Vizsgaremek\\Rendel\u0151TabletApi\\Rendel\u0151TabletApi\\Model\\Termek.cs*",
+              "RelativeToolTip": "Rendel\u0151TabletApi\\Model\\Termek.cs*",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-04-22T05:46:13.601Z",
@@ -157,8 +161,7 @@
               "RelativeToolTip": "Rendel\u0151TabletApi\\Controllers\\ErtekelesController.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAuwBoAAAAPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-20T18:34:28.414Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-20T18:34:28.414Z"
             },
             {
               "$type": "Document",
@@ -174,7 +177,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\Bende\\Documents\\GitHub\\Vizsgaremek\\Rendel\u0151TabletApi\\Rendel\u0151TabletApi\\Program.cs",
               "RelativeDocumentMoniker": "Rendel\u0151TabletApi\\Program.cs",
@@ -182,12 +185,7 @@
               "RelativeToolTip": "Rendel\u0151TabletApi\\Program.cs",
               "ViewState": "AgIAAA0AAAAAAAAAAAAQwGcAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-15T21:24:24.676Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+              "WhenOpened": "2026-04-15T21:24:24.676Z"
             },
             {
               "$type": "Document",

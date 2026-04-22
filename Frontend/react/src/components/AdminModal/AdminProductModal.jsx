@@ -47,7 +47,7 @@ export default function AdminProductModal({
               type="text" 
               value={productAllergens} 
               onChange={(e) => setProductAllergens(e.target.value)} 
-              placeholder="pl. 1, 3, 7" 
+              placeholder="pl. 1,3,7" 
             />
           </div>
 

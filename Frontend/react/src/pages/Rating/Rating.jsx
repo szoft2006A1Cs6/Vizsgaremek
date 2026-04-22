@@ -16,7 +16,7 @@ export default function Rating() {
 
   const handleFinish = () => {
     localStorage.removeItem('lastOrderId');
-    navigate('/categories'); 
+    navigate('/home'); 
   };
 
   const handleSubmit = async () => {

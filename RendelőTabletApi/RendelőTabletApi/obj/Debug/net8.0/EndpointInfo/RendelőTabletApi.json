@@ -1165,8 +1165,8 @@
             "format": "int32"
           },
           "kep": {
-            "type": "integer",
-            "format": "int32"
+            "type": "string",
+            "nullable": true
           },
           "etelTipus": {
             "$ref": "#/components/schemas/EtelTipus"

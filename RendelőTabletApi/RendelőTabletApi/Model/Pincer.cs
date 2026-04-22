@@ -4,6 +4,7 @@
     {
         public int PincerId { get; set; }
         public string? PincerNev { get; set; }
+        public int Munka {get; set; }
 
         public List<Rendeles>? Rendelesek { get; set; }
 
