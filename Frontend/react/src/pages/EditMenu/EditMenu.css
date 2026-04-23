@@ -1,11 +1,10 @@
-/* Sötét téma alapok és fix magasság */
 .edit-menu-dark {
   background-color: #111827;
   color: #F3F4F6;
-  height: 100vh; /* Fix magasság a képernyő kitöltéséhez */
+  height: 100vh;
   display: flex;
   flex-direction: column;
-  overflow: hidden; /* A főoldal ne görgessen egyben */
+  overflow: hidden;
 }
 
 .edit-menu-container {
@@ -16,18 +15,17 @@
   flex-grow: 1;
   display: flex;
   flex-direction: column;
-  min-height: 0; /* Fontos a belső scrollhoz */
+  min-height: 0;
 }
 
 .admin-grid {
   display: grid;
   grid-template-columns: 350px 1fr;
   gap: 2rem;
-  height: 100%; /* Kitölti a rendelkezésre álló magasságot */
+  height: 100%;
   min-height: 0;
 }
 
-/* Sötét kártyák - Belső görgetésre felkészítve */
 .admin-card {
   background: #1F2937;
   border-radius: var(--radius-lg);
@@ -36,7 +34,7 @@
   border: 1px solid #374151;
   display: flex;
   flex-direction: column;
-  height: 100%; /* Kitölti a grid cellát */
+  height: 100%;
   overflow: hidden;
 }
 
@@ -47,7 +45,7 @@
   margin-bottom: 1.5rem;
   padding-bottom: 0.75rem;
   border-bottom: 2px solid #374151;
-  flex-shrink: 0; /* A fejléc ne zsugorodjon */
+  flex-shrink: 0;
 }
 
 .section-header h3 {
@@ -76,4 +74,25 @@
 
 .btn-add-small .material-icons {
   font-size: 2.2rem;
+}
+
+@media (max-width: 768px) {
+  .edit-menu-dark {
+    height: auto;
+    overflow: visible;
+  }
+  .admin-grid {
+    grid-template-columns: 1fr;
+    height: auto;
+  }
+  .admin-card {
+    height: auto;
+    max-height: 500px;
+  }
+  .edit-menu-container {
+    padding: 1rem;
+  }
+  .admin-table-wrapper {
+    overflow-x: auto;
+  }
 }

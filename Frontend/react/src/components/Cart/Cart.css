@@ -44,7 +44,7 @@
 
 .cart-item-controls button {
   background-color: #FCD34D; 
-  color: #000000; 
+  color: #78350F; 
   border: none;
   border-radius: 6px;
   width: 32px; 
@@ -128,4 +128,16 @@
 .cart-empty-msg .material-icons {
   font-size: 4rem;
   opacity: 0.3;
+}
+
+@media (max-width: 768px) {
+  .cart-sidebar {
+    height: auto;
+    position: static;
+    border-left: none;
+    border-top: 2px solid var(--dark);
+    margin-top: 1rem;
+    padding: 1rem;
+    border-radius: var(--radius-lg);
+  }
 }

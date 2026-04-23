@@ -43,3 +43,14 @@
 .method-title { 
   margin: 0; 
 }
+
+@media (max-width: 768px) {
+  .payment-method-grid {
+    grid-template-columns: 1fr;
+  }
+  .payment-method-btn {
+    flex-direction: row;
+    padding: 1.5rem;
+    text-align: left;
+  }
+}

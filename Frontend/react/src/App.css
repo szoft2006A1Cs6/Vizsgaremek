@@ -67,8 +67,6 @@ h4,
   vertical-align: middle;
 }
 
-/* ===== Újrahasznosítható Utility Osztályok ===== */
-
 .bg-dark {
   background-color: var(--dark) !important;
 }
@@ -90,8 +88,6 @@ h4,
 .w-35 {
   width: 35%;
 }
-
-/* ===== Alap Layout ===== */
 
 .page-layout {
   display: flex;
@@ -155,4 +151,22 @@ h4,
 .btn-outline:hover {
   background: var(--dark);
   color: white;
+}
+
+@media (max-width: 768px) {
+  .main-content {
+    padding: 1rem;
+  }
+  .w-35 {
+    width: 100%;
+  }
+  .page-layout {
+    padding-bottom: 4rem;
+  }
+  .kds-layout {
+    display: flex !important;
+    flex-direction: column !important;
+    height: auto !important;
+    overflow: visible !important;
+  }
 }

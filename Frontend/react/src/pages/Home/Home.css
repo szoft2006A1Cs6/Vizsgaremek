@@ -82,3 +82,29 @@
   font-size: 3rem; 
   color: var(--accent); 
 }
+
+@media (max-width: 768px) {
+  .home-header {
+    flex-direction: column;
+    padding: 1rem;
+    gap: 1rem;
+  }
+  .home-title {
+    position: static;
+    transform: none;
+    font-size: 2.2rem;
+    order: -1;
+  }
+  .home-footer {
+    flex-direction: column;
+    padding: 1rem;
+    gap: 1rem;
+  }
+  .help-text-box {
+    text-align: left;
+  }
+  .footer-help-btn {
+    padding: 1.5rem;
+    justify-content: space-between;
+  }
+}

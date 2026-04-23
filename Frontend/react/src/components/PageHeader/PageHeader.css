@@ -135,3 +135,30 @@
 .page-header.dark .table-badge-icon-container .material-icons {
   color: var(--accent);
 }
+
+@media (max-width: 768px) {
+  .page-header {
+    padding: 1rem;
+    min-height: 70px;
+  }
+  .page-header-title {
+    font-size: 1.3rem !important;
+    text-align: center;
+  }
+  .btn-back-text {
+    display: none;
+  }
+  .btn-back-pill {
+    padding: 8px;
+  }
+  .table-badge-label {
+    display: none;
+  }
+  .table-badge-pill {
+    padding: 6px 12px;
+    gap: 6px;
+  }
+  .header-left, .header-right {
+    flex: 0 1 auto;
+  }
+}

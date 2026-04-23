@@ -36,3 +36,9 @@
   flex: 1; 
   padding: 1.5rem; 
 }
+
+@media (max-width: 768px) {
+  .status-actions {
+    flex-direction: column;
+  }
+}

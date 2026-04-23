@@ -23,7 +23,7 @@ export default function PaymentMethods({ isProcessing, onSelectMethod }) {
           style={{ opacity: isProcessing ? 0.6 : 1 }}
         >
           <div className="method-icon-wrapper cash-method">
-            <span className="material-icons method-icon">storefront</span>
+            <span className="material-icons method-icon">payments</span>
           </div>
           <h3 className="font-display method-title">Készpénzes fizetés</h3>
         </button>
