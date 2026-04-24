@@ -24,12 +24,12 @@ export default function Menu() {
     const fetchProducts = async () => {
       const token = localStorage.getItem('token');
       try {
-        const response = await fetch(`${API_BASE_URL}/api/Termek`, { headers: { 'Authorization': `Bearer ${token}` }});
+        const response = await fetch(`${API_BASE_URL}/api/Termek`, { headers: { 'Authorization': `Bearer ${token}` } });
         if (response.ok) {
           const allProducts = await response.json();
           setProducts(allProducts.filter(p => p.eteltipusId === categoryId));
         } else { setError('Hiba a termékek betöltésekor.'); }
-      } catch (err) { setError('Szerverhiba történt.'); } 
+      } catch (err) { setError('Szerverhiba történt.'); }
       finally { setLoading(false); }
     };
     fetchProducts();

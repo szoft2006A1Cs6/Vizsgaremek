@@ -1,12 +1,12 @@
 import './AdminCategoryList.css';
 
-export default function AdminCategoryList({ 
-  categories, 
-  selectedCategoryId, 
-  onSelectCategory, 
-  onEditCategory, 
+export default function AdminCategoryList({
+  categories,
+  selectedCategoryId,
+  onSelectCategory,
+  onEditCategory,
   onDeleteCategory, // Új prop
-  onAddCategory 
+  onAddCategory
 }) {
   return (
     <section className="admin-card category-section">
@@ -18,25 +18,25 @@ export default function AdminCategoryList({
       </div>
       <ul className="admin-list">
         {categories.map(cat => (
-          <li 
-            key={cat.eteltipusId} 
+          <li
+            key={cat.eteltipusId}
             className={selectedCategoryId === cat.eteltipusId ? 'active' : ''}
           >
             <span className="list-text" onClick={() => onSelectCategory(cat.eteltipusId)}>
               {cat.tipusNev}
             </span>
             <div className="list-actions">
-              <button 
-                className="btn-icon" 
-                onClick={(e) => { e.stopPropagation(); onEditCategory(cat); }} 
+              <button
+                className="btn-icon"
+                onClick={(e) => { e.stopPropagation(); onEditCategory(cat); }}
                 title="Szerkesztés"
               >
                 <span className="material-icons">edit</span>
               </button>
-              
-              <button 
-                className="btn-icon delete-icon" 
-                onClick={(e) => { e.stopPropagation(); onDeleteCategory(cat); }} 
+
+              <button
+                className="btn-icon delete-icon"
+                onClick={(e) => { e.stopPropagation(); onDeleteCategory(cat); }}
                 title="Törlés"
               >
                 <span className="material-icons">delete</span>

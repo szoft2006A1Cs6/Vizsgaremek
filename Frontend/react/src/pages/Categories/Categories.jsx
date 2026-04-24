@@ -20,10 +20,10 @@ export default function Categories() {
       const token = localStorage.getItem('token');
       if (!token) { navigate('/'); return; }
       try {
-        const response = await fetch(`${API_BASE_URL}/api/EtelTipus`, { headers: { 'Authorization': `Bearer ${token}` }});
-        if (response.ok) { setCategories(await response.json()); } 
+        const response = await fetch(`${API_BASE_URL}/api/EtelTipus`, { headers: { 'Authorization': `Bearer ${token}` } });
+        if (response.ok) { setCategories(await response.json()); }
         else { setError('Nem sikerült betölteni a kategóriákat.'); }
-      } catch (err) { setError('Hiba a szerverrel való kapcsolat során.'); } 
+      } catch (err) { setError('Hiba a szerverrel való kapcsolat során.'); }
       finally { setLoading(false); }
     };
     fetchCategories();
@@ -41,8 +41,8 @@ export default function Categories() {
           ) : (
             <div className="category-grid">
               {categories.map((cat) => (
-                <CategoryCard 
-                  key={cat.eteltipusId} category={cat} 
+                <CategoryCard
+                  key={cat.eteltipusId} category={cat}
                   onClick={() => navigate('/menu', { state: { categoryId: cat.eteltipusId, categoryName: cat.tipusNev } })}
                 />
               ))}

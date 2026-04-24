@@ -2,7 +2,7 @@ import './KitchenOrderCard.css';
 
 export default function KitchenOrderCard({ order, updateStatus }) {
   const getButtonConfig = (status) => {
-    switch(status) {
+    switch (status) {
       case 0: return { text: 'Felvétel', icon: 'pan_tool', className: 'kds-btn-accept', next: 1 };
       case 1: return { text: 'Tálalás', icon: 'restaurant', className: 'kds-btn-serve', next: 2 };
       case 2: return { text: 'Kiadva', icon: 'check_circle', className: 'kds-btn-ready', next: 3 };
@@ -18,11 +18,11 @@ export default function KitchenOrderCard({ order, updateStatus }) {
     <div className={`kds-card status-${order.statusz}`}>
       <div className="kds-card-header">
         <span className="kds-table-num">#{order.asztal}</span>
-        
+
         <span className={`kds-status-badge ${isNoWaiter ? 'no-waiter-badge' : ''}`}>
           {order.pincer}
         </span>
-        
+
         <span className="kds-time">{order.ido}</span>
       </div>
       <div className="kds-card-body">

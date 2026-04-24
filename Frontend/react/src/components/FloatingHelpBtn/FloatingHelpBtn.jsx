@@ -7,7 +7,7 @@ export default function FloatingHelpBtn() {
   const [asztalSzam, setAsztalSzam] = useState('?');
   const [callStatus, setCallStatus] = useState('idle');
   const [showAllergens, setShowAllergens] = useState(false);
-  const [showConfirm, setShowConfirm] = useState(false); 
+  const [showConfirm, setShowConfirm] = useState(false);
 
   useEffect(() => {
     const token = localStorage.getItem('token');
@@ -16,16 +16,16 @@ export default function FloatingHelpBtn() {
     try {
       const base64Url = token.split('.')[1];
       const base64 = base64Url.replace(/-/g, '+').replace(/_/g, '/');
-      const jsonPayload = decodeURIComponent(atob(base64).split('').map(function(c) {
-          return '%' + ('00' + c.charCodeAt(0).toString(16)).slice(-2);
+      const jsonPayload = decodeURIComponent(atob(base64).split('').map(function (c) {
+        return '%' + ('00' + c.charCodeAt(0).toString(16)).slice(-2);
       }).join(''));
-      
+
       const payload = JSON.parse(jsonPayload);
-      const nameClaim = payload["http://schemas.xmlsoap.org/ws/2005/05/identity/claims/name"] 
-                        || payload.name 
-                        || payload.unique_name 
-                        || "";
-      
+      const nameClaim = payload["http://schemas.xmlsoap.org/ws/2005/05/identity/claims/name"]
+        || payload.name
+        || payload.unique_name
+        || "";
+
       const szam = nameClaim.replace(/\D/g, '');
       if (szam) setAsztalSzam(szam);
     } catch (error) {
@@ -42,12 +42,12 @@ export default function FloatingHelpBtn() {
   const executeCall = async () => {
     setShowConfirm(false);
     setCallStatus('calling');
-    
+
     const token = localStorage.getItem('token');
     const now = new Date();
     const localTime = new Date(now.getTime() - now.getTimezoneOffset() * 60000)
       .toISOString()
-      .substring(0, 19); 
+      .substring(0, 19);
 
     try {
       const response = await fetch(`${API_BASE_URL}/api/PincerHivas`, {
@@ -58,7 +58,7 @@ export default function FloatingHelpBtn() {
         },
         body: JSON.stringify({
           asztalId: parseInt(asztalSzam, 10),
-          idopont: localTime, 
+          idopont: localTime,
           statusz: 'Segítség Kérés'
         })
       });
@@ -94,16 +94,16 @@ export default function FloatingHelpBtn() {
   return (
     <>
       <div className="floating-actions-container">
-        <button 
-          className="floating-btn info-btn" 
+        <button
+          className="floating-btn info-btn"
           onClick={() => setShowAllergens(true)}
           title="Allergén információk"
         >
           <span className="material-icons">medical_information</span>
         </button>
 
-        <button 
-          className="floating-btn help-btn" 
+        <button
+          className="floating-btn help-btn"
           onClick={triggerCall}
           style={callStatus === 'success' ? { backgroundColor: '#16A34A', color: 'white', borderColor: '#15803D' } : {}}
           title="Segítség kérése"
@@ -126,22 +126,22 @@ export default function FloatingHelpBtn() {
                 <span className="material-icons">close</span>
               </button>
             </div>
-            
+
             <div className="modal-body" style={{ textAlign: 'center', padding: '2rem' }}>
               <p style={{ fontSize: '1.2rem', margin: '0 0 2rem 0', color: 'var(--dark)' }}>
                 Szeretne segítséget kérni a pincértől?
               </p>
               <div style={{ display: 'flex', gap: '1rem', justifyContent: 'center' }}>
-                <button 
-                  className="btn" 
-                  style={{ flex: 1, padding: '1rem', border: '1px solid #E5E7EB', background: 'var(--surface)', color: 'var(--dark)', fontWeight: 'bold', borderRadius: '0.5rem', cursor: 'pointer' }} 
+                <button
+                  className="btn"
+                  style={{ flex: 1, padding: '1rem', border: '1px solid #E5E7EB', background: 'var(--surface)', color: 'var(--dark)', fontWeight: 'bold', borderRadius: '0.5rem', cursor: 'pointer' }}
                   onClick={() => setShowConfirm(false)}
                 >
                   Nem
                 </button>
-                <button 
-                  className="btn" 
-                  style={{ flex: 1, padding: '1rem', background: 'var(--primary)', color: 'white', border: 'none', fontWeight: 'bold', borderRadius: '0.5rem', cursor: 'pointer' }} 
+                <button
+                  className="btn"
+                  style={{ flex: 1, padding: '1rem', background: 'var(--primary)', color: 'white', border: 'none', fontWeight: 'bold', borderRadius: '0.5rem', cursor: 'pointer' }}
                   onClick={executeCall}
                 >
                   Igen

@@ -1,23 +1,23 @@
-.category-card { 
-  padding: 2rem 2.5rem; 
+.category-card {
+  padding: 2rem 2.5rem;
   min-height: 130px;
-  display: flex; 
-  flex-direction: column; 
-  align-items: center; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
   gap: 1rem;
-  background-color: var(--accent); 
-  border: none; 
-  border-radius: 16px; 
-  cursor: pointer; 
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4); 
+  background-color: var(--accent);
+  border: none;
+  border-radius: 16px;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
   transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
 
 .category-card:hover {
-  transform: translateY(-4px) scale(1.02); 
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5); 
-  background-color: var(--accent); 
+  transform: translateY(-4px) scale(1.02);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+  background-color: var(--accent);
 }
 
 .category-card:active {
@@ -25,10 +25,10 @@
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
 }
 
-.category-name { 
-  font-size: 1.6rem; 
-  font-weight: 700; 
-  color: #000000; 
+.category-name {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #000000;
   letter-spacing: 0.03em;
   margin: 0;
 }

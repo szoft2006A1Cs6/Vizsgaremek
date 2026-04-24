@@ -22,8 +22,8 @@ export default function EditStaff() {
   const fetchStaff = async () => {
     const token = localStorage.getItem('token');
     try {
-      const res = await fetch(`${API_BASE_URL}/api/Pincer`, { 
-        headers: { 'Authorization': `Bearer ${token}` } 
+      const res = await fetch(`${API_BASE_URL}/api/Pincer`, {
+        headers: { 'Authorization': `Bearer ${token}` }
       });
       if (res.ok) {
         const data = await res.json();
@@ -37,10 +37,10 @@ export default function EditStaff() {
     e.preventDefault();
     const token = localStorage.getItem('token');
     const method = editingStaff ? 'PUT' : 'POST';
-    const url = editingStaff 
-      ? `${API_BASE_URL}/api/Pincer/${editingStaff.pincerId}` 
+    const url = editingStaff
+      ? `${API_BASE_URL}/api/Pincer/${editingStaff.pincerId}`
       : `${API_BASE_URL}/api/Pincer`;
-    
+
     const body = {
       pincerNev: staffName,
       munka: editingStaff ? editingStaff.munka : 0 // Új pincér alapból nem dolgozik
@@ -63,7 +63,7 @@ export default function EditStaff() {
   const handleToggleWork = async (person) => {
     const token = localStorage.getItem('token');
     const updatedPerson = { ...person, munka: person.munka === 1 ? 0 : 1 };
-    
+
     try {
       const res = await fetch(`${API_BASE_URL}/api/Pincer/${person.pincerId}`, {
         method: 'PUT',
@@ -110,9 +110,9 @@ export default function EditStaff() {
   return (
     <div className="page-layout edit-menu-dark">
       <PageHeader title="Személyzet Kezelése" theme="dark" />
-      
+
       <main className="main-content staff-container">
-        <AdminStaffTable 
+        <AdminStaffTable
           staff={staff}
           onEdit={openEditStaff}
           onDelete={(person) => setItemToDelete(person)}
@@ -121,7 +121,7 @@ export default function EditStaff() {
         />
       </main>
 
-      <AdminStaffModal 
+      <AdminStaffModal
         isOpen={showModal}
         onClose={closeModal}
         onSave={handleSaveStaff}
@@ -130,7 +130,7 @@ export default function EditStaff() {
         isEditing={!!editingStaff}
       />
 
-      <AdminConfirmModal 
+      <AdminConfirmModal
         isOpen={!!itemToDelete}
         onClose={() => setItemToDelete(null)}
         onConfirm={executeDelete}

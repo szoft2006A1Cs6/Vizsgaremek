@@ -1,11 +1,11 @@
-.promo-card { 
-  flex: 2; 
-  background: rgba(255, 255, 255, 0.05); 
-  border: 1px solid rgba(255, 255, 255, 0.2); 
-  padding: 1.5rem; 
-  display: flex; 
-  flex-direction: column; 
-  justify-content: center; 
+.promo-card {
+  flex: 2;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   transition: transform 0.2s ease;
 }
 
@@ -14,7 +14,7 @@
 }
 
 .promo-card.clickable:hover {
-  transform: translateY(-2px); 
+  transform: translateY(-2px);
 }
 
 .fade-in {
@@ -26,31 +26,32 @@
     opacity: 0;
     transform: translateY(5px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
   }
 }
 
-.promo-badge { 
-  background: var(--accent); 
-  color: var(--dark); 
-  padding: 0.25rem 0.5rem; 
-  border-radius: 4px; 
-  font-size: 0.8rem; 
-  font-weight: bold; 
+.promo-badge {
+  background: var(--accent);
+  color: var(--dark);
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  font-weight: bold;
   display: inline-block;
   text-transform: uppercase;
 }
 
-.promo-title { 
-  color: var(--accent); 
-  margin: 0.5rem 0; 
+.promo-title {
+  color: var(--accent);
+  margin: 0.5rem 0;
   font-size: 1.5rem;
 }
 
-.promo-desc { 
-  margin: 0; 
-  opacity: 0.8; 
+.promo-desc {
+  margin: 0;
+  opacity: 0.8;
   line-height: 1.5;
 }

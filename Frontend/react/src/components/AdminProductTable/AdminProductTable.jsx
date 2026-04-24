@@ -31,7 +31,7 @@ export default function AdminProductTable({ products, onEditProduct, onDeletePro
                   <td className="font-bold">{prod.termekNev}</td>
                   <td>{prod.ar} Ft</td>
                   <td>{prod.allergenek || '-'}</td>
-                  
+
                   <td className="text-center">
                     {prod.featured ? (
                       <span className="material-icons star-icon">star</span>
@@ -39,12 +39,12 @@ export default function AdminProductTable({ products, onEditProduct, onDeletePro
                       <span className="material-icons star-icon-empty">star_border</span>
                     )}
                   </td>
-                  
+
                   <td className="text-right actions-cell">
                     <button className="btn-icon" onClick={() => onEditProduct(prod)} title="Szerkesztés">
                       <span className="material-icons">edit</span>
                     </button>
-                    
+
                     <button className="btn-icon delete-icon" onClick={() => onDeleteProduct(prod)} title="Törlés">
                       <span className="material-icons">delete</span>
                     </button>

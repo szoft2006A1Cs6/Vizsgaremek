@@ -1,8 +1,8 @@
 import './LoginForm.css';
 
-export default function LoginForm({ 
-  fetchingUsers, users, selectedUser, setSelectedUser, 
-  password, setPassword, error, isLoading, onSubmit 
+export default function LoginForm({
+  fetchingUsers, users, selectedUser, setSelectedUser,
+  password, setPassword, error, isLoading, onSubmit
 }) {
   return (
     <form onSubmit={onSubmit} className="auth-form">

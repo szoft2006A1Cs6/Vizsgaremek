@@ -13,11 +13,11 @@ export default function AdminStaffModal({ isOpen, onClose, onSave, staffName, se
         <div className="modal-body-simple">
           <div className="form-group">
             <label>Pincér teljes neve</label>
-            <input 
-              type="text" 
-              value={staffName} 
-              onChange={(e) => setStaffName(e.target.value)} 
-              required 
+            <input
+              type="text"
+              value={staffName}
+              onChange={(e) => setStaffName(e.target.value)}
+              required
               autoFocus
               placeholder="pl. Kovács János"
             />

@@ -1,77 +1,77 @@
-.payment-summary { 
-  flex: 1 1 300px; 
-  display: flex; 
-  flex-direction: column; 
+.payment-summary {
+  flex: 1 1 300px;
+  display: flex;
+  flex-direction: column;
 }
 
-.summary-header { 
-  background: var(--dark); 
-  color: white; 
-  padding: 1rem 1.5rem; 
-  font-weight: bold; 
-  display: flex; 
-  justify-content: space-between; 
+.summary-header {
+  background: var(--dark);
+  color: white;
+  padding: 1rem 1.5rem;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
 }
 
-.summary-body { 
-  padding: 1.5rem; 
-  flex-grow: 1; 
+.summary-body {
+  padding: 1.5rem;
+  flex-grow: 1;
 }
 
-.summary-item { 
-  display: flex; 
-  justify-content: space-between; 
-  margin-bottom: 1rem; 
-  border-bottom: 1px solid #eee; 
-  padding-bottom: 1rem; 
+.summary-item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 1rem;
 }
 
-.summary-item-left { 
-  display: flex; 
-  gap: 1rem; 
+.summary-item-left {
+  display: flex;
+  gap: 1rem;
 }
 
-.summary-qty { 
-  background: var(--accent-light); 
-  width: 30px; 
-  height: 30px; 
-  display: flex; 
-  align-items: center; 
-  justify-content: center; 
-  border-radius: 50%; 
-  font-weight: bold; 
+.summary-qty {
+  background: var(--accent-light);
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  font-weight: bold;
 }
 
-.summary-item-name { 
-  margin: 0; 
-  font-size: 1rem; 
+.summary-item-name {
+  margin: 0;
+  font-size: 1rem;
 }
 
-.summary-item-desc { 
-  margin: 0; 
-  font-size: 0.8rem; 
-  color: var(--text-muted); 
+.summary-item-desc {
+  margin: 0;
+  font-size: 0.8rem;
+  color: var(--text-muted);
 }
 
-.summary-price { 
-  font-weight: bold; 
+.summary-price {
+  font-weight: bold;
 }
 
-.summary-footer { 
-  background: var(--bg-color); 
-  padding: 1.5rem; 
-  border-top: 1px solid #eee; 
+.summary-footer {
+  background: var(--bg-color);
+  padding: 1.5rem;
+  border-top: 1px solid #eee;
 }
 
-.summary-total-row { 
-  display: flex; 
-  justify-content: space-between; 
-  align-items: center; 
-  font-weight: bold; 
-  font-size: 1.25rem; 
+.summary-total-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+  font-size: 1.25rem;
 }
 
-.summary-total-price { 
-  font-size: 1.5rem; 
-  color: var(--primary); 
+.summary-total-price {
+  font-size: 1.5rem;
+  color: var(--primary);
 }

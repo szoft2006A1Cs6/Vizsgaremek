@@ -8,9 +8,9 @@ export default function MenuItem({ product, onAdd }) {
     <div className="card menu-item-card" onClick={onAdd}>
       <div className="menu-item-img-wrapper">
         {product.kep && !imageError ? (
-          <img 
-            src={product.kep} 
-            alt={product.termekNev} 
+          <img
+            src={product.kep}
+            alt={product.termekNev}
             className="menu-item-image"
             onError={() => setImageError(true)}
           />
@@ -18,7 +18,7 @@ export default function MenuItem({ product, onAdd }) {
           <span className="material-icons menu-item-icon">restaurant</span>
         )}
       </div>
-      
+
       <div className="menu-item-info">
         <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start' }}>
           <h2 className="font-display menu-item-title" style={{ hyphens: 'auto', WebkitHyphens: 'auto', margin: 0, wordBreak: 'break-word' }}>

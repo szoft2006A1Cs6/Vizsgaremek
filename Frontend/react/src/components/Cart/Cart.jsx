@@ -52,7 +52,7 @@ export default function Cart({ refreshTrigger }) {
   return (
     <aside className="cart-sidebar">
       <h2 className="cart-title">Kosár ({items.length})</h2>
-      
+
       <div className="cart-items">
         {items.map(item => (
           <div key={item.termekId} className="cart-item">

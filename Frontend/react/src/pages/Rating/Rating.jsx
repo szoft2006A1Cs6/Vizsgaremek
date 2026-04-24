@@ -16,7 +16,7 @@ export default function Rating() {
 
   const handleFinish = () => {
     localStorage.removeItem('lastOrderId');
-    navigate('/home'); 
+    navigate('/home');
   };
 
   const handleSubmit = async () => {
@@ -32,7 +32,7 @@ export default function Rating() {
         method: 'POST', headers: { 'Content-Type': 'application/json', 'Authorization': `Bearer ${token}` },
         body: JSON.stringify({ rendelesId: parseInt(orderId, 10), pontszam: rating, idopont: localTime })
       });
-    } catch (err) {} 
+    } catch (err) { }
     finally { handleFinish(); }
   };
 
@@ -45,11 +45,11 @@ export default function Rating() {
           <span className="material-icons rating-top-icon">restaurant</span>
           <h2 className="font-display rating-title">Hogy ízlett az étel?</h2>
           <p className="rating-subtitle">Kérjük, értékelje a rendelését egy kattintással, hogy még jobb élményt nyújthassunk!</p>
-          
+
           <RatingStars rating={rating} setRating={setRating} />
 
-          <button 
-            className="btn btn-primary rating-submit-btn" 
+          <button
+            className="btn btn-primary rating-submit-btn"
             onClick={handleSubmit} disabled={isSubmitting || rating === 0}
             style={{ opacity: (isSubmitting || rating === 0) ? 0.5 : 1 }}
           >

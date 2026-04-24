@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import LoginForm from '../../components/LoginForm/LoginForm';
 import './Login.css';
 
-const API_BASE_URL = 'https://localhost:7235'; 
+const API_BASE_URL = 'https://localhost:7235';
 
 export default function Login() {
   const navigate = useNavigate();
@@ -74,7 +74,7 @@ export default function Login() {
           <h1 className="font-display auth-title">Gusto Bistro</h1>
           <p className="auth-subtitle">Bejelentkezés</p>
         </div>
-        <LoginForm 
+        <LoginForm
           fetchingUsers={fetchingUsers} users={users}
           selectedUser={selectedUser} setSelectedUser={setSelectedUser}
           password={password} setPassword={setPassword}

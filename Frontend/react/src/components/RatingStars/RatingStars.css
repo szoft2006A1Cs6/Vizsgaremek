@@ -1,24 +1,24 @@
-.rating-stars { 
-  display: flex; 
-  justify-content: center; 
-  gap: 0.5rem; 
-  margin-bottom: 2rem; 
+.rating-stars {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-bottom: 2rem;
 }
 
-.stars .material-icons { 
-  font-size: 3rem; 
-  cursor: pointer; 
-  transition: var(--transition); 
+.stars .material-icons {
+  font-size: 3rem;
+  cursor: pointer;
+  transition: var(--transition);
 }
 
-.stars .material-icons:hover { 
-  transform: scale(1.1); 
+.stars .material-icons:hover {
+  transform: scale(1.1);
 }
 
-.stars .filled { 
-  color: var(--accent); 
+.stars .filled {
+  color: var(--accent);
 }
 
-.stars .empty { 
-  color: #E5E7EB; 
+.stars .empty {
+  color: #E5E7EB;
 }

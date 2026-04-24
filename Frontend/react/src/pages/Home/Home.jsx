@@ -4,7 +4,7 @@ import HeroButton from '../../components/HeroButton/HeroButton';
 import PromoCard from '../../components/PromoCard/PromoCard';
 import './Home.css';
 
-const API_BASE_URL = 'https://localhost:7235'; 
+const API_BASE_URL = 'https://localhost:7235';
 
 export default function Home() {
   const navigate = useNavigate();
@@ -17,7 +17,7 @@ export default function Home() {
   useEffect(() => {
     const token = localStorage.getItem('token');
     if (!token) { navigate('/'); return; }
-    
+
     try {
       const base64Url = token.split('.')[1];
       const base64 = base64Url.replace(/-/g, '+').replace(/_/g, '/');
@@ -36,7 +36,7 @@ export default function Home() {
         if (res.ok) {
           const data = await res.json();
           const featured = data.filter(p => p.featured === 1 || p.featured === true);
-          
+
           if (featured.length > 0) {
             setDisplayList(featured);
           } else if (data.length > 0) {
@@ -51,7 +51,7 @@ export default function Home() {
 
   useEffect(() => {
     if (displayList.length <= 1) return;
-    
+
     const intervalId = setInterval(() => {
       setCurrentIndex(prevIndex => (prevIndex + 1) % displayList.length);
     }, 10000);
@@ -61,9 +61,9 @@ export default function Home() {
 
   const handlePromoClick = () => {
     if (displayList.length === 0) return;
-    
+
     const selectedDish = displayList[currentIndex];
-    
+
     const cart = JSON.parse(localStorage.getItem('cart') || '[]');
     const existingItem = cart.find(item => item.termekId === selectedDish.termekId);
 
@@ -74,7 +74,7 @@ export default function Home() {
     }
 
     localStorage.setItem('cart', JSON.stringify(cart));
-    
+
     navigate('/categories');
   };
 
@@ -119,12 +119,12 @@ export default function Home() {
       </main>
 
       <footer className="home-footer">
-        <PromoCard 
-          dish={displayList[currentIndex]} 
-          onClick={handlePromoClick} 
+        <PromoCard
+          dish={displayList[currentIndex]}
+          onClick={handlePromoClick}
         />
-        
-        <button 
+
+        <button
           className="card footer-help-btn"
           onClick={handleSegitseg}
           disabled={callStatus !== 'idle'}

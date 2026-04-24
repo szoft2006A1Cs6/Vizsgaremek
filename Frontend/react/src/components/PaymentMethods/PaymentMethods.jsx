@@ -5,8 +5,8 @@ export default function PaymentMethods({ isProcessing, onSelectMethod }) {
     <section className="payment-methods-section">
       <h2 className="font-display">Válasszon fizetési módot</h2>
       <div className="payment-method-grid">
-        <button 
-          className="card payment-method-btn" 
+        <button
+          className="card payment-method-btn"
           onClick={() => onSelectMethod('Bankkártyás Fizetés')}
           disabled={isProcessing}
           style={{ opacity: isProcessing ? 0.6 : 1 }}
@@ -16,8 +16,8 @@ export default function PaymentMethods({ isProcessing, onSelectMethod }) {
           </div>
           <h3 className="font-display method-title">Bankkártyás</h3>
         </button>
-        <button 
-          className="card payment-method-btn" 
+        <button
+          className="card payment-method-btn"
           onClick={() => onSelectMethod('Készpénzes Fizetés')}
           disabled={isProcessing}
           style={{ opacity: isProcessing ? 0.6 : 1 }}

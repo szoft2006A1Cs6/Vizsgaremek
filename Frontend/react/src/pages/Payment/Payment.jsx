@@ -27,7 +27,7 @@ export default function Payment() {
       const payload = JSON.parse(atob(token.split('.')[1]));
       const szam = (payload.name || payload.unique_name || "").replace(/\D/g, '');
       if (szam) setAsztalSzam(parseInt(szam, 10));
-    } catch (error) {}
+    } catch (error) { }
 
     fetch(`${API_BASE_URL}/api/Pincer`, { headers: { 'Authorization': `Bearer ${token}` } })
       .then(res => res.json()).then(data => setWaiters(data)).catch(console.error);
@@ -36,12 +36,12 @@ export default function Payment() {
   const handlePayment = async (fizetesiMod) => {
     if (isProcessing) return;
     setIsProcessing(true);
-    
+
     let assignedPincerId = 0;
-    
+
     if (waiters && waiters.length > 0) {
       const activeWaiters = waiters.filter(w => w.munka === 1);
-      
+
       if (activeWaiters.length > 0) {
         const randomIndex = Math.floor(Math.random() * activeWaiters.length);
         assignedPincerId = activeWaiters[randomIndex].pincerId;
@@ -55,10 +55,10 @@ export default function Payment() {
     try {
       const orderRes = await fetch(`${API_BASE_URL}/api/Rendeles`, {
         method: 'POST', headers,
-        body: JSON.stringify({ 
-          asztalId: asztalSzam || 1, 
-          idopont: localTime, 
-          statusz: 0, 
+        body: JSON.stringify({
+          asztalId: asztalSzam || 1,
+          idopont: localTime,
+          statusz: 0,
           pincerId: assignedPincerId
         })
       });

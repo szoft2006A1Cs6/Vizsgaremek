@@ -28,7 +28,7 @@ export default function AdminStaffTable({ staff, onEdit, onDelete, onToggleWork,
                   </span>
                 </td>
                 <td className="text-right actions-cell">
-                  <button 
+                  <button
                     className={`btn-work ${person.munka === 1 ? 'btn-stop' : 'btn-start'}`}
                     onClick={() => onToggleWork(person)}
                   >

@@ -11,11 +11,10 @@ export default function AfkTimeout({ timeoutMinutes = 15, countdownSeconds = 60 
   const countdownIntervalRef = useRef(null);
 
   const resetIdleTimer = () => {
-    if (isIdle) return; // Ha már kint van a figyelmeztetés, ne induljon újra az alap időzítő
+    if (isIdle) return;
 
     if (idleTimerRef.current) clearTimeout(idleTimerRef.current);
-    
-    // Alap időzítő beállítása (percek -> milliszekundumok)
+
     idleTimerRef.current = setTimeout(() => {
       setIsIdle(true);
       setTimeLeft(countdownSeconds);
@@ -23,15 +22,14 @@ export default function AfkTimeout({ timeoutMinutes = 15, countdownSeconds = 60 
   };
 
   useEffect(() => {
-    // Események, amik aktivitásnak számítanak (érintés, kattintás, görgetés)
     const events = ['mousemove', 'keydown', 'click', 'touchstart', 'scroll'];
-    
+
     const handleActivity = () => {
       resetIdleTimer();
     };
 
     events.forEach(e => window.addEventListener(e, handleActivity));
-    resetIdleTimer(); // Indítás az oldal betöltésekor
+    resetIdleTimer();
 
     return () => {
       events.forEach(e => window.removeEventListener(e, handleActivity));
@@ -40,14 +38,12 @@ export default function AfkTimeout({ timeoutMinutes = 15, countdownSeconds = 60 
     };
   }, [timeoutMinutes, countdownSeconds, isIdle]);
 
-  // A visszaszámláló logikája, amikor az isIdle true lesz
   useEffect(() => {
     if (isIdle) {
       countdownIntervalRef.current = setInterval(() => {
         setTimeLeft(prev => {
           if (prev <= 1) {
             clearInterval(countdownIntervalRef.current);
-            // Ha letelik az idő: adatok törlése és navigálás a főoldalra
             localStorage.removeItem('cart');
             localStorage.removeItem('lastOrderId');
             navigate('/home');
