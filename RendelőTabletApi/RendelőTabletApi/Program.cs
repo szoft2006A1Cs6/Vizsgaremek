@@ -86,6 +86,17 @@ namespace RendelőTabletApi
                     });
             });
 
+            builder.Services.AddCors(options =>
+            {
+                options.AddPolicy("AllowAll", 
+                policy =>
+                {
+                    policy.AllowAnyOrigin()
+                        .AllowAnyHeader()
+                        .AllowAnyMethod();
+                });
+            });
+
             var app = builder.Build();
 
             // Configure the HTTP request pipeline.
@@ -96,7 +107,7 @@ namespace RendelőTabletApi
             }
 
             app.UseRouting();
-            app.UseCors("AllowReactApp");
+            app.UseCors("AllowAll");
             app.UseHttpsRedirection();
             app.UseAuthentication();
             app.UseAuthorization();

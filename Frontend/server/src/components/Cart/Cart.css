@@ -1,0 +1,143 @@
+.cart-sidebar {
+  background: var(--surface);
+  border-left: 1px solid #E5E7EB;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  height: calc(100vh - 80px);
+  position: sticky;
+  top: 80px;
+}
+
+.cart-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  color: var(--dark);
+  border-bottom: 2px solid var(--accent-light);
+  padding-bottom: 0.5rem;
+}
+
+.cart-items {
+  flex-grow: 1;
+  overflow-y: auto;
+  margin-bottom: 1rem;
+}
+
+.cart-item {
+  padding: 1rem 0;
+  border-bottom: 1px solid #F3F4F6;
+}
+
+.cart-item-info {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+.cart-item-controls {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.cart-item-controls button {
+  background-color: #FCD34D;
+  color: #78350F;
+  border: none;
+  border-radius: 6px;
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+}
+
+.cart-item-controls button:hover {
+  background-color: #FBBF24;
+  transform: scale(1.05);
+}
+
+.cart-item-controls button:active {
+  transform: scale(0.95);
+}
+
+.cart-item-qty {
+  font-size: 1rem;
+  font-weight: bold;
+  min-width: 40px;
+  text-align: center;
+}
+
+.cart-item-remove {
+  margin-left: auto;
+  color: #EF4444 !important;
+  background: transparent !important;
+}
+
+.cart-item-remove:hover {
+  transform: scale(1.1);
+  background: rgba(239, 68, 68, 0.1) !important;
+}
+
+.cart-footer {
+  padding-top: 1rem;
+  border-top: 2px solid var(--dark);
+}
+
+.cart-total {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.cart-pay-btn {
+  width: 100%;
+  padding: 1rem;
+  background: var(--primary);
+  color: white;
+  border: none;
+  border-radius: var(--radius-md);
+  font-weight: bold;
+  font-size: 1.1rem;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  transition: background 0.2s;
+}
+
+.cart-pay-btn:hover {
+  background: #B91C1C;
+}
+
+.cart-empty-msg {
+  text-align: center;
+  color: #9CA3AF;
+  margin-top: 4rem;
+}
+
+.cart-empty-msg .material-icons {
+  font-size: 4rem;
+  opacity: 0.3;
+}
+
+@media (max-width: 768px) {
+  .cart-sidebar {
+    height: auto;
+    position: static;
+    border-left: none;
+    border-top: 2px solid var(--dark);
+    margin-top: 1rem;
+    padding: 1rem;
+    border-radius: var(--radius-lg);
+  }
+}

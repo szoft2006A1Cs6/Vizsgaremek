@@ -1,0 +1,111 @@
+.admin-table-wrapper {
+  overflow-y: auto;
+  flex-grow: 1;
+  padding-right: 0.5rem;
+}
+
+.admin-table-wrapper::-webkit-scrollbar {
+  width: 6px;
+}
+
+.admin-table-wrapper::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+
+.admin-table-wrapper::-webkit-scrollbar-thumb {
+  background: #4B5563;
+  border-radius: 10px;
+}
+
+.admin-table-wrapper::-webkit-scrollbar-thumb:hover {
+  background: #6B7280;
+}
+
+.admin-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+  color: #F3F4F6;
+  position: relative;
+}
+
+.admin-table th {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  padding: 1rem;
+  background: #1F2937;
+  color: #9CA3AF;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  border-bottom: 2px solid #374151;
+  box-shadow: 0 2px 4px -2px rgba(0, 0, 0, 0.5);
+}
+
+.admin-table td {
+  padding: 1.25rem 1rem;
+  border-bottom: 1px solid #374151;
+  vertical-align: middle;
+}
+
+.admin-table tbody tr:hover {
+  background: rgba(55, 65, 81, 0.4);
+}
+
+.font-bold {
+  font-weight: bold;
+  color: #F3F4F6;
+  font-size: 1.1rem;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.actions-cell {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.5rem;
+}
+
+.btn-icon {
+  background: none;
+  border: none;
+  color: #9CA3AF;
+  cursor: pointer;
+  padding: 4px;
+  transition: color 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-icon:hover {
+  color: #60A5FA;
+}
+
+.btn-icon.delete-icon:hover {
+  color: #EF4444 !important;
+}
+
+.star-icon {
+  color: #FBC02D;
+  font-size: 1.5rem;
+}
+
+.star-icon-empty {
+  color: #4B5563;
+  font-size: 1.5rem;
+}
+
+.empty-table-msg {
+  text-align: center;
+  color: #9CA3AF;
+  padding: 4rem 2rem !important;
+  font-size: 1.1rem;
+}

@@ -1,0 +1,44 @@
+.table-info-badge { 
+  background: var(--accent); 
+  color: var(--dark); 
+  padding: 0.5rem 1rem; 
+  border-radius: var(--radius-md); 
+  font-weight: bold; 
+}
+
+.status-main { 
+  display: flex; 
+  flex-direction: column; 
+  gap: 2rem; 
+  max-width: 800px; 
+  margin: 0 auto; 
+  width: 100%; 
+}
+
+.status-order-num { 
+  color: var(--text-muted); 
+  font-size: 1.2rem; 
+  margin-bottom: 0.5rem; 
+}
+
+.status-title { 
+  color: var(--dark); 
+  font-size: 2.5rem; 
+  margin: 0; 
+}
+
+.status-actions { 
+  display: flex; 
+  gap: 1rem; 
+}
+
+.status-action-btn { 
+  flex: 1; 
+  padding: 1.5rem; 
+}
+
+@media (max-width: 768px) {
+  .status-actions {
+    flex-direction: column;
+  }
+}

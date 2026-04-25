@@ -1,0 +1,57 @@
+.payment-methods-section {
+  flex: 2 1 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.payment-method-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+}
+
+.payment-method-btn {
+  padding: 3rem 2rem;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.method-icon-wrapper {
+  padding: 1.5rem;
+  border-radius: 50%;
+}
+
+.method-icon-wrapper.card-method {
+  background: var(--accent-light);
+  color: var(--primary);
+}
+
+.method-icon-wrapper.cash-method {
+  background: var(--bg-color);
+  color: var(--accent);
+}
+
+.method-icon {
+  font-size: 3rem;
+}
+
+.method-title {
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .payment-method-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .payment-method-btn {
+    flex-direction: row;
+    padding: 1.5rem;
+    text-align: left;
+  }
+}

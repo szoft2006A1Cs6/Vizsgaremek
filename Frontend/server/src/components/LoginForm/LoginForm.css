@@ -1,0 +1,51 @@
+.auth-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  text-align: left;
+}
+
+.form-label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+  color: var(--dark);
+  font-size: 0.9rem;
+}
+
+.form-control {
+  width: 100%;
+  padding: 1rem;
+  border-radius: var(--radius-md);
+  border: 2px solid #E5E7EB;
+  background: white;
+  font-family: inherit;
+  font-size: 1rem;
+  outline: none;
+}
+
+select.form-control {
+  cursor: pointer;
+}
+
+.form-control.error {
+  border: 2px solid var(--primary);
+}
+
+.form-error {
+  color: var(--primary);
+  margin-top: 0.5rem;
+  font-size: 0.85rem;
+}
+
+.auth-submit-btn {
+  width: 100%;
+  padding: 1.25rem;
+  font-size: 1.1rem;
+  margin-top: 1rem;
+}
+
+.auth-loading-text {
+  padding: 1rem;
+  color: var(--text-muted);
+}
