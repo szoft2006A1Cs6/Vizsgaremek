@@ -43,8 +43,8 @@
 }
 
 .cart-item-controls button {
-  background-color: #FCD34D;
-  color: #78350F;
+  background-color: var(--accent);
+  color: #000000;
   border: none;
   border-radius: 6px;
   width: 32px;
@@ -59,7 +59,6 @@
 }
 
 .cart-item-controls button:hover {
-  background-color: #FBBF24;
   transform: scale(1.05);
 }
 
