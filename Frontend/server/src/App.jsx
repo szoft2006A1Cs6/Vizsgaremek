@@ -9,6 +9,7 @@ import Kitchen from './pages/Kitchen/Kitchen';
 import Login from './pages/Login/Login';
 import EditMenu from './pages/EditMenu/EditMenu';
 import EditStaff from './pages/EditStaff/EditStaff';
+import RatingStats from './pages/RatingStats/RatingStats';
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
         <Route path="/kitchen" element={<Kitchen />} />
         <Route path="/editmenu" element={<EditMenu />} />
         <Route path="/editstaff" element={<EditStaff />} />
+        <Route path='/ratingstats' element={<RatingStats />} />
       </Routes>
     </Router>
   );

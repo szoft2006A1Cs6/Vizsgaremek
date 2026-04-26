@@ -1,0 +1,24 @@
+.rating-table {
+    table-layout: fixed;
+    width: 100%;
+}
+
+.rating-score {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: #F3F4F6;
+}
+
+.rating-score .material-icons {
+    font-size: 1.25rem;
+    color: #FBC02D;
+    line-height: 1;
+}
+
+.rating-date {
+    color: #9CA3AF;
+    font-size: 0.95rem;
+}

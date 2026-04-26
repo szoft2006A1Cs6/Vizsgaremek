@@ -109,6 +109,10 @@ export default function KonyhaiKijelzo() {
             <span className="material-icons">people_alt</span>
           </button>
 
+          <button onClick={() => navigate('/ratingstats')} className="kds-nav-btn" title="Értékelések megtekintése">
+            <span className="material-icons">star_rate</span>
+          </button>
+
           <div className="kds-clock">{time}</div>
           
           <button onClick={() => { localStorage.clear(); navigate('/'); }} className="logout-btn" title="Kijelentkezés">
