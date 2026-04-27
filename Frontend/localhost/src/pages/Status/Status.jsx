@@ -26,6 +26,7 @@ export default function Status() {
     if (!token) return;
 
     try {
+      // Token dekódolása, hogy megtudjuk, melyik asztalnál ül a vendég
       const payload = JSON.parse(atob(token.split('.')[1]));
       const szam = (payload.name || payload.unique_name || "").replace(/\D/g, '');
       if (szam) setAsztalSzam(parseInt(szam, 10));
@@ -41,6 +42,7 @@ export default function Status() {
         if (tetelekRes.ok && termekRes.ok) {
           const allTetelek = await tetelekRes.json();
           const allTermekek = await termekRes.json();
+          
           const myTetelek = allTetelek.filter(t => t.rendelesId === parseInt(orderId));
           
           let calcTotal = 0;
@@ -57,6 +59,7 @@ export default function Status() {
 
     fetchOrderData();
 
+    // 5 másodpercenként lekérdezzük a szervert, hogy a konyha átállította-e már a rendelés státuszát
     const intervalId = setInterval(async () => {
       try {
         const res = await fetch(`${API_BASE_URL}/api/Rendeles/${orderId}`, { headers: { 'Authorization': `Bearer ${token}` } });
@@ -64,9 +67,11 @@ export default function Status() {
       } catch (e) {}
     }, 5000);
 
+    // Komponens megsemmisülésekor töröli az időzítőt, hogy ne fusson feleslegesen a háttérben
     return () => clearInterval(intervalId);
   }, [orderId, navigate]);
 
+  // Pincér hívása API kérés
   const handlePincerHivas = async () => {
     if (callStatus !== 'idle' || !asztalSzam) return;
     setCallStatus('calling');
@@ -80,11 +85,13 @@ export default function Status() {
       });
       if (response.ok) {
         setCallStatus('success');
+        // Sikeres hívás után 3 másodpercig zöld marad a gomb, utána visszaáll alapállapotba
         setTimeout(() => setCallStatus('idle'), 3000);
       } else { setCallStatus('idle'); }
     } catch (err) { setCallStatus('idle'); }
   };
 
+  // Beállítja a folyamatjelző csíkot a jelenlegi állapot alapján
   const getProgress = () => {
     switch(orderStatus) {
       case 0: return { w: '0%', step: 0, t: 'Rendelés leadva' };

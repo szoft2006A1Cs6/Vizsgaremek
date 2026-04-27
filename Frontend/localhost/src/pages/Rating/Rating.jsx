@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
-import PageHeader from '../../components/PageHeader/PageHeader'; // FRISSÍTVE
+import PageHeader from '../../components/PageHeader/PageHeader';
 import RatingStars from '../../components/RatingStars/RatingStars';
 import AfkTimeout from '../../components/AfkTimeout/AfkTimeout';
 import './Rating.css';
@@ -10,10 +10,12 @@ const API_BASE_URL = 'https://localhost:7235';
 export default function Rating() {
   const navigate = useNavigate();
   const location = useLocation();
+  // Rendelés azonosítójának lekérése a navigációs állapotból, vagy ha az nincs, akkor a localStorage-ból
   const orderId = location.state?.orderId || localStorage.getItem('lastOrderId');
   const [rating, setRating] = useState(0);
   const [isSubmitting, setIsSubmitting] = useState(false);
 
+  // Értékelési folyamat lezárása
   const handleFinish = () => {
     localStorage.removeItem('lastOrderId');
     navigate('/home');
@@ -25,15 +27,21 @@ export default function Rating() {
 
     setIsSubmitting(true);
     const token = localStorage.getItem('token');
+    
+    // Helyi idő generálása az adatbázis számára
     const localTime = new Date(new Date().getTime() - new Date().getTimezoneOffset() * 60000).toISOString().substring(0, 19);
 
     try {
+      // Értékelés elküldése az API-nak
       await fetch(`${API_BASE_URL}/api/Ertekeles`, {
         method: 'POST', headers: { 'Content-Type': 'application/json', 'Authorization': `Bearer ${token}` },
         body: JSON.stringify({ rendelesId: parseInt(orderId, 10), pontszam: rating, idopont: localTime })
       });
     } catch (err) { }
-    finally { handleFinish(); }
+    finally { 
+      // Sikeres küldés és hiba esetén is továbbengedjük a felhasználót
+      handleFinish(); 
+    }
   };
 
   return (

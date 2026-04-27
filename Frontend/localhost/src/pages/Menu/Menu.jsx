@@ -51,7 +51,6 @@ export default function Menu() {
     }
     
     localStorage.setItem('cart', JSON.stringify(cart));
-    // Ezzel az állapotváltozással "szólunk" a Cart komponensnek, hogy olvassa újra a localStorage-t
     setRefreshCart(prev => prev + 1);
   };
 
