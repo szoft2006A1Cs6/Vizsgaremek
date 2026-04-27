@@ -18,6 +18,7 @@ export default function KonyhaiKijelzo() {
     if (!token) { navigate('/'); return; }
     try {
       const headers = { 'Authorization': `Bearer ${token}`, 'Content-Type': 'application/json' };
+
       const [ordersRes, itemsRes, productsRes, waitersRes, callsRes] = await Promise.all([
         fetch(`${API_BASE_URL}/api/Rendeles`, { headers }),
         fetch(`${API_BASE_URL}/api/RendelesTetel`, { headers }),
@@ -34,6 +35,7 @@ export default function KonyhaiKijelzo() {
             rawWaiters = await waitersRes.json(), 
             rawCalls = await callsRes.json();
 
+      // Rendelések adatainak összefűzése
       setOrders(rawOrders.filter(o => o.statusz < 3).map(o => {
         const pincer = rawWaiters.find(p => p.pincerId === o.pincerId);
         const tetelek = rawItems.filter(rt => rt.rendelesId === o.rendelesId).map(rt => {
@@ -47,10 +49,11 @@ export default function KonyhaiKijelzo() {
           ido: new Date(o.idopont).toLocaleTimeString('hu-HU', { hour: '2-digit', minute: '2-digit' }), 
           pincer: pincer ? pincer.pincerNev : 'Nincs pincér', 
           tetelek: tetelek, 
-          raw: o 
+          raw: o
         };
       }).sort((a, b) => new Date(b.raw.idopont) - new Date(a.raw.idopont)));
 
+      // Aktív (még nem teljesített) pincérhívások listázása
       setCalls(rawCalls.filter(c => c.statusz !== 'Teljesítve').map(c => ({
         id: c.hivasId, 
         asztal: c.asztalId, 
@@ -66,26 +69,35 @@ export default function KonyhaiKijelzo() {
   useEffect(() => {
     fetchData();
     const clockInterval = setInterval(() => setTime(new Date().toLocaleTimeString('hu-HU')), 1000);
+    
+    // 10 másodpercenként frissíti a rendeléseket, hogy a konyha mindig lássa az újakat
     const pollInterval = setInterval(fetchData, 10000);
+    
     return () => { clearInterval(clockInterval); clearInterval(pollInterval); };
   }, []);
 
+  // Rendelés állapotának léptetése (0: Felvéve -> 1: Készül -> 2: Tálalás -> 3: Kész)
   const updateStatus = async (order, nextStatus) => {
     try {
       await fetch(`${API_BASE_URL}/api/Rendeles/${order.id}`, {
-        method: 'PUT', headers: { 'Authorization': `Bearer ${localStorage.getItem('token')}`, 'Content-Type': 'application/json' },
+        method: 'PUT', 
+        headers: { 'Authorization': `Bearer ${localStorage.getItem('token')}`, 'Content-Type': 'application/json' },
         body: JSON.stringify({ ...order.raw, statusz: nextStatus })
       });
-      fetchData();
+      fetchData(); // Siker esetén azonnali frissítés
     } catch (err) {}
   };
 
+  // Pincérhívás lezárása 
   const resolveCall = async (call) => {
     try {
       const response = await fetch(`${API_BASE_URL}/api/PincerHivas/${call.id}`, {
-        method: 'PUT', headers: { 'Authorization': `Bearer ${localStorage.getItem('token')}`, 'Content-Type': 'application/json' },
+        method: 'PUT', 
+        headers: { 'Authorization': `Bearer ${localStorage.getItem('token')}`, 'Content-Type': 'application/json' },
         body: JSON.stringify({ ...call.raw, statusz: 'Teljesítve' })
       });
+      
+      // Ha sikeres a kérés, azonnal kiveszi a felületről
       if (response.ok) setCalls(prev => prev.filter(c => c.id !== call.id));
     } catch (err) {}
   };

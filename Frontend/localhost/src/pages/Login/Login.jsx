@@ -14,6 +14,7 @@ export default function Login() {
   const [isLoading, setIsLoading] = useState(false);
   const [fetchingUsers, setFetchingUsers] = useState(true);
 
+  // Komponens betöltésekor lekérjük az elérhető felhasználókat a legördülő menühöz
   useEffect(() => {
     const fetchUsers = async () => {
       try {
@@ -42,6 +43,7 @@ export default function Login() {
     const currentUser = users.find(u => u.id === selectedUser);
 
     try {
+      // Bejelentkezési kérés elküldése a kiválasztott felhasználónévvel és jelszóval
       const response = await fetch(`${API_BASE_URL}/api/auth/login`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
@@ -50,6 +52,7 @@ export default function Login() {
       const data = await response.json();
 
       if (response.ok) {
+        // Sikeres bejelentkezés esetén elmentjük a tokent, majd jogosultság alapján navigálunk
         localStorage.setItem('token', data.token);
         localStorage.setItem('role', data.role);
         if (data.role === 'Staff') navigate('/kitchen');

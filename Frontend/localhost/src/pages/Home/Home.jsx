@@ -19,6 +19,7 @@ export default function Home() {
     if (!token) { navigate('/'); return; }
 
     try {
+      // Token visszafejtése, hogy megtudjuk melyik asztalnál vagyunk
       const base64Url = token.split('.')[1];
       const base64 = base64Url.replace(/-/g, '+').replace(/_/g, '/');
       const jsonPayload = decodeURIComponent(atob(base64).split('').map(c => '%' + ('00' + c.charCodeAt(0).toString(16)).slice(-2)).join(''));
@@ -28,6 +29,7 @@ export default function Home() {
       if (szam) setAsztalSzam(szam);
     } catch (error) { console.error(error); }
 
+    // Kiemelt ételek lekérése a promóciós kártyához
     const fetchFeaturedDishes = async () => {
       try {
         const res = await fetch(`${API_BASE_URL}/api/Termek`, {

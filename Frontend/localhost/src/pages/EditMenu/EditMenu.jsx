@@ -38,6 +38,7 @@ export default function EditMenu() {
       if (res.ok) {
         const data = await res.json();
         setCategories(data);
+        // Ha van kategória, de még nem kattintottunk egyikre sem, az elsőt betölti
         if (data.length > 0 && !selectedCategoryId) setSelectedCategoryId(data[0].eteltipusId);
       }
     } catch (err) { console.error(err); }
@@ -58,6 +59,7 @@ export default function EditMenu() {
   const handleSaveCategory = async (e) => {
     e.preventDefault();
     const token = localStorage.getItem('token');
+    // Eldöntjük a linket
     const method = editingCategory ? 'PUT' : 'POST';
     const url = editingCategory ? `${API_BASE_URL}/api/EtelTipus/${editingCategory.eteltipusId}` : `${API_BASE_URL}/api/EtelTipus`;
 
@@ -130,6 +132,7 @@ export default function EditMenu() {
     try {
       if (itemToDelete.type === 'category') {
         const cat = itemToDelete.data;
+        // Kategória törlése előtt törölni kell az összes benne lévő ételt
         const prodRes = await fetch(`${API_BASE_URL}/api/Termek`, { headers: { 'Authorization': `Bearer ${token}` } });
         if (prodRes.ok) {
           const allProds = await prodRes.json();
@@ -147,6 +150,7 @@ export default function EditMenu() {
           fetchCategories();
         }
       } else if (itemToDelete.type === 'product') {
+        // Sima termék törlés
         const prod = itemToDelete.data;
         const res = await fetch(`${API_BASE_URL}/api/Termek/${prod.termekId}`, { method: 'DELETE', headers: { 'Authorization': `Bearer ${token}` } });
         if (res.ok) {

@@ -17,14 +17,17 @@ export default function Categories() {
 
   useEffect(() => {
     const fetchCategories = async () => {
+      // Van-e érvényes bejelentkezési token a localStorage-ben
       const token = localStorage.getItem('token');
       if (!token) { navigate('/'); return; }
+      
       try {
+        // Kategóriák lekérése a backendről hitelesítéssel
         const response = await fetch(`${API_BASE_URL}/api/EtelTipus`, { headers: { 'Authorization': `Bearer ${token}` } });
         if (response.ok) { setCategories(await response.json()); }
         else { setError('Nem sikerült betölteni a kategóriákat.'); }
       } catch (err) { setError('Hiba a szerverrel való kapcsolat során.'); }
-      finally { setLoading(false); }
+      finally { setLoading(false); } // Töltőképernyő kikapcsolása
     };
     fetchCategories();
   }, [navigate]);
@@ -43,6 +46,7 @@ export default function Categories() {
               {categories.map((cat) => (
                 <CategoryCard
                   key={cat.eteltipusId} category={cat}
+                  // Navigálás a menü oldalra, átadva a kiválasztott kategória ID-ját és nevét
                   onClick={() => navigate('/menu', { state: { categoryId: cat.eteltipusId, categoryName: cat.tipusNev } })}
                 />
               ))}

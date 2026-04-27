@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ytURux9Nwow=",
+  "dgSpecHash": "Z60ndb0+1VI=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Bende\\Desktop\\RendelőTabletApi\\RendelőTabletApi.csproj",
+  "projectFilePath": "C:\\Users\\Bende\\Documents\\GitHub\\Vizsgaremek\\RendelőTabletApi\\RendelőTabletApi\\RendelőTabletApi.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Bende\\.nuget\\packages\\bouncycastle.cryptography\\2.6.2\\bouncycastle.cryptography.2.6.2.nupkg.sha512",
     "C:\\Users\\Bende\\.nuget\\packages\\google.protobuf\\3.32.0\\google.protobuf.3.32.0.nupkg.sha512",
@@ -44,8 +44,7 @@
     "C:\\Users\\Bende\\.nuget\\packages\\system.security.cryptography.protecteddata\\8.0.0\\system.security.cryptography.protecteddata.8.0.0.nupkg.sha512",
     "C:\\Users\\Bende\\.nuget\\packages\\system.security.permissions\\8.0.0\\system.security.permissions.8.0.0.nupkg.sha512",
     "C:\\Users\\Bende\\.nuget\\packages\\system.windows.extensions\\8.0.0\\system.windows.extensions.8.0.0.nupkg.sha512",
-    "C:\\Users\\Bende\\.nuget\\packages\\zstdsharp.port\\0.8.6\\zstdsharp.port.0.8.6.nupkg.sha512",
-    "C:\\Users\\Bende\\.nuget\\packages\\microsoft.netcore.app.host.linux-x64\\8.0.26\\microsoft.netcore.app.host.linux-x64.8.0.26.nupkg.sha512"
+    "C:\\Users\\Bende\\.nuget\\packages\\zstdsharp.port\\0.8.6\\zstdsharp.port.0.8.6.nupkg.sha512"
   ],
   "logs": []
 }

@@ -17,8 +17,10 @@ export default function EditStaff() {
 
   const [staffName, setStaffName] = useState('');
 
+  // Komponens betöltésekor egyből lekérjük a pincéreket
   useEffect(() => { fetchStaff(); }, []);
 
+  // Pincérek lekérése a backendről
   const fetchStaff = async () => {
     const token = localStorage.getItem('token');
     try {
@@ -33,18 +35,20 @@ export default function EditStaff() {
     finally { setLoading(false); }
   };
 
+  // Új pincér felvitele VAGY meglévő adatainak frissítése
   const handleSaveStaff = async (e) => {
     e.preventDefault();
     const token = localStorage.getItem('token');
+
     const method = editingStaff ? 'PUT' : 'POST';
-    const url = editingStaff
-      ? `${API_BASE_URL}/api/Pincer/${editingStaff.pincerId}`
-      : `${API_BASE_URL}/api/Pincer`;
+    const url = editingStaff ? `${API_BASE_URL}/api/Pincer/${editingStaff.pincerId}` : `${API_BASE_URL}/api/Pincer`;
 
     const body = {
       pincerNev: staffName,
-      munka: editingStaff ? editingStaff.munka : 0 // Új pincér alapból nem dolgozik
+      // Új pincér alapértelmezetten nincs munkában, szerkesztésnél megtartjuk a jelenlegi állapotát
+      munka: editingStaff ? editingStaff.munka : 0 
     };
+
     if (editingStaff) body.pincerId = editingStaff.pincerId;
 
     try {
@@ -60,31 +64,31 @@ export default function EditStaff() {
     } catch (err) { console.error(err); }
   };
 
+  // Pincér státuszának azonnali váltogatása
   const handleToggleWork = async (person) => {
     const token = localStorage.getItem('token');
-    const updatedPerson = { ...person, munka: person.munka === 1 ? 0 : 1 };
-
     try {
-      const res = await fetch(`${API_BASE_URL}/api/Pincer/${person.pincerId}`, {
+      await fetch(`${API_BASE_URL}/api/Pincer/${person.pincerId}`, {
         method: 'PUT',
         headers: { 'Content-Type': 'application/json', 'Authorization': `Bearer ${token}` },
-        body: JSON.stringify(updatedPerson)
+        body: JSON.stringify({ ...person, munka: person.munka === 1 ? 0 : 1 })
       });
-      if (res.ok) fetchStaff();
+      fetchStaff();
     } catch (err) { console.error(err); }
   };
 
+  // Végleges törlés a megerősítő ablak leokézása után
   const executeDelete = async () => {
     if (!itemToDelete) return;
     const token = localStorage.getItem('token');
     try {
-      const res = await fetch(`${API_BASE_URL}/api/Pincer/${itemToDelete.pincerId}`, {
-        method: 'DELETE',
-        headers: { 'Authorization': `Bearer ${token}` }
+      const res = await fetch(`${API_BASE_URL}/api/Pincer/${itemToDelete.pincerId}`, { 
+        method: 'DELETE', 
+        headers: { 'Authorization': `Bearer ${token}` } 
       });
       if (res.ok) fetchStaff();
     } catch (err) { console.error(err); }
-    finally { setItemToDelete(null); }
+    finally { setItemToDelete(null); } // Törlés után modál bezárása
   };
 
   const closeModal = () => {
@@ -112,6 +116,7 @@ export default function EditStaff() {
       <PageHeader title="Személyzet Kezelése" theme="dark" />
 
       <main className="main-content staff-container">
+        {/* Pincéreket listázó táblázat komponens */}
         <AdminStaffTable
           staff={staff}
           onEdit={openEditStaff}
@@ -121,6 +126,7 @@ export default function EditStaff() {
         />
       </main>
 
+      {/* Felvitel/Szerkesztés felugró ablak */}
       <AdminStaffModal
         isOpen={showModal}
         onClose={closeModal}
@@ -130,12 +136,13 @@ export default function EditStaff() {
         isEditing={!!editingStaff}
       />
 
+      {/* Törlés megerősítő felugró ablak */}
       <AdminConfirmModal
         isOpen={!!itemToDelete}
         onClose={() => setItemToDelete(null)}
         onConfirm={executeDelete}
         title="Pincér törlése"
-        message={`Biztosan törölni szeretnéd ${itemToDelete?.pincerNev} pincért a rendszerből?`}
+        message={`Biztosan törölni szeretnéd "${itemToDelete?.pincerNev}" pincért a rendszerből?`}
       />
     </div>
   );
